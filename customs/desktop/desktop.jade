@@ -1,0 +1,47 @@
+extends ../../templates/lcloud/desktop
+
+block varsdesktop
+    - var itemCarousel1 = { src: "/apps/files//icons/desktop/tuformacion.png", title:'Mis cursos'}
+    - var itemCarousel2 = { src: "/apps/files//icons/desktop/catalogos.png", title:'Catálogo'}
+    - var itemCarousel3 = { src: "/apps/files//icons/desktop/biblioteca.png", title:'Biblioteca'}
+    - var itemCarousel4 = { src: "/apps/files//icons/desktop/aulavirtual.png", title:'Aulas virtuales aulas virtuales'}
+    - var itemCarousel5 = { src: "/apps/files//icons/desktop/play.png", title:'Play'}      
+    - var itemCarousel6 = { src: "/apps/files//icons/desktop/maker.png", title:'Maker'}
+    - var itemCarousel7 = { src: "/apps/files//icons/desktop/social.png", title:'Comunidad'}
+    - var itemCarousel8 = { src: "/apps/files//icons/desktop/notificaciones.png", title:'Mensajes'}
+    - var itemCarousel9 = { src: "/apps/files//icons/desktop/calendario.png", title:'Calendario'}
+    - var itemCarousel10 = { src: "/apps/files//icons/desktop/calendario.png", title:'Calendario'}
+    - var itemCarousel11 = { src: "/apps/files//icons/desktop/calendario.png", title:'Calendario'}
+    - var itemCarousel12 = { src: "/apps/files//icons/desktop/calendario.png", title:'Calendario'}
+    - var itemCarousel13 = { src: "/apps/files//icons/desktop/calendario.png", title:'Calendario'}
+    - var itemCarousel14 = { src: "/apps/files//icons/desktop/calendario.png", title:'Calendario'}
+    - var itemsCarousel = [itemCarousel1, itemCarousel2, itemCarousel3, itemCarousel4, itemCarousel5, itemCarousel6, itemCarousel7, itemCarousel8, itemCarousel9, itemCarousel10, itemCarousel11, itemCarousel12, itemCarousel13, itemCarousel14]  
+block head
+    meta( charset="utf-8")
+    meta( http-equiv="X-UA-Compatible", content="IE=edge")
+    meta( name="viewport", content="width=device-width, initial-scale=1")
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    title #{appTitle}
+    <!-- fonts -->
+    link( href='//fonts.googleapis.com/css?family=Lato:100,400,700', rel='stylesheet', type='text/css')
+    <!-- Bootstrap -->
+    link( href="/apps/vendors/bootstrap/css/bootstrap.min.css", rel="stylesheet")
+    link( rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+    <!-- Theme -->
+    link( href="#{pathCSSTheme}", rel="stylesheet")
+    <!-- Force CSS Customizable -->
+    link( href="desktop-custom.css", rel="stylesheet")        
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
+    script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
+    <![endif]-->       
+block imageprofile
+    img(src='/apps/files/img/profile.png') 
+block footerscripts    
+    script(src="/apps/vendors/jquery/jquery.1.11.2.min.js")      
+    script(src="/apps/vendors/bootstrap/js/bootstrap.min.js")     
+    script(src="/webcomponents/js/theme.js")     
+    
+    

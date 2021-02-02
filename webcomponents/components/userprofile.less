@@ -1,0 +1,25 @@
+@import "../../themes/less/variables";
+@import "../../themes/less/settings";
+@import "../mixins";
+
+@line-height-profile-user: 30px;
+
+.detail-content-user-profile .profile-actions{    
+    line-height: @line-height-profile-user;
+}
+
+.detail-content-user-profile .profile-data .row, .detail-content-user-profile .badge-primary{
+    font-size: @font-size-large;
+    line-height: @line-height-profile-user;
+}
+
+.tab-content-profile{
+    #tabexpediente{
+        .detail-header{
+            .col-detail-header-actions{
+                text-align: right;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,139 @@
+doctype html
+html(lang="en")
+    include ../../templates/components/_vars
+    block vars
+        - showLateralMenu = false
+        //- appTitle = 'ICONS'   
+        - sectionTitle = 'ICONS'
+        //- pathCSSTheme = pathCSSThemeCentral 
+        - pathuserprofile  = '/apps/files/img/profile.png'
+        - pathmenudashboardicon = '/apps/files/icons/icon.svg'        
+        - pathlogo = '/apps/files/icons/logo/logo.png'        
+    block head
+        meta( charset="utf-8")
+        meta( http-equiv="X-UA-Compatible", content="IE=edge")
+        meta( name="viewport", content="width=device-width, initial-scale=1")
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        title #{appTitle}
+        <!-- fonts -->
+        link( href='//fonts.googleapis.com/css?family=Lato:100,400,700', rel='stylesheet', type='text/css')
+        <!-- Bootstrap -->
+        link( href="/apps/vendors/bootstrap/css/bootstrap.min.css", rel="stylesheet")
+        link( rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+        <!-- Theme -->
+        link( href="#{pathCSSTheme}", rel="stylesheet")
+        <!-- Force CSS Customizable -->
+        link( href="desktop-custom.css", rel="stylesheet")        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
+        script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
+        <![endif]-->       
+    - var bodybg = ''
+    if bodyBGInverse
+        - bodybg = 'body-bg-inverse'
+    - bodybg =  bodybg + ' ' + bodyclasses + ' desktop-classic'
+    body(class=bodybg)
+        block topbar
+            - navbarclass = 'navbar-desktop-classic'
+            include ../../templates/components/_topbardesktop                
+                                                        
+        div.body-content           
+            section.content
+                div.container-fluid
+                    div#client-container
+                        div
+                            span html canvas
+                        div.htmlcanvas 
+                            span HTML CANVAS
+            
+            include ../../templates/components/_footer
+        div#news-content.news-wrapper.collapse
+            .content
+                .toggle-close(data-toggle='collapse', data-target='#news-content') X
+                .row
+                    .col-lg-12
+                        .row.news-container.col-reverse-responsive
+                            .col-news
+                                .section
+                                    i.icon-ntx.icon-news
+                                    label News
+                                .news-list
+                                    .new-wrapper
+                                        time.new-time 23/09/2015
+                                        a.new-title(href='newsdetail.html')
+                                        | Dimite el presidente de Volkswagen tras
+                                        | el
+                                        | escándalo de manipulación en EEUU
+                                        .new-summary
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor felis in mi dapibus tempor. Etiam gravida nisl in nulla ullamcorper, in ultrices quam ullamcorper. Aliquam erat volutpat. In hac habitasse platea dictumst. Phasellus hendrerit urna non turpis pulvinar, sit amet placerat augue tincidunt. Donec ornare quam quis dapibus vestibulum. Duis interdum laoreet placerat. Integer ut dignissim metus. Nullam erat est, pulvinar ut fermentum vitae, molestie in magna.
+                                    .new-wrapper
+                                        time.new-time 23/09/2015
+                                        a.new-title(href='newsdetail.html') Tejerina confirma un apoyo masivo al acuerdo lácteo
+                                        .new-summary
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor felis in mi dapibus tempor. Etiam gravida nisl in nulla ullamcorper, in ultrices quam ullamcorper. Aliquam erat volutpat. In hac habitasse platea dictumst. Phasellus hendrerit urna non turpis pulvinar, sit amet placerat augue tincidunt. Donec ornare quam quis dapibus vestibulum. Duis interdum laoreet placerat. Integer ut dignissim metus. Nullam erat est, pulvinar ut fermentum vitae, molestie in magna.
+                                    .new-wrapper
+                                        time.new-time 23/09/2015
+                                        a.new-title(href='newsdetail.html') El PP mantendrá la expropiación para lograr los terrenos de As Burgas
+                                        .new-summary
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor felis in mi dapibus tempor. Etiam gravida nisl in nulla ullamcorper, in ultrices quam ullamcorper. Aliquam erat volutpat. In hac habitasse platea dictumst. Phasellus hendrerit urna non turpis pulvinar, sit amet placerat augue tincidunt. Donec ornare quam quis dapibus vestibulum. Duis interdum laoreet placerat. Integer ut dignissim metus. Nullam erat est, pulvinar ut fermentum vitae, molestie in magna.
+                                    .new-wrapper
+                                        time.new-time 23/09/2015
+                                        a.new-title(href='newsdetail.html') Margallo: "Los catalanes perderían la nacionalidad española si se independizan"
+                                        .new-summary
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor felis in mi dapibus tempor. Etiam gravida nisl in nulla ullamcorper, in ultrices quam ullamcorper. Aliquam erat volutpat. In hac habitasse platea dictumst. Phasellus hendrerit urna non turpis pulvinar, sit amet placerat augue tincidunt. Donec ornare quam quis dapibus vestibulum. Duis interdum laoreet placerat. Integer ut dignissim metus. Nullam erat est, pulvinar ut fermentum vitae, molestie in magna.
+                                    .new-wrapper
+                                        time.new-time 23/09/2015
+                                        a.new-title(href='newsdetail.html') Extinguen un incendio en el centro tecnológico Aimen, en Porriño
+                                        .new-summary
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor felis in mi dapibus tempor. Etiam gravida nisl in nulla ullamcorper, in ultrices quam ullamcorper. Aliquam erat volutpat. In hac habitasse platea dictumst. Phasellus hendrerit urna non turpis pulvinar, sit amet placerat augue tincidunt. Donec ornare quam quis dapibus vestibulum. Duis interdum laoreet placerat. Integer ut dignissim metus. Nullam erat est, pulvinar ut fermentum vitae, molestie in magna.
+                            .col-poll
+                                .poll
+                                    .section
+                                        i.icon-ntx.icon-ranking
+                                        label Poll
+                                    form.form.form-transparent
+                                        fieldset
+                                            .form-group
+                                                label
+                                                | Which device are you most likely to use to
+                                                | access training content
+                                                .clearfix
+                                                .radio.radio-primary.clearfix
+                                                    input#radio1(type='radio', name='radio', value='option1')
+                                                    label(for='radio1')
+                                                    | Smartphone
+                                                .radio.radio-primary.clearfix
+                                                    input#radio2(type='radio', name='radio', value='option2')
+                                                    label(for='radio2')
+                                                    | Tablet
+                                                .radio.radio-primary.clearfix
+                                                    input#radio3(type='radio', name='radio', value='option3')
+                                                    label(for='radio3')
+                                                    | Laptop
+                                            .form-group
+                                                button.btn.btn-primary Responder
+                .loading-wrapper.vertical-align-center
+                    i.fa.fa-circle-o-notch.fa-spin
+                    label Loading
+
+        div.news-toggle.collapsed(data-toggle="collapse" data-target="#news-content")
+            div.label-wrapper
+                div.label Announcements   
+                     
+block footerscripts
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    script(src="/apps/vendors/jquery/jquery.1.11.2.min.js")
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    script(src="/apps/vendors/bootstrap/js/bootstrap.min.js")
+    script(src="/apps/vendors/bootstrap-selects/bootstrap-select.min.js")
+    script(src="/apps/vendors/bootstrap-switches/js/bootstrap-switch.min.js")
+    <!-- dropzone library -->
+    script(src="/apps/vendors/dropzonejs/min/dropzone.min.js")
+    <!-- js theme -->
+    script(src="/apps/vendors/circles/circles.min.js")
+    script(src="/webcomponents/js/theme.js")
+    
+      
+            

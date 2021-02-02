@@ -1,0 +1,75 @@
+h1.text-responsive , .text-responsive-h1{ font-size: 30px; line-height: 1.2; }
+h2.text-responsive , .text-responsive-h2{ font-size: 26px; line-height: 1.2; }
+h3.text-responsive , .text-responsive-h3{ font-size: 24px; line-height: 1.2; }
+h4.text-responsive , .text-responsive-h4{ font-size: 22px; line-height: 1.2; }
+h5.text-responsive , .text-responsive-h5{ font-size: 20px; line-height: 1.2; }
+h6.text-responsive , .text-responsive-h6{ font-size: 18px; line-height: 1.2; }
+
+.text-responsive{
+    font-size: 15px;    
+    &.text-responsive-big { font-size: 16px;}
+    &.text-responsive-bigger { font-size: 18px;} 
+    &.text-responsive-biggest { font-size: 20px;}
+    &.text-responsive-small { font-size: 12px;}
+    &.text-responsive-smaller { font-size: 10px;} 
+    &.text-responsive-smallest { font-size: 8px;}
+}
+
+/* Responsive */
+
+/* Only mobile */
+@media (max-width: @responsive-xm-min-width) {  
+    //word-break: break-all;
+    h1.text-responsive , .text-responsive-h1{ word-wrap: break-word;}
+    h2.text-responsive , .text-responsive-h2{ word-wrap: break-word;}
+    h3.text-responsive , .text-responsive-h3{ word-wrap: break-word;}
+    h4.text-responsive , .text-responsive-h4{ word-wrap: break-word;}
+    h5.text-responsive , .text-responsive-h5{ word-wrap: break-word;}
+    h6.text-responsive , .text-responsive-h6{ word-wrap: break-word;}
+
+    .text-responsive{      
+        word-wrap: break-word;;
+    }
+}
+/* Extra text-responsive-small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+@media (min-width: @responsive-xm-min-width) {  
+
+}
+
+/* text-responsive-small devices (tablets, 768px and up) */
+@media (min-width: @responsive-sm-min-width) {    //  
+    h1.text-responsive, .text-responsive-h1{ font-size: 58px;}
+    h2.text-responsive, .text-responsive-h2{ font-size: 48px;}
+    h3.text-responsive, .text-responsive-h3{ font-size: 32px;}
+    h4.text-responsive, .text-responsive-h4{ font-size: 28px;}
+    h5.text-responsive, .text-responsive-h5{ font-size: 26px;}
+    h6.text-responsive, .text-responsive-h6{ font-size: 24px;}    
+    
+    .text-responsive{
+        font-size: 16px;
+        &.text-responsive-big { font-size: 18px;}
+        &.text-responsive-bigger { font-size: 20px;} 
+        &.text-responsive-biggest { font-size: 22px;}
+        &.text-responsive-small { font-size: 14px;}
+        &.text-responsive-smaller { font-size: 12px;} 
+        &.text-responsive-smallest { font-size: 10px;}
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @responsive-md-min-width) { 
+    h1.text-responsive, .text-responsive-h1{ font-size: 75px;}
+    h2.text-responsive, .text-responsive-h2{ font-size: 58px;}
+    h3.text-responsive, .text-responsive-h3{ font-size: 40px;}
+    h4.text-responsive, .text-responsive-h4{ font-size: 36px;}
+    h5.text-responsive, .text-responsive-h5{ font-size: 26px;}
+    h6.text-responsive, .text-responsive-h6{ font-size: 24px;}    
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @responsive-lg-min-width) { 
+
+}

@@ -1,0 +1,104 @@
+@import "../../themes/less/variables";
+@import "../../themes/less/settings";
+@import "../mixins";
+
+
+.course-collection-detail{
+    .collection-view{
+        padding-top:15px;
+        padding-bottom:15px;
+        .switch-label-left{
+            cursor: pointer;
+            font-weight: bold;            
+        }
+        .switch-label-right{
+            margin-left:10px;
+            margin-bottom: -5px;
+        }   
+    }  
+    .collection-header{       
+        .col-image {
+            max-width: 180px;
+            padding-bottom: 15px;
+            display: inline-block;
+            float: left;
+        }        
+        .image-wrapper{
+            border-radius:0px;              
+            max-width: 150px;          
+        }       
+        .col-data{
+            h3{
+                font-weight: bold;
+                color: @color-grey;
+            }          
+            text-align: left;
+            .helper-collection{
+                font-size:12px;
+            }
+        }
+    }  
+    .collection-search{   
+        padding-right:15px;
+        padding-left:15px;
+    }
+}
+
+.collections-gallery{       
+    .collections-gallery-item{
+        min-width: 190px; 
+        min-height: 180px;   
+        margin-bottom: @padding-large;
+        
+        a{
+            color:@color-darkgrey; 
+            text-align: center;  
+            .image-wrapper{
+                border-radius:0px;              
+                max-width: 150px;
+            }     
+        }                      
+    }    
+}
+
+.container-buttons-collections{
+    overflow: hidden;
+    .collection-unlock{
+        float: left;
+        .btnCollectionsHelp{
+            white-space: nowrap;
+            display: inline-block;
+            margin-top: 10px;    
+        }
+    }
+    .collection-selection-request{
+        float: right;
+        .btn + .btn {
+            margin-right: 0;
+        }
+    }
+}
+
+
+@media(max-width: @responsive-xm-min-width) { //480px
+    .collections-gallery{       
+        .collections-gallery-item{           
+            width: 100%;                    
+        }    
+    }
+    .container-buttons-collections{
+        .collection-unlock{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media(max-width: @responsive-sm-min-width) { //768px
+    .container-buttons-collections{
+        .collection-unlock{
+            .btnCollectionsHelp{
+                display: block; 
+            }
+        }
+    }
+}

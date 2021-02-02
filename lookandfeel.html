@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>APARIENCIA</title><!-- Bootstrap -->
+    <link href="apps/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--link( rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")-->
+    <link rel="stylesheet" href="apps/vendors/font-awesome-4.5.0/css/font-awesome.min.css"><!-- Theme -->
+    <link href="styles/theme_lcloud.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="apps/vendors/html5shiv/html5shiv.min.js"></script>
+    <script src="apps/vendors/respond/respond.min.js"></script><![endif]-->
+    <!-- jquery UI -->
+    <link href="apps/vendors/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet"><!-- bootstrap colorpicker -->
+    <link href="apps/vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet"><!-- bootstrap datetimepicker -->
+    <link href="apps/vendors/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"><!-- infinity repeteable form fields -->
+    <link href="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/css/infinity.min.css" rel="stylesheet"><!-- croppie -->
+    <link href="apps/vendors/croppie/croppie.css" rel="stylesheet"><!-- Slide slick -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick.css" rel="stylesheet"><!-- Add the new slick-theme.css if you want the default styling -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick-theme.css" rel="stylesheet"><!-- Bar rating theme -->
+    <link href="apps/vendors/jquery-bar-rating-master/dist/themes/css-stars.css" rel="stylesheet"><!-- bootstrap table -->
+    <link href="apps/vendors/bootstrap-table/dist/bootstrap-table.min.css" rel="stylesheet"><!-- animate -->
+    <link href="apps/vendors/animate/animate.css" rel="stylesheet"><!-- jquery autocomplete master -->
+    <link href="apps/vendors/jQuery-Autocomplete-master/content/styles.css" rel="stylesheet"><!-- Full Calendar Assets -->
+    <link href="apps/vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar_customized.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+    <link href="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.css" rel="stylesheet">
+  </head>
+  <body class=" ">
+    <nav class="navbar navbar-topbar">
+      <div class="container-fluid topbar-wrapper">
+        <div class="navbar-header"><a href="#" class="navbar-brand">APARIENCIA</a></div>
+        <div id="navbar" class="navbar-topbar-wrapper navbar-collapse"><a href="javascript:window.history.back();" class="navigation-back"><i class="fa fa-chevron-left"></i></a>
+          <label>APARIENCIA</label>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="profile-username"><a href="#">Federica Garcia</a></li>
+            <li class="profile-notifications-wrapper">
+              <div class="dropdown">
+                <div id="dropdownMenu-profile" data-toggle="dropdown" aria-expanded="true" class="avatar-wrapper"><img src="apps/files/img/profile.png"></div>
+                <div class="profile-notifications-bubble">122</div>
+                <ul role="menu" aria-labelledby="dropdownMenu-profile" class="dropdown-menu contextual-menu">
+                  <li class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner"></span></li>
+                  <li class="menu-item-iconavatar"><img src="apps/files/img/profile.png" alt="" title="Perfil"></li>
+                  <li class="menu-item-iconavatar-right">
+                    <ul>
+                      <li class="menu-item-username"><i class="icon-ntx icon-cloud"></i><span>Federica Garcia   </span></li>
+                      <li class="menu-subitem-username"><span>federica.garcia                                                                                                                           </span></li>
+                      <li><a href="#">Tu cuenta</a></li>
+                      <li><a href="#">Notificaciones</a><span class="badge">7</span></li>
+                      <li><a href="#">Anuncios</a><span class="badge">4</span></li>
+                    </ul>
+                  </li>
+                  <li class="item-divisor"><span class="non-link"></span></li>
+                  <li><a href="#">Novedades en learningCloud</a></li>
+                  <li><a href="#">Acceso a manuales</a></li>
+                  <li><a href="#">Centro de ayuda</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#formModalSuggestions">Sugerencias</a></li>
+                  <li class="menu-item-important-action"><a href="#" rel="nofollow" class="btn btn-primary">Mi perfil Social</a></li>
+                  <li class="item-divisor"><span></span></li>
+                  <li class="menu-item-logout"><a href="#" rel="nofollow"><i class="icon-ntx icon-poweroff"></i> Salir de learningCloud</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="toggle-dashboard"><a href="javascript:void(0);" data-toggle="collapse" data-target="#menu-dashboard" class="collapsed"><span aria-hidden="true" class="glyphicon glyphicon-th"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard-wrapper-small">
+        <div id="menu-dashboard" class="row dashboard collapse">
+          <div class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner">    </span></div>
+          <div id="menu-apps" class="row">  
+            <div class="col-lg-12">   
+              <div class="col-md-1 app-wrapper">            <a href="apps/lcloud/index.html" data-toggle="tooltip" data-placement="top" title="CLOUD"><span class="icon-wrapper"><img src="apps/files/projects/lcloud.png"></span>
+                  <label>CLOUD</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/lcentral/index.html" data-toggle="tooltip" data-placement="top" title="CENTRAL"><span class="icon-wrapper"><img src="apps/files/projects/lcentral.png"></span>
+                  <label>CENTRAL                </label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/default/index.html" data-toggle="tooltip" data-placement="top" title="DEFAULT"><span class="icon-wrapper"><img src="apps/files/projects/default.png"></span>
+                  <label>DEFAULT</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/old/index.html" data-toggle="tooltip" data-placement="top" title="Old files"><span class="icon-wrapper"><img src="apps/files/projects/old.png"></span>
+                  <label>OLD</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="body-content">
+      <div id="menu-lateral" class="menu-lateral collapse in">
+        <nav role="navigation" class="navbar navbar-default">
+          <ul class="nav nav-stacked">
+            <li class="toggle"><a href="javascript:void(0);" data-toggle="collapse" data-target="#menu-lateral">                       <i class="icon icon-ntx icon-bars-menu fs-icon"></i></a></li>
+            <li class="active"><a href="apps/lcloud/users.html"><span class="icon icon icon-ntx icon-members"></span>
+                <label>Usuarios</label></a></li>
+            <li><a href="apps/lcloud/groups-table.html"><span class="icon icon icon-ntx icon-groups"></span>
+                <label>Grupos</label></a></li>
+            <li><a href="apps/lcloud/extensible_fields.html"><span class="icon icon icon-ntx icon-input"></span>
+                <label>Campos extend.</label></a></li>
+            <li><a href="apps/lcloudapps-list.html"><span class="icon icon icon-ntx icon-cubes"></span>
+                <label>Apps</label></a></li>
+            <li><a href="apps/lcloud/list-external-apps.html"><span class="icon icon icon-ntx icon-external-apps"></span>
+                <label>External Apps</label></a></li>
+            <li><a href="apps/lcloud/google-analytics-config.html"><span class="icon icon icon-ntx icon-collections"></span>
+                <label>Integrations</label></a></li>
+            <li><a href="#"><span class="icon icon icon-ntx icon-news"></span>
+                <label>Anuncios</label></a></li>
+            <li><a href="#"><span class="icon icon icon-ntx icon-ranking"></span>
+                <label>Sondeos</label></a></li>
+            <li><a href="apps/lcloud/lookandfeel.html"><span class="icon icon icon-ntx icon-appearance"></span>
+                <label>Apariencia</label></a></li>
+            <li><a href="apps/lcloud/password-config.html"><span class="icon icon icon-ntx icon-gear"></span>
+                <label>Conf. Avanzada</label></a></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row detail-header detail-header-sm detail-header-lookandfeel">
+            <div class="text-center">
+              <div role="group" class="btn-group"><a href="lookandfeel.html" class="btn selected">Versión web  </a><a href="lookandfeel-app.html" class="btn">Versión app                             </a></div>
+            </div>
+            <div class="col-lg-12 separation-top-xlarge">
+              <div class="carousel-laptop">                                                      
+                <div id="tour" data-interval="false" class="carousel slide">                       
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="laptop">
+                        <div class="frame-wrap">
+                          <iframe id="frame_login" src="customs/login/login.html" class="frame">                                                                                   </iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="laptop">
+                        <div class="frame-wrap">
+                          <iframe id="frame_desktop" src="customs/desktop/desktop.html" class="frame"></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="laptop">
+                        <div class="frame-wrap">
+                          <iframe id="frame_desktop_classic" src="customs/desktop_classic/desktop.html" class="frame"></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <ol class="carousel-indicators">
+                    <li data-target="#tour" data-slide-to="0" class="active"></li>
+                    <li data-target="#tour" data-slide-to="1"></li>
+                    <li data-target="#tour" data-slide-to="2">     </li>
+                  </ol><a href="#tour" data-slide="prev" class="left carousel-control"><i class="arrow-left icon-ntx icon-caret-left">                                   </i></a><a href="#tour" data-slide="next" class="right carousel-control">                                   <i class="arrow-right icon-ntx icon-caret-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="tabs-wrapper tabs-bg-inverse"><!-- Tabs -->
+                <ul role="tablist" class="nav nav-tabs">
+                  <li role="presentation" class="active"><a href="#tabgeneral" aria-controls="tabgeneral" role="tab" data-toggle="tab">General</a>
+                    <activa></activa>
+                  </li>
+                  <li role="presentation"><a href="#tablogos" aria-controls="tablogos" role="tab" data-toggle="tab">Logos</a></li>
+                  <li role="presentation"><a href="#tabcolortexto" aria-controls="tabcolortexto" role="tab" data-toggle="tab">Colores</a></li>
+                  <li role="presentation"><a href="#tabfondo" aria-controls="tabfondo" role="tab" data-toggle="tab">Imagen de fondo</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row detail-content background-inverse tab-content-lookandfeel">
+            <div class="col-lg-12">
+              <div class="tab-content">               
+                <div id="tabgeneral" role="tabpanel" class="tab-pane active">
+                  <div class="row">
+                    <div class="tab-title-param col-xs-12 col-sm-2 col-md-2">
+                      <label>Landing page theme</label><span data-toggle="tooltip" data-placement="top" title="Choose the theme you want to appear on the landing page" class="icon icon-ntx icon-info-thin fs-icon-xmedium fc-blue"></span>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8">                                                                  
+                      <div class="checkbox checkbox-primary">
+                        <input id="chk_display" type="checkbox" checked>
+                        <label for="chk_display">Default landing page</label><span class="info">(Default theme)</span>
+                      </div>
+                      <div class="checkbox checkbox-primary">
+                        <input id="chk_classic" type="checkbox">
+                        <label for="chk_classic">Create my landing page</label><span class="info">(custom html) </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="classic_view_options" style="display:none" class="row">
+                    <form>
+                      <div class="tab-title-param col-sm-12 col-lg-2"></div>
+                      <div class="col-sm-12 col-lg-10"> 
+                        <div class="row classic-language">
+                          <div class="classic-language-row col-lg-12">
+                            <div class="text-left">
+                              <label>My custom theme</label>
+                            </div>
+                            <textarea id="classic_editor_default" class="editor-html"></textarea>
+                          </div>
+                          <div class="classic-language-row col-lg-12 language-actions separator-bottom right-align">                      <a id="btnPreviewDefault" class="btn btn-primary"><span>Previsualizar    </span></a></div>
+                        </div>
+                        <div class="row selector-languages">
+                          <div class="col-lg-12">
+                            <label>Idiomas: </label>
+                          </div>
+                          <div class="col-lg-12"><a id="dropdownMenuLanguage" type="button" data-toggle="dropdown" aria-expanded="true" class="btn btn-primary dropdown-toggle">                               <span>+ Añadir Idioma</span>&nbsp;&nbsp;<span class="caret"></span></a>
+                            <ul role="menu" aria-labelledby="dropdownMenu1" class="dropdown-menu"> 
+                              <li role="presentation" class="selected"><a role="menuitem" tabindex="-1" href="#"> <span>Spanish                                                </span></a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> <span>English</span></a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> <span>Dansk</span></a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> <span>Galego                       </span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="row classic-language">
+                          <div class="classic-language-row col-lg-12">
+                            <div class="text-right">
+                              <label>SPANISH                                        </label>
+                            </div>
+                            <textarea id="classic_editor_es" class="editor-html"> </textarea>
+                          </div>
+                          <div class="classic-language-row col-lg-12 language-actions">                      <a id="btnDeleteES" class="btn btn-default">                                                                               <span class="glyphicon glyphicon-trash"></span>Eliminar  </a><a id="btnPreviewES" class="btn btn-primary pull-right"><span>Previsualizar      </span></a></div>
+                        </div>
+                        <div class="row classic-language">
+                          <div class="classic-language-row col-lg-12">
+                            <div class="text-right">
+                              <label>ENGLISH</label>
+                            </div>
+                            <textarea id="classic_editor_en" class="editor-html"> </textarea>
+                          </div>
+                          <div class="classic-language-row col-lg-12 language-actions">                      <a id="btnDeleteES" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span>Eliminar</a><a id="btnPreviewEN" class="btn btn-primary pull-right"><span>Previsualizar    </span></a></div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="row">
+                    <div class="tab-title-param col-xs-12 col-sm-2 col-md-2">
+                      <label>Homepage</label><span data-toggle="tooltip" data-placement="top" title="Choose the page that will appear when you enter the platform" class="icon icon-ntx icon-info-thin fs-icon-xmedium fc-blue"></span>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8">                                                                  
+                      <div class="checkbox checkbox-primary">
+                        <input id="chk_landingpage" type="checkbox" checked>
+                        <label for="chk_landingpage">Landing page</label>
+                      </div>
+                      <div class="checkbox checkbox-primary">
+                        <input id="chk_learning" type="checkbox">
+                        <label for="chk_learning">My learning</label><span class="info">(learningCloud)</span>
+                      </div>
+                      <div class="checkbox checkbox-primary">
+                        <input id="chk_training" type="checkbox">
+                        <label for="chk_training">Your training</label><span class="info">(Pack LMS) </span>
+                      </div>
+                      <div class="checkbox checkbox-primary">
+                        <input id="chk_catalogue" type="checkbox">
+                        <label for="chk_catalogue">Catalogue</label><span class="info">(Pack LMS) </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tablogos" role="tabpanel" class="tab-pane">               
+                  <div id="logotypes-first" class="row">
+                    <div class="tab-title-param col-xs-12 col-sm-2 col-md-2">
+                      <label>Logotipo principal</label><span class="info">(dashboard)</span>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8">
+                      <div class="row">                              
+                        <div class="col-lg-12">
+                          <div class="logotypes-preview-wrapper">
+                            <div data-logotype="logotype_1_1" data-toggle="tooltip" data-placement="top" title="Esta imagen está siendo utilizada y no se puede eliminar" class="logotype-preview-wrapper background-grill selected-others">                         <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x"> </i></span>
+                              <div class="logotype-preview logotype_cloud"> </div>
+                            </div>
+                            <div data-logotype="logotype_1_2" class="logotype-preview-wrapper background-grill selected"> <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                     </i></span>
+                              <div class="logotype-preview logotype_1">  </div>
+                            </div>
+                            <div data-logotype="logotype_1_3" class="logotype-preview-wrapper background-grill"> <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                     </i></span>
+                              <div class="logotype-preview logotype_2">                                                                                                                         </div>
+                            </div>
+                            <div data-logotype="logotype_1_4" class="logotype-preview-wrapper background-grill"> <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                     </i></span>
+                              <div class="logotype-preview logotype_3">                                                                                                                         </div>
+                            </div>
+                            <div data-logotype="logotype_1_5" class="logotype-preview-wrapper background-grill"> <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                     </i></span>
+                              <div class="logotype-preview logotype_4">                                                                                                                         </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <button type="button" data-toggle="modal" data-target="#formModal" class="btn btn-primary">
+                             
+                            Seleccionar imagen
+                          </button>
+                          <div class="col clear visible-xs"></div><span class="info"> Selecciona tu propio logotipo corporativo</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="logotypes-second" class="row">              
+                    <div class="tab-title-param col-xs-12 col-sm-2 col-md-2">
+                      <label>Logotipo secundario</label><span class="info">(login screen)</span>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8">                                                      
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="checkbox checkbox-primary">
+                            <input id="chk_logotypesecondary_useprimary" type="checkbox" checked="true">
+                            <label for="chk_logotypesecondary_useprimary">Usar logotipo principal</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row logotypes-list opacity-medium">                              
+                        <div class="col-lg-12">
+                          <div class="logotypes-preview-wrapper">
+                            <div data-logotype="logotype_2_1" data-toggle="tooltip" data-placement="top" title="Esta imagen está siendo utilizada y no se puede eliminar" class="logotype-preview-wrapper background-grill selected-others">                         <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x"> </i></span>
+                              <div class="logotype-second-preview logotype_large_cloud"> </div>
+                            </div>
+                            <div data-logotype="logotype_2_2" class="logotype-preview-wrapper background-grill selected"> <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                     </i></span>
+                              <div class="logotype-second-preview logotype_1"> </div>
+                            </div>
+                            <div data-logotype="logotype_2_3" class="logotype-preview-wrapper background-grill"> <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                     </i></span>
+                              <div class="logotype-second-preview logotype_2">                                                                                                                                                           </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <button type="button" data-toggle="modal" data-target="#formModal" class="btn btn-primary">
+                             
+                            Seleccionar imagen
+                          </button>
+                          <div class="col clear visible-xs"></div><span class="info"> Selecciona tu propio logotipo corporativo                                    </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="logotypes-third" class="row">
+                    <div class="tab-title-param col-xs-12 col-sm-2 col-md-2">
+                      <label>Logotipo notificación</label><span class="info">(notification email)</span>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8">
+                      <div class="row">   
+                        <div class="col-lg-12">
+                          <div class="checkbox checkbox-primary">
+                            <input id="chk_logotypethird_useprimary" type="checkbox">
+                            <label for="chk_logotypethird_useprimary">Usar logotipo principal</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row logotypes-list disabled">                              
+                        <div class="col-lg-12">
+                          <div class="logotypes-preview-wrapper">
+                            <div data-logotype="logotype_3_1" data-toggle="tooltip" data-placement="top" title="Esta imagen está siendo utilizada y no se puede eliminar" class="logotype-preview-wrapper background-grill selected-others">                         <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x"> </i></span>
+                              <div class="logotype-preview logotype_cloud">   </div>
+                            </div>
+                            <div data-logotype="logotype_3_2" class="logotype-preview-wrapper background-grill selected">                                                    <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                     </i></span>
+                              <div class="logotype-preview logotype_1">  </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <button type="button" data-toggle="modal" data-target="#formModal" class="btn btn-primary">
+                             
+                            Seleccionar imagen
+                          </button>
+                          <div class="col clear visible-xs"></div><span class="info"> Selecciona tu propio logotipo corporativo</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tabcolortexto" role="tabpanel" class="tab-pane">
+                  <div class="row">
+                    <div class="tab-title-param col-xs-12 col-sm-2 col-md-2">
+                      <label>Color de textos </label><span class="info">(login screen + dashboard)                           </span>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8"> 
+                      <div id="colorpickerTextcolor" class="input-group"><span class="input-group-addon"><i>      </i></span>
+                        <input type="text" value="#999999" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="tab-title-param col-xs-12 col-sm-2 col-md-2">
+                      <label>Color de header </label><span class="info">(dashboard)                           </span>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8"> 
+                      <div id="colorpickerHeaderColor" class="input-group"><span class="input-group-addon"><i>      </i></span>
+                        <input type="text" value="#383C46" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tabfondo" role="tabpanel" class="tab-pane">
+                  <div class="row">
+                    <div class="tab-title-param col-xs-12 col-sm-2 col-md-2">
+                      <label>Imagen de fondo</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8"> 
+                      <div class="desktop-images-preview-wrapper">
+                        <div data-wallpaper="wallpaper_1" data-toggle="tooltip" data-placement="top" title="Esta imagen está siendo utilizada y no se puede eliminar" class="desktop-image-preview-wrapper selected-others"> <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                              </i></span>
+                          <div class="desktop-image-preview wallpaper_1"></div>
+                        </div>
+                        <div data-wallpaper="wallpaper_2" class="desktop-image-preview-wrapper selected"> <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                              </i></span>
+                          <div class="desktop-image-preview wallpaper_2"></div>
+                        </div>
+                        <div data-wallpaper="wallpaper_3" class="desktop-image-preview-wrapper"> <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                              </i></span>
+                          <div class="desktop-image-preview wallpaper_3"></div>
+                        </div>
+                        <div data-wallpaper="wallpaper_4" class="desktop-image-preview-wrapper"> <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                              </i></span>
+                          <div class="desktop-image-preview wallpaper_4"></div>
+                        </div>
+                        <div data-wallpaper="wallpaper_5" class="desktop-image-preview-wrapper"> <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                              </i></span>
+                          <div class="desktop-image-preview wallpaper_1"></div>
+                        </div>
+                        <div data-wallpaper="wallpaper_6" class="desktop-image-preview-wrapper"> <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                              </i></span>
+                          <div class="desktop-image-preview wallpaper_2"></div>
+                        </div>
+                        <div data-wallpaper="wallpaper_7" class="desktop-image-preview-wrapper"> <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                              </i></span>
+                          <div class="desktop-image-preview wallpaper_3"></div>
+                        </div>
+                        <div data-wallpaper="wallpaper_8" class="desktop-image-preview-wrapper"> <span class="btn-circle-close fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="icon-ntx icon-delete fa-stack-1x">                                                                                                                                                                              </i></span>
+                          <div class="desktop-image-preview wallpaper_4"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-lg-offset-2 col-lg-10">
+                      <button type="button" data-toggle="modal" data-target="#formModalFondo" class="btn btn-primary">
+                         
+                        Seleccionar imagen
+                      </button><span class="info">Seleccione su propia imagen de fondo                                </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row desktop-actions separation-top-xxlarge">
+            <div class="col-xs-12 col-sm-12 col-md-12 right-align"> <a id="btnReset" class="btn btn-link"><span>Restaurar la apariencia por defecto                      </span></a><a id="btnSave" class="btn btn-primary"><span>Guardar Tema</span></a></div>
+          </div><!-- Modal Añadir Fondo -->
+          <div id="formModalFondo" aria-hidden="true" style="display: none;" class="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                  <h4 id="modal-title" class="modal-title">Select logotype<a href="#modal-title" class="anchorjs-link"></a><span class="anchorjs-icon"></span></h4>
+                </div>
+                <div class="modal-body modal-uploader">
+                  <form id="form-dropzone" action="#">
+                    <div class="row">
+                      <div class="col-lg-12"><i class="icon icon-arrow-down"></i></div>
+                      <div class="col-lg-12 title">Drop your image here</div>
+                      <div class="col-lg-12">or</div>
+                      <div class="col-lg-12">
+                        <button type="button" class="btn btn-default">Choose an image</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+                  <button id="btnAddBackground" name="btnAddBackground" type="button" class="btn btn-primary">Add                    </button>
+                </div>
+              </div>
+            </div>
+          </div><!-- Modal Borrar Logotipo --> 
+          <div id="modalDeleteLogotype" aria-hidden="true" style="display: none;" class="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                  <h4 id="modal-title" class="modal-title">Eliminación de logotipo<a href="#modal-title" class="anchorjs-link"></a><span class="anchorjs-icon"></span></h4>
+                </div>
+                <div class="modal-body">                   
+                  <input id="data-logotype-delete" name="data-logotype-delete" type="hidden">
+                  <p>¿Está seguro de eliminar el elemento?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+                  <button id="btnDeleteLogotype" name="btnDeleteLogotype" type="button" class="btn btn-primary">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- Modal Borrar Desktop Image -->
+          <div id="modalDeleteDesktopImage" aria-hidden="true" style="display: none;" class="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                  <h4 id="modal-title" class="modal-title">Eliminación de Imagen<a href="#modal-title" class="anchorjs-link"></a><span class="anchorjs-icon"></span></h4>
+                </div>
+                <div class="modal-body">
+                  <input id="data-desktop-image-delete" name="data-desktop-image-delete" type="hidden">
+                  <p>¿Está seguro de eliminar el elemento?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+                  <button id="btnDeleteDesktopImage" name="btnDeleteDesktopImage" type="button" class="btn btn-primary">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="formModalSuggestions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal form-modal fade">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+              <h4 id="myModalLabel" class="modal-title">Enviar sugerencia</h4>
+            </div>
+            <div class="modal-body">
+              <!-- Contenido modal-->
+              <form class="form form-horizontal">
+                <fieldset>
+                  <div class="form-group-title">
+                    <label>Env&iacute;anos tu sugerencia</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject" class="col-sm-2 control-label">Asunto</label>
+                    <div class="col-sm-10">
+                      <input id="subject" type="text" placeholder="Asunto" class="form-control"><span class="help-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="content" class="col-sm-2 control-label">Descripci&oacute;n</label>
+                    <div class="col-sm-10">
+                      <textarea id="content" class="form-control"></textarea><span class="help-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group form-group-submit">
+                    <div class="col-sm-12">
+                      <button type="submit" class="btn btn-default">Cancelar</button>
+                      <button type="submit" class="btn btn-primary">Env&iacute;ar</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+              <!-- ./Contenido modal-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Formulario modal-->
+      <footer class="footer">
+        <div class="box">
+          <div class="developed">Developed by Netex Learning</div>
+          <div class="version">ver. X.Y.Z</div>
+        </div>
+      </footer>
+    </div><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="apps/vendors/jquery/jquery.1.11.2.min.js"></script><!-- jQuery UI -->
+    <script src="apps/vendors/jquery-ui-1.12.1/jquery-ui.min.js"></script><!-- Importante with locales para traducción cloud calendar -->
+    <script src="apps/vendors/momentjs/moment-with-locales.min.js"> </script><!-- Full Calendar scripts -->
+    <script src="apps/vendors/fullcalendar/lib/moment.min.js"></script>
+    <script src="apps/vendors/fullcalendar/fullcalendar.min.js"></script>
+    <script src="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.min.js"></script>
+    <script src="apps/vendors/fullcalendar/lang-all.js"></script><!-- jquery autocomplete master -->
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/jquery.mockjax.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/countries.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/demo.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/src/jquery.autocomplete.js"></script><!-- boostrap table -->
+    <script src="apps/vendors/bootstrap-table/dist/bootstrap-table.min.js"></script><!-- boostrap table locales para traducción -->
+    <script src="apps/vendors/bootstrap-table/dist/locale/bootstrap-table-es-ES.min.js"></script><!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="apps/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="apps/vendors/bootstrap-selects/bootstrap-select.min.js"></script>
+    <script src="apps/vendors/bootstrap-switches/js/bootstrap-switch.min.js"></script><!-- dropzone library -->
+    <script src="apps/vendors/dropzonejs/min/dropzone.min.js"></script><!-- js theme -->
+    <script src="apps/vendors/circles/circles.min.js"></script>
+    <script src="webcomponents/js/theme.js"></script><!-- bootstrap colorpicker -->
+    <script src="apps/vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script><!-- jquery ellipsis -->
+    <script src="apps/vendors/jquery-ellipsis/jquery.ellipsis.min.js"></script><!-- jquery mobile touch event -->
+    <script src="apps/vendors/jquery-mobile-touchevent/jquery.mobile.custom.min.js"></script><!-- bootstrap datetimepicker -->
+    <script src="apps/vendors/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script><!-- circular progress bar -->
+    <script src="apps/vendors/circular-progressbar/dist/progressbar.min.js"></script><!-- infinity repeteable form fields -->
+    <script src="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/js/infinity.min.js"></script><!-- croppie -->
+    <script src="apps/vendors/croppie/croppie.min.js"></script><!-- Slide slick -->
+    <script src="apps/vendors/slick-1.6.0/slick/slick.min.js"></script><!-- Bar rating -->
+    <script src="apps/vendors/jquery-bar-rating-master/dist/jquery.barrating.min.js"></script><!-- bootstrap responsive table dropdown -->
+    <script src="apps/vendors/bootstrap-responsive-table-dropdown-master/bs-responsive-table-dropdown.js"></script>
+    <script src="apps/vendors/ckeditor/ckeditor.js"></script>
+    <script src="webcomponents/js/init.lookandfeel.js">                                      </script>
+  </body>
+</html>

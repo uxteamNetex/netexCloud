@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Configuración</title><!-- Bootstrap -->
+    <link href="apps/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--link( rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")-->
+    <link rel="stylesheet" href="apps/vendors/font-awesome-4.5.0/css/font-awesome.min.css"><!-- Theme -->
+    <link href="styles/theme_lcloud.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="apps/vendors/html5shiv/html5shiv.min.js"></script>
+    <script src="apps/vendors/respond/respond.min.js"></script><![endif]-->
+    <!-- jquery UI -->
+    <link href="apps/vendors/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet"><!-- bootstrap colorpicker -->
+    <link href="apps/vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet"><!-- bootstrap datetimepicker -->
+    <link href="apps/vendors/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"><!-- infinity repeteable form fields -->
+    <link href="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/css/infinity.min.css" rel="stylesheet"><!-- croppie -->
+    <link href="apps/vendors/croppie/croppie.css" rel="stylesheet"><!-- Slide slick -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick.css" rel="stylesheet"><!-- Add the new slick-theme.css if you want the default styling -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick-theme.css" rel="stylesheet"><!-- Bar rating theme -->
+    <link href="apps/vendors/jquery-bar-rating-master/dist/themes/css-stars.css" rel="stylesheet"><!-- bootstrap table -->
+    <link href="apps/vendors/bootstrap-table/dist/bootstrap-table.min.css" rel="stylesheet"><!-- animate -->
+    <link href="apps/vendors/animate/animate.css" rel="stylesheet"><!-- jquery autocomplete master -->
+    <link href="apps/vendors/jQuery-Autocomplete-master/content/styles.css" rel="stylesheet"><!-- Full Calendar Assets -->
+    <link href="apps/vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar_customized.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+    <link href="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.css" rel="stylesheet">
+  </head>
+  <body class="body-bg-inverse body-welcome">
+    <nav class="navbar navbar-topbar">
+      <div class="container-fluid topbar-wrapper">
+        <div class="navbar-header"><a href="#" class="navbar-brand">Configuración</a></div>
+        <div id="navbar" class="navbar-topbar-wrapper navbar-collapse"><a href="javascript:window.history.back();" class="navigation-back"><i class="fa fa-chevron-left"></i></a>
+          <label>Groups</label>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="profile-username"><a href="#">Federica Garcia</a></li>
+            <li class="profile-notifications-wrapper">
+              <div class="dropdown">
+                <div id="dropdownMenu-profile" data-toggle="dropdown" aria-expanded="true" class="avatar-wrapper"><img src="apps/files/img/profile.png"></div>
+                <div class="profile-notifications-bubble">122</div>
+                <ul role="menu" aria-labelledby="dropdownMenu-profile" class="dropdown-menu contextual-menu">
+                  <li class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner"></span></li>
+                  <li class="menu-item-iconavatar"><img src="apps/files/img/profile.png" alt="" title="Perfil"></li>
+                  <li class="menu-item-iconavatar-right">
+                    <ul>
+                      <li class="menu-item-username"><i class="icon-ntx icon-cloud"></i><span>Federica Garcia   </span></li>
+                      <li class="menu-subitem-username"><span>federica.garcia                                                                                                                           </span></li>
+                      <li><a href="#">Tu cuenta</a></li>
+                      <li><a href="#">Notificaciones</a><span class="badge">7</span></li>
+                      <li><a href="#">Anuncios</a><span class="badge">4</span></li>
+                    </ul>
+                  </li>
+                  <li class="item-divisor"><span class="non-link"></span></li>
+                  <li><a href="#">Novedades en learningCloud</a></li>
+                  <li><a href="#">Acceso a manuales</a></li>
+                  <li><a href="#">Centro de ayuda</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#formModalSuggestions">Sugerencias</a></li>
+                  <li class="menu-item-important-action"><a href="#" rel="nofollow" class="btn btn-primary">Mi perfil Social</a></li>
+                  <li class="item-divisor"><span></span></li>
+                  <li class="menu-item-logout"><a href="#" rel="nofollow"><i class="icon-ntx icon-poweroff"></i> Salir de learningCloud</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="toggle-dashboard"><a href="javascript:void(0);" data-toggle="collapse" data-target="#menu-dashboard" class="collapsed"><span aria-hidden="true" class="glyphicon glyphicon-th"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard-wrapper-small">
+        <div id="menu-dashboard" class="row dashboard collapse">
+          <div class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner">    </span></div>
+          <div id="menu-apps" class="row">  
+            <div class="col-lg-12">   
+              <div class="col-md-1 app-wrapper">            <a href="apps/lcloud/index.html" data-toggle="tooltip" data-placement="top" title="CLOUD"><span class="icon-wrapper"><img src="apps/files/projects/lcloud.png"></span>
+                  <label>CLOUD</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/lcentral/index.html" data-toggle="tooltip" data-placement="top" title="CENTRAL"><span class="icon-wrapper"><img src="apps/files/projects/lcentral.png"></span>
+                  <label>CENTRAL                </label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/default/index.html" data-toggle="tooltip" data-placement="top" title="DEFAULT"><span class="icon-wrapper"><img src="apps/files/projects/default.png"></span>
+                  <label>DEFAULT</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/old/index.html" data-toggle="tooltip" data-placement="top" title="Old files"><span class="icon-wrapper"><img src="apps/files/projects/old.png"></span>
+                  <label>OLD</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="body-content">
+      <div id="menu-lateral" class="menu-lateral collapse in">
+        <nav role="navigation" class="navbar navbar-default">
+          <ul class="nav nav-stacked">
+            <li class="toggle"><a href="javascript:void(0);" data-toggle="collapse" data-target="#menu-lateral">                       <i class="icon icon-ntx icon-bars-menu fs-icon"></i></a></li>
+            <li class="active"><a href="apps/lcloud/users.html"><span class="icon icon icon-ntx icon-members"></span>
+                <label>Usuarios</label></a></li>
+            <li><a href="apps/lcloud/groups-table.html"><span class="icon icon icon-ntx icon-groups"></span>
+                <label>Grupos</label></a></li>
+            <li><a href="apps/lcloud/extensible_fields.html"><span class="icon icon icon-ntx icon-input"></span>
+                <label>Campos extend.</label></a></li>
+            <li><a href="apps/lcloudapps-list.html"><span class="icon icon icon-ntx icon-cubes"></span>
+                <label>Apps</label></a></li>
+            <li><a href="apps/lcloud/list-external-apps.html"><span class="icon icon icon-ntx icon-external-apps"></span>
+                <label>External Apps</label></a></li>
+            <li><a href="apps/lcloud/google-analytics-config.html"><span class="icon icon icon-ntx icon-collections"></span>
+                <label>Integrations</label></a></li>
+            <li><a href="#"><span class="icon icon icon-ntx icon-news"></span>
+                <label>Anuncios</label></a></li>
+            <li><a href="#"><span class="icon icon icon-ntx icon-ranking"></span>
+                <label>Sondeos</label></a></li>
+            <li><a href="apps/lcloud/lookandfeel.html"><span class="icon icon icon-ntx icon-appearance"></span>
+                <label>Apariencia</label></a></li>
+            <li><a href="apps/lcloud/password-config.html"><span class="icon icon icon-ntx icon-gear"></span>
+                <label>Conf. Avanzada</label></a></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="content">
+        <div class="container-fluid">
+          <div class="parallax-container parallax-container-xs z-depth-1">
+            <div class="header-group-image"><img src="apps/files/img/coffee-home.jpg" class="vertical-align"></div>
+            <div class="breadcrumbs_navegation">
+              <div class="separator"><span class="icon icon-ntx icon-play-arrow-left fs-icon-8"></span></div><a href="groups-table.html">Groups</a>
+              <div class="separator"><span class="icon icon-ntx icon-play-arrow-right fs-icon-8"></span></div><a href="groups-table.html" data-toggle="tooltip" data-placement="bottom" title="Grupo Galicia" class="crumb firstCrumb"><span>Grupo Galicia</span></a>
+              <div class="separator"><span class="icon icon-ntx icon-play-arrow-right fs-icon-8"></span></div><a href="groups-table.html" data-toggle="tooltip" data-placement="bottom" title="Grupo A Coruna" class="crumb"><span>Grupo A Coruna</span></a>
+              <div class="separator"><span class="icon icon-ntx icon-play-arrow-right fs-icon-8"></span></div><a href="groups-table.html" data-toggle="tooltip" data-placement="bottom" title="Grupo Empresa Netex Learning Technologies" class="crumb"><span>Grupo Empresa Netex Learning Technologies</span></a>
+              <div class="separator"><span class="icon icon-ntx icon-play-arrow-right fs-icon-8"></span></div><a href="groups-table.html" data-toggle="tooltip" data-placement="bottom" title="322178 - Marcelo Ferran Garcia" class="crumb"><span>322178 - Marcelo Ferran Garcia</span></a>
+              <div class="separator"><span class="icon icon-ntx icon-play-arrow-right fs-icon-8"></span></div><a href="groups-table.html" data-toggle="tooltip" data-placement="bottom" title="322178 - Marcelo Ferran Garcia Full Team" class="crumb lastCrumb"><span>322178 - Marcelo Ferran Garcia Full Team</span></a>
+            </div>
+            <div class="img-wrapper"><img src="apps/files/img/birrete.png"></div>
+            <div class="breadcrumbs_title margin-top-medium">1022987 - Group name</div>
+            <div class="tabs-wrapper">
+              <ul role="tablist" class="nav nav-tabs">
+                <li role="presentation" class="subgroups"><a href="groups-table-subgroups.html">Subgroups</a></li>
+                <li role="presentation" class="users"><a href="groups-card-users.html">Users</a></li>
+                <li role="presentation" class="details"><a href="groups-table-details.html">Details</a></li>
+                <li role="presentation" class="assignmentrules"><a href="groups-table-assignment-rules.html">Assignment rules</a></li>
+                <li role="presentation" class="lookandfeel"><a href="groups-table-lookandfeel.html">Look &amp; Feel</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-group-container">
+            <div class="row toolbar">
+              <div class="toolbar-search-wrapper pull-left toolbar-search-full-width">
+                <form action="#" method="post" name="SearchForm" class="form form-inline form-thin toolbar-search">
+                  <fieldset>
+                    <div class="form-group form-group-search form-group-search-full-width">
+                      <div class="input-group">
+                        <div class="inner-addon left-addon right-addon clearfix">
+                          <button class="btn inner left fa fa-search btn-flat"></button>
+                          <input id="input-search" type="text" name="searchTerm" value="" placeholder="Search" onkeyup="isEmptyInputText(this)?jQuery('#btn-clear-search').hide().addClass('hide'):jQuery('#btn-clear-search').show().removeClass('hide')" class="form-control">
+                          <button id="btn-clear-search" onclick="jQuery('#input-search').val('');" class="btn btn-flat inner right fa fa-close hide"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row detail-header detail-header-sm">
+                  <div class="col-md-12">
+                    <button type="button" data-toggle="modal" data-target="#formAddGroup" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>New subgroup</button>
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span>Delete</button>
+                    <button type="button" class="btn btn-default"><span class="fa fa-share"></span>Export</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="table-responsive">
+                      <table class="table table-hover vertical-align-center">
+                        <thead>
+                          <tr>  
+                            <th class="col-checkbox">   </th>
+                            <th class="sortable sorted desc"> <a href="#" role="button">Nombre                                                       </a></th>
+                            <th class="sortable"><a href="#" role="button">ID</a></th>
+                            <th>Subgroups</th>
+                            <th>Users</th>
+                            <th>                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>                      
+                          <tr> 
+                            <td class="checkbox-app">
+                              <div class="checkbox checkbox-primary">
+                                <input id="checkbox1" type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes">
+                                <label for="checkbox1"></label>
+                              </div>
+                            </td>
+                            <td><a href="groups-table-subgroups.html" role="button" class="btn btn-link separation-left-reset display-flex-center"><span class="icon icon-ntx icon-folder-opened-thin fs-icon-xmedium margin-right-small"></span><span data-toggle="tooltip" data-placement="top" title="0 EMP ADAPT" class="td-text">0 EMP ADAPT                                       </span></a></td>
+                            <td><span>0 EMP Core &amp; Common</span>
+                            </td>
+                            <td>                      <span>6</span></td>
+                            <td><span>17</span></td>
+                            <td class="actions-gear">
+                              <div class="dropdown">
+                                <div id="dropdownMenu-title_1" data-toggle="dropdown" aria-expanded="true"><i class="icon glyphicon glyphicon-option-vertical"></i></div>
+                                <!-- Contextual menú  item-->
+                                <ul role="menu" aria-labelledby="dropdownMenu-title_1" class="dropdown-menu pull-right inverse">
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-toggle="modal" data-target="#formAddGroup">Edit</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td class="checkbox-app">
+                              <div class="checkbox checkbox-primary">
+                                <input id="checkbox1" type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes">
+                                <label for="checkbox1"></label>
+                              </div>
+                            </td>
+                            <td><a href="groups-table-subgroups.html" role="button" class="btn btn-link separation-left-reset display-flex-center"><span class="icon icon-ntx icon-folder-opened-thin fs-icon-xmedium margin-right-small"></span><span data-toggle="tooltip" data-placement="top" title="Marcelo" class="td-text">Marcelo                                       </span></a></td>
+                            <td><span></span>
+                            </td>
+                            <td>                      <span>3</span></td>
+                            <td><span>267</span></td>
+                            <td class="actions-gear">
+                              <div class="dropdown">
+                                <div id="dropdownMenu-title_1" data-toggle="dropdown" aria-expanded="true"><i class="icon glyphicon glyphicon-option-vertical"></i></div>
+                                <!-- Contextual menú  item-->
+                                <ul role="menu" aria-labelledby="dropdownMenu-title_1" class="dropdown-menu pull-right inverse">
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-toggle="modal" data-target="#formAddGroup">Edit</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td class="checkbox-app">
+                              <div class="checkbox checkbox-primary">
+                                <input id="checkbox1" type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes">
+                                <label for="checkbox1"></label>
+                              </div>
+                            </td>
+                            <td><a href="groups-table-subgroups.html" role="button" class="btn btn-link separation-left-reset display-flex-center"><span class="icon icon-ntx icon-folder-opened-thin fs-icon-xmedium margin-right-small"></span><span data-toggle="tooltip" data-placement="top" title="Marcelo" class="td-text">Marcelo                                       </span></a></td>
+                            <td><span></span>
+                            </td>
+                            <td>                      <span>3</span></td>
+                            <td><span>267</span></td>
+                            <td class="actions-gear">
+                              <div class="dropdown">
+                                <div id="dropdownMenu-title_1" data-toggle="dropdown" aria-expanded="true"><i class="icon glyphicon glyphicon-option-vertical"></i></div>
+                                <!-- Contextual menú  item-->
+                                <ul role="menu" aria-labelledby="dropdownMenu-title_1" class="dropdown-menu pull-right inverse">
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-toggle="modal" data-target="#formAddGroup">Edit</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div id="formAddGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal form-modal fade formAddGroup">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Nuevo grupo</h4>
+                      </div>
+                      <div class="modal-body">
+                        <form class="form form-horizontal">
+                          <fieldset>
+                            <div class="form-two-columns">
+                              <div class="form-group-title">
+                                <label>Informaci&oacute;n de registro </label>
+                              </div>
+                              <div class="form-group form-group-modal">
+                                <label for="groupname" class="control-label col-xs-12 col-md-3">Nombre</label>
+                                <div class="col-xs-12 col-md-9">           
+                                  <input id="groupname" type="text" placeholder="Nombre del grupo" class="form-control"><span class="help-block"> </span>
+                                </div>
+                                <label for="groupdescription" class="control-label col-xs-12 col-md-3">Descripción</label>
+                                <div class="col-xs-12 col-md-9"> 
+                                  <textarea id="groupdescription" type="text" placeholder="Descripción..." class="form-control"></textarea><span class="help-block"> </span>
+                                </div>
+                                <label for="groupidexterno" class="control-label col-xs-12 col-md-3">ID Externo</label>
+                                <div class="col-xs-12 col-md-9">  
+                                  <input id="groupidexterno" type="text" placeholder="ID externo del grupo" class="form-control"><span class="help-block"> </span>
+                                </div>
+                                <label for="groupimage" class="control-label col-xs-12 col-md-3">Imagen</label>
+                                <div class="col-xs-12 col-md-9"> 
+                                  <div id="dzupload_1" class="dropzone">
+                                    <div class="dz-default dz-message">
+                                      <label class="title">Arrastra tu imagen aqu&iacute;...</label><span>&oacute;</span>
+                                      <button id="btn_dzupload_3" onclick="return false;" class="btn btn-default">Selecciona en tu disco</button><span class="info">Formatos: jpg, png &oacute; gif<br>Dimensiones: 280x280 px, máximo 2Mb</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group-title">
+                                <label>Información adicional</label>
+                              </div>
+                              <div class="form-group form-group-modal">
+                                <div class="col-xs-12 col-md-3"></div>
+                                <div class="separation-all-reset col-xs-12 col-md-9"> 
+                                  <div class="col-xs-12 col-md-6">
+                                    <label for="extensible_field_1" class="separation-left-reset col-md-12">Campo extendido</label>
+                                    <div class="separation-left-reset separation-right-reset col-md-12">
+                                      <input id="extensible_field_1" type="text" placeholder="Valor" class="form-control"><span class="help-block"> </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-md-6">
+                                    <label for="extensible_field_2" class="separation-left-reset col-md-12">Campo extendido</label>
+                                    <div class="separation-left-reset separation-right-reset col-md-12">
+                                      <input id="extensible_field_2" type="text" placeholder="Valor" class="form-control"><span class="help-block"> </span>
+                                    </div>
+                                  </div>
+                                  <div class="clearfix"> </div>
+                                  <div class="col-xs-12 col-md-6">
+                                    <label for="extensible_field_3" class="separation-left-reset col-md-12">Campo extendido</label>
+                                    <div class="separation-left-reset separation-right-reset col-md-12">
+                                      <input id="extensible_field_3" type="text" placeholder="Valor" class="form-control"><span class="help-block"> </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-md-6">
+                                    <label for="extensible_field_4" class="separation-left-reset col-md-12">Campo extendido</label>
+                                    <div class="separation-left-reset separation-right-reset col-md-12">
+                                      <input id="extensible_field_4" type="text" placeholder="Valor" class="form-control"><span class="help-block"> </span>
+                                    </div>
+                                  </div>
+                                  <div class="clearfix"> </div>
+                                </div>
+                              </div>
+                              <div class="form-group-title">
+                                <label>Acceso de usuario</label>
+                              </div>
+                              <div class="form-group form-group-modal">
+                                <div class="col-xs-12 col-md-3"></div>
+                                <div class="separation-all-reset col-xs-12 col-md-9"> 
+                                  <div class="col-xs-12 col-md-6">
+                                    <label for="packLMS" class="separation-left-reset col-md-12">Pack LMS</label>
+                                    <div class="separation-left-reset separation-right-reset col-md-12">
+                                      <select id="packLMS" title="Sin acceso" data-live-search="true" multiple="" data-max-options="1" class="selectpicker">
+                                        <option>Sin acceso</option>
+                                        <option>Apps de Admin</option>
+                                        <option>Apps de Support</option>
+                                      </select><span class="help-block"> </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-md-6">
+                                    <label for="packcloud" class="separation-left-reset col-md-12">Pack learningCloud</label>
+                                    <div class="separation-left-reset separation-right-reset col-md-12">
+                                      <select id="packcloud" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                        <option>Apps de Admin</option>
+                                        <option>Apps de Support</option>
+                                        <option>Apps de Trainer</option>
+                                        <option>Apps de User</option>
+                                      </select><span class="help-block"> </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-md-6">
+                                    <label for="maker" class="separation-left-reset col-md-12">learningMaker</label>
+                                    <div class="separation-left-reset separation-right-reset col-md-12">
+                                      <select id="packmaker" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                        <option>Apps de Admin</option>
+                                        <option>Apps de Support</option>
+                                        <option>Apps de Trainer</option>
+                                        <option>Apps de User</option>
+                                      </select><span class="help-block"> </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-md-6">
+                                    <label for="stories" class="separation-left-reset col-md-12">learningStories</label>
+                                    <div class="separation-left-reset separation-right-reset col-md-12">
+                                      <select id="packstories" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                        <option>Apps de Admin</option>
+                                        <option>Apps de Support</option>
+                                        <option>Apps de Trainer</option>
+                                        <option>Apps de User</option>
+                                      </select><span class="help-block"> </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-md-6">
+                                    <label for="social" class="separation-left-reset col-md-12">Social</label>
+                                    <div class="separation-left-reset separation-right-reset col-md-12">
+                                      <select id="packsocial" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                        <option>Apps de Admin</option>
+                                        <option>Apps de Support</option>
+                                        <option>Apps de Trainer</option>
+                                        <option>Apps de User</option>
+                                      </select><span class="help-block"></span>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-md-6">
+                                    <label for="social" class="separation-left-reset col-md-12">OpenSesame</label>
+                                    <div class="separation-left-reset separation-right-reset col-md-12">
+                                      <select id="packopensesame" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                        <option>Apps de Admin</option>
+                                        <option>Apps de Support</option>
+                                        <option>Apps de Trainer</option>
+                                        <option>Apps de User</option>
+                                      </select><span class="help-block"> </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-md-6">
+                                    <label for="social" class="separation-left-reset col-md-12">Anders Pink</label>
+                                    <div class="separation-left-reset separation-right-reset col-md-12">
+                                      <select id="packanderspink" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                        <option>Apps de Admin</option>
+                                        <option>Apps de Support</option>
+                                        <option>Apps de Trainer</option>
+                                        <option>Apps de User</option>
+                                      </select><span class="help-block"> </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-md-6">
+                                    <label for="social" class="separation-left-reset col-md-12">Google Analytics</label>
+                                    <div class="separation-left-reset separation-right-reset col-md-12">
+                                      <select id="packgoogleanalytics" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                        <option>Apps de Admin</option>
+                                        <option>Apps de Support</option>
+                                        <option>Apps de Trainer</option>
+                                        <option>Apps de User</option>
+                                      </select><span class="help-block"> </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-md-6">
+                                    <label for="social" class="separation-left-reset col-md-12">Kaltura</label>
+                                    <div class="separation-left-reset separation-right-reset col-md-12">
+                                      <select id="packkaltura" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                        <option>Apps de Admin</option>
+                                        <option>Apps de Support</option>
+                                        <option>Apps de Trainer</option>
+                                        <option>Apps de User</option>
+                                      </select><span class="help-block"> </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group form-group-submit">
+                              <div class="col-sm-12">
+                                <button type="submit" class="btn btn-default">Cancelar</button>
+                                <button type="submit" class="btn btn-primary">Guardar </button>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="formModalSuggestions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal form-modal fade">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+              <h4 id="myModalLabel" class="modal-title">Enviar sugerencia</h4>
+            </div>
+            <div class="modal-body">
+              <!-- Contenido modal-->
+              <form class="form form-horizontal">
+                <fieldset>
+                  <div class="form-group-title">
+                    <label>Env&iacute;anos tu sugerencia</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject" class="col-sm-2 control-label">Asunto</label>
+                    <div class="col-sm-10">
+                      <input id="subject" type="text" placeholder="Asunto" class="form-control"><span class="help-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="content" class="col-sm-2 control-label">Descripci&oacute;n</label>
+                    <div class="col-sm-10">
+                      <textarea id="content" class="form-control"></textarea><span class="help-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group form-group-submit">
+                    <div class="col-sm-12">
+                      <button type="submit" class="btn btn-default">Cancelar</button>
+                      <button type="submit" class="btn btn-primary">Env&iacute;ar</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+              <!-- ./Contenido modal-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Formulario modal-->
+      <footer class="footer">
+        <div class="box">
+          <div class="developed">Developed by Netex Learning</div>
+          <div class="version">ver. X.Y.Z</div>
+        </div>
+      </footer>
+    </div><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="apps/vendors/jquery/jquery.1.11.2.min.js"></script><!-- jQuery UI -->
+    <script src="apps/vendors/jquery-ui-1.12.1/jquery-ui.min.js"></script><!-- Importante with locales para traducción cloud calendar -->
+    <script src="apps/vendors/momentjs/moment-with-locales.min.js"> </script><!-- Full Calendar scripts -->
+    <script src="apps/vendors/fullcalendar/lib/moment.min.js"></script>
+    <script src="apps/vendors/fullcalendar/fullcalendar.min.js"></script>
+    <script src="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.min.js"></script>
+    <script src="apps/vendors/fullcalendar/lang-all.js"></script><!-- jquery autocomplete master -->
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/jquery.mockjax.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/countries.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/demo.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/src/jquery.autocomplete.js"></script><!-- boostrap table -->
+    <script src="apps/vendors/bootstrap-table/dist/bootstrap-table.min.js"></script><!-- boostrap table locales para traducción -->
+    <script src="apps/vendors/bootstrap-table/dist/locale/bootstrap-table-es-ES.min.js"></script><!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="apps/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="apps/vendors/bootstrap-selects/bootstrap-select.min.js"></script>
+    <script src="apps/vendors/bootstrap-switches/js/bootstrap-switch.min.js"></script><!-- dropzone library -->
+    <script src="apps/vendors/dropzonejs/min/dropzone.min.js"></script><!-- js theme -->
+    <script src="apps/vendors/circles/circles.min.js"></script>
+    <script src="webcomponents/js/theme.js"></script><!-- bootstrap colorpicker -->
+    <script src="apps/vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script><!-- jquery ellipsis -->
+    <script src="apps/vendors/jquery-ellipsis/jquery.ellipsis.min.js"></script><!-- jquery mobile touch event -->
+    <script src="apps/vendors/jquery-mobile-touchevent/jquery.mobile.custom.min.js"></script><!-- bootstrap datetimepicker -->
+    <script src="apps/vendors/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script><!-- circular progress bar -->
+    <script src="apps/vendors/circular-progressbar/dist/progressbar.min.js"></script><!-- infinity repeteable form fields -->
+    <script src="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/js/infinity.min.js"></script><!-- croppie -->
+    <script src="apps/vendors/croppie/croppie.min.js"></script><!-- Slide slick -->
+    <script src="apps/vendors/slick-1.6.0/slick/slick.min.js"></script><!-- Bar rating -->
+    <script src="apps/vendors/jquery-bar-rating-master/dist/jquery.barrating.min.js"></script><!-- bootstrap responsive table dropdown -->
+    <script src="apps/vendors/bootstrap-responsive-table-dropdown-master/bs-responsive-table-dropdown.js"></script>
+    <script type="text/javascript">
+      $(function () {
+          $('.parallax-container .tabs-wrapper ul.nav-tabs li').removeClass('active');
+          $('.parallax-container .tabs-wrapper ul.nav-tabs li.subgroups').addClass('active');
+          });
+      });
+    </script>
+  </body>
+</html>

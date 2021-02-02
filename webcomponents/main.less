@@ -1,0 +1,675 @@
+@import "../themes/less/variables";
+@import "../themes/less/settings";
+@import "mixins";
+
+@font-face{
+  font-family:LatoBlack;
+  src:url('@{url_fonts}Lato/Lato-Black.eot');
+  src:url('@{url_fonts}Lato/Lato-Black.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-Black.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-Black.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-Black.ttf') format('truetype');
+  font-style:normal;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoBlack;
+  src:url('@{url_fonts}Lato/Lato-BlackItalic.eot');
+  src:url('@{url_fonts}Lato/Lato-BlackItalic.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-BlackItalic.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-BlackItalic.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-BlackItalic.ttf') format('truetype');
+  font-style:italic;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoBold;
+  src:url('@{url_fonts}Lato/Lato-Bold.eot');
+  src:url('@{url_fonts}Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-Bold.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-Bold.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-Bold.ttf') format('truetype');
+  font-style:normal;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoBold;
+  src:url('@{url_fonts}Lato/Lato-BoldItalic.eot');
+  src:url('@{url_fonts}Lato/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-BoldItalic.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-BoldItalic.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-BoldItalic.ttf') format('truetype');
+  font-style:italic;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoHairline;
+  src:url('@{url_fonts}Lato/Lato-Hairline.eot');
+  src:url('@{url_fonts}Lato/Lato-Hairline.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-Hairline.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-Hairline.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-Hairline.ttf') format('truetype');
+  font-style:normal;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoHairline;
+  src:url('@{url_fonts}Lato/Lato-HairlineItalic.eot');
+  src:url('@{url_fonts}Lato/Lato-HairlineItalic.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-HairlineItalic.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-HairlineItalic.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-HairlineItalic.ttf') format('truetype');
+  font-style:italic;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoHeavy;
+  src:url('@{url_fonts}Lato/Lato-Heavy.eot');
+  src:url('@{url_fonts}Lato/Lato-Heavy.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-Heavy.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-Heavy.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-Heavy.ttf') format('truetype');
+  font-style:normal;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoHeavy;
+  src:url('@{url_fonts}Lato/Lato-HeavyItalic.eot');
+  src:url('@{url_fonts}Lato/Lato-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-HeavyItalic.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-HeavyItalic.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-HeavyItalic.ttf') format('truetype');
+  font-style:italic;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:Lato;
+  src:url('@{url_fonts}Lato/Lato-Italic.eot');
+  src:url('@{url_fonts}Lato/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-Italic.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-Italic.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-Italic.ttf') format('truetype');
+  font-style:italic;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoLight;
+  src:url('@{url_fonts}Lato/Lato-Light.eot');
+  src:url('@{url_fonts}Lato/Lato-Light.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-Light.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-Light.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-Light.ttf') format('truetype');
+  font-style:normal;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoLight;
+  src:url('@{url_fonts}Lato/Lato-LightItalic.eot');
+  src:url('@{url_fonts}Lato/Lato-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-LightItalic.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-LightItalic.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-LightItalic.ttf') format('truetype');
+  font-style:italic;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoMedium;
+  src:url('@{url_fonts}Lato/Lato-Medium.eot');
+  src:url('@{url_fonts}Lato/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-Medium.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-Medium.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-Medium.ttf') format('truetype');
+  font-style:normal;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoMedium;
+  src:url('@{url_fonts}Lato/Lato-MediumItalic.eot');
+  src:url('@{url_fonts}Lato/Lato-MediumItalic.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-MediumItalic.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-MediumItalic.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-MediumItalic.ttf') format('truetype');
+  font-style:italic;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:Lato;
+  src:url('@{url_fonts}Lato/Lato-Regular.eot');
+  src:url('@{url_fonts}Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-Regular.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-Regular.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-Regular.ttf') format('truetype');
+  font-style:normal;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoSemibold;
+  src:url('@{url_fonts}Lato/Lato-Semibold.eot');
+  src:url('@{url_fonts}Lato/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-Semibold.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-Semibold.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-Semibold.ttf') format('truetype');
+  font-style:normal;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoSemibold;
+  src:url('@{url_fonts}Lato/Lato-SemiboldItalic.eot');
+  src:url('@{url_fonts}Lato/Lato-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-SemiboldItalic.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-SemiboldItalic.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-SemiboldItalic.ttf') format('truetype');
+  font-style:italic;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoThin;
+  src:url('@{url_fonts}Lato/Lato-Thin.eot');
+  src:url('@{url_fonts}Lato/Lato-Thin.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-Thin.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-Thin.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-Thin.ttf') format('truetype');
+  font-style:normal;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+@font-face{
+  font-family:LatoThin;
+  src:url('@{url_fonts}Lato/Lato-ThinItalic.eot');
+  src:url('@{url_fonts}Lato/Lato-ThinItalic.eot?#iefix') format('embedded-opentype'),
+  url('@{url_fonts}Lato/Lato-ThinItalic.woff2') format('woff2'),
+  url('@{url_fonts}Lato/Lato-ThinItalic.woff') format('woff'),
+  url('@{url_fonts}Lato/Lato-ThinItalic.ttf') format('truetype');
+  font-style:italic;
+  font-weight:300;
+  text-rendering:optimizeLegibility
+}
+
+/** BOOTSTRAP OVERRIDES */
+
+/**************************************************/
+/****************** layout ************************/
+body {
+  font-family:          @font-family-base;
+  font-size:            @font-size-medium;
+  color:                @color-lightgrey;
+  background-color:     @color-extralightgrey;
+}
+html, body {
+  height: 100%;
+}
+a{
+  outline: none !important; 
+}
+body.body-bg-inverse {
+  background-color: @color-white;
+}
+.body-content {
+  padding-top: @navbar-height;
+  position: relative;
+  height: 100%;
+}
+.navbar-topbar.navbar-partner{
+  + .navbar-topbar{
+    + .body-content {
+      margin-top: @navbar-height + @navbar-support-user-height;
+    }
+  }
+}
+
+.content-fullwidth-admin{
+  .calc(width; "100% - @{navbar-lateral-width}");
+  margin-left: @navbar-lateral-width;
+  min-height: 950px !important;
+}
+
+.content {
+  width: 100%;
+  .transiction-menu-lateral;
+}
+.menu-lateral ~ .content {
+  .calc(width; "100% - @{navbar-lateral-width}");
+  margin-left: @navbar-lateral-width;
+}
+
+.font-size-default {
+  font-size: @font-size-medium !important;
+}
+.font-size-subtitle{
+  font-size: @font-size-subtitle !important;
+}
+
+.background-default{
+   background-color: @color-extralightgrey;
+}
+.background-inverse{
+   background-color: @color-white;
+}
+
+@import "components/helpers";
+
+@import "components/layout";
+
+@import "components/navbar";
+
+/************************************************/
+/************** profile *************************/
+
+div.avatar-wrapper {
+
+  border-radius: 100px;
+  width: @avatar-dimensions-base;
+  height: @avatar-dimensions-base;
+  overflow: hidden;
+  margin-top: 5px;
+  display: inline-block;
+
+  img {
+    width: @avatar-dimensions-base;
+  }
+}
+
+.profile-notifications-wrapper {
+  position: relative;
+  a {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+ .profile-notifications-bubble {
+   color: @color-white;
+   font-size: @font-size-xxsmall;
+   top: 0;
+   position: absolute;
+   right: -5px;
+   background-color: @color-primary;
+   border-radius: 100px;
+   padding: 0 2px;
+   width: auto;
+   min-width: @bubble-dimensions;
+   height: @bubble-dimensions;
+   line-height: @bubble-dimensions;
+   text-align: center;
+ }
+}
+
+.badge {
+  border-radius: @border-radius-default;
+}
+
+@import "components/entity-detail";
+
+@import "components/info-pills";
+
+@import "components/list-entities";
+
+.icon-circle-wrapper (41px; 41px);
+
+@import "components/menu-lateral";
+
+@import "components/tables";
+
+@import "components/modals";
+
+@import "components/forms";
+
+@import "components/dropzone";
+
+/*******************************************************/
+/************** links  *********************************/
+
+a {
+  color: @color-action;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    color: @color-action-hover;
+  }
+}
+
+@import "components/buttons";
+
+@import "components/checkboxes";
+
+@import "components/selects";
+
+@import "components/switch";
+
+/******************************************************/
+/****************** dropdown **************************/
+.dropdown {
+  &.dropdown-lateral {
+    cursor: pointer;
+    height: 30px;
+    width: auto;
+    ul.dropdown-menu{
+      z-index: 9;
+      li{
+        padding: 6px 5px 2px;
+        white-space: nowrap; 
+        &:hover{
+          background-color: #eee;
+        }
+        .checkbox{
+          margin: 0;  
+          label{
+            font-size: 14px;
+            line-height: 19px;
+            min-height: 0; 
+            width: 100%; 
+            white-space: normal;
+            word-break: normal;
+            overflow: hidden;
+            text-transform: inherit;
+            span{
+              display: inline-block;
+              font-weight: normal;
+            }
+          }
+        }
+      } 
+    }
+  }
+  a.dropdown-toggle {
+    .glyphicon ~ .caret {
+      margin-bottom: @padding-small;
+      margin-left: @padding-small;
+    }
+  }
+}
+
+.dropdown-menu{
+    li.separator{
+        border-bottom: 1px solid @color-lightergrey;            
+        margin-bottom: 10px;
+        margin-top: 10px;          
+    }
+    li a i.icon-success{
+        display:none;
+    }
+    li.selected a i.icon-success{
+        display:inline;
+        color: @color-darkgrey;
+        position: absolute;
+        right: 5px;
+        margin-top: 2px;
+    }
+}     
+
+@import "components/pagination";
+
+
+@media (min-width: 993px) {
+  .dropdown {
+    &.dropdown-lateral{
+      position: relative;
+      top: initial;
+      width: 100%;
+      div[data-toggle="dropdown"]{
+        display: none;  
+      }
+      ul.dropdown-menu{
+        display: block;
+        position: relative;
+        top: initial;
+        width: 100%;
+        border: 0 none;
+        background-color: transparent;
+        box-shadow: none;
+        white-space: nowrap; 
+        li{
+          display: block;  
+        } 
+      }
+    }
+  }
+}
+
+
+/*******************************************************/
+/*******************  glyphicon ************************/
+.glyphicon {
+  font-size: @font-size-xlarge;
+}
+
+/*******************************************************/
+/****************** font - awesome *********************/
+.fa {
+  &.fa-color-primary {
+    color: @color-primary;
+  }
+  &.fa-color-white {
+    color: @color-white;
+  }
+
+  &.fa-color-default {
+    color: @color-lightgrey;
+  }
+}
+
+@import "components/alerts";
+
+@import "components/cards-old";
+@import "components/cards";
+
+
+/*******************************************************/
+/********************* MISC ****************************/
+/* enable absolute positioning */
+
+  /* style icon */
+  .inner-addon {
+    position: relative;
+    .inner {
+      position: absolute;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 5;
+      color: @color-lightgrey;
+      &.left {
+        left: 0;
+      }
+      &.right {
+        right: 0;
+      }
+    }
+    &.left-addon input {
+      padding-left: 35px;
+    }
+    &.right-addon input {
+      padding-right: 35px;
+    }
+  }
+
+@import "components/stickybar";
+
+@import "components/desktop";
+
+@import "components/login";
+
+@import "components/icons";
+
+.no-results {
+  font-size: @font-size-xlarge;
+  color: @color-lightgrey;
+  text-align: center;
+  padding-top: 100px !important;
+  padding-bottom: @padding-xxlarge;
+  i.icon, i.icon-ntx {
+    display: block;
+    font-size: @font-size-icon-xlarge;
+    margin-bottom: @padding-xxlarge;
+  }
+}
+
+.no-results-found {
+  font-size: @font-size-xlarge;
+  color: @color-lightgrey;
+  text-align: center;
+  i.icon, i.icon-ntx {
+    display: block;
+    font-size: @font-size-icon-xlarge;
+    margin-bottom: @padding-xxlarge;
+  }
+}
+
+
+.modal-uploader {
+  padding: @padding-big inherit;
+  text-align: center;
+  color:  @color-grey;
+  .row > div {
+    padding-bottom: @padding-medium;
+  }
+  i.icon {
+    font-size: @font-size-icon-large;
+    color: @color-lightgrey;
+  }
+  .title {
+    font-size: @font-size-xxxlarge;
+    color: @color-lightgrey;
+  }
+  button {
+    margin-right: 0;
+  }
+}
+
+.text-danger {
+  color: @color-error;
+}
+.text-success {
+  color: @color-green;
+}
+.text-warning {
+  color: @color-warning;
+}
+.text-info {
+  color: @color-info;
+}
+.text-disabled{
+    color: @color-lightergrey;
+}
+.background-disabled{
+    background-color: @color-extralightgrey;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.background-grill{
+     background-color: @color-lightergrey !important;
+     background-image: repeating-linear-gradient(45deg, transparent, transparent 1px, rgba(255,255,255,.5) 1px, rgba(255,255,255,.5) 5px)!important;
+}
+
+.colorpicker-element{
+    width:190px;    
+}
+
+.fa-ul {
+  margin-left : @padding-base;
+  li {
+    i.fa.fa-li {
+      font-size: 9px;
+      margin-top: 6px;
+    }
+  }
+
+}
+
+@import "components/images";
+
+.colorpicker {
+  z-index: @zindex-colorpicker;
+}
+
+@import "components/tabs";
+
+@import "components/contextualmenu";
+
+@import "components/material";
+@import "components/material-cards";
+@import "components/material-card-image";
+@import "components/waves";
+@import "components/toolbar";
+@import "components/chips";
+@import "components/calendar";
+@import "components/notifications";
+@import "components/cloudtags";
+@import "components/parallax";
+@import "components/badge";
+@import "components/progressbar";
+@import "components/error";
+@import "components/messages";
+@import "components/widgets";
+@import "components/htmlcontainer";
+@import "components/columns-equals";
+@import "components/tokenizer";
+@import "components/userprofile";
+@import "components/submenu-lateral";
+@import "components/coursecollection";
+@import "components/spinners";
+@import "components/carousel-laptop";
+@import "components/carousel-app";
+@import "components/ellipsis";
+@import "components/tooltip";
+@import "components/external-apps";
+@import "components/passwordrules";
+@import "components/platforms";
+@import "components/record-card";
+@import "components/color";
+@import "components/croppie";
+@import "components/csv-preview";
+@import "components/users-synchro";
+@import "components/progressbarjs";
+@import "components/text-responsive";
+@import "components/page-with-iframe";
+@import "components/steps";
+@import "components/container-scroll";
+@import "components/loading";
+@import "components/anderspink";
+@import "components/google-analytics";
+@import "components/groups";
+@import "components/lists";
+@import "components/ztree";
+@import "components/infinity-forms-fields";
+@import "components/slide";
+@import "components/material-card-image-new";
+@import "components/score";
+@import "components/floated-actions";
+@import "components/autocomplete-fields";
+@import "components/breadcrumbs";
+
+/*******************************************************/
+/************** media queries **************************/
+@import "components/mediaqueries";
+
+@screenltie7: ~"screen\0";
+@screengtie7: ~"screen\9";
+
+/* Solo aplica a IE */
+@media @screenltie7, @screengtie7 {
+  .menu-lateral, .content {
+    -webkit-transition: height 0.01s !important;
+    -moz-transition: height 0.01s !important;
+    -ms-transition: height 0.01s !important;
+    -o-transition: height 0.01s !important;
+    transition: height 0.01s !important;
+  }
+  .menu-lateral ul.nav li a {
+    text-overflow: clip;
+  }
+}

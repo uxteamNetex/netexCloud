@@ -1,0 +1,68 @@
+.score-reviewing{
+    text-align: center;
+    .br-wrapper{
+        display: inline-block;
+        a{
+            font-size: 42px !important;   
+            height: auto !important;
+            width: auto !important; 
+        }
+    }
+    .bootstrap-select{
+        display: none !important;
+    }
+}
+.score-container{
+    display: inline-block;
+    &.score-big{
+        .score-valuation{
+            display: block;
+            margin-right: 0;
+            text-align: center;
+        }
+        .score{
+            display: table;
+            margin: 0 auto; 
+            .score-number{
+                margin-left: 0;
+                display: block;
+                font-size: 36px;
+                line-height: 36px;
+                text-align: center;    
+            }   
+        }
+    }
+    .score-valuation{
+        display: inline;
+        color: @color-grey;
+        font-size: @font-size-medium;
+        margin-right: 10px;
+    }
+    .score{
+        display: inline-table;
+        font-size: 14px;
+        .score-icon{
+            color:#d2d2d2;
+            display: inline-block;
+            vertical-align: sub;
+            &.icon-star-semi-empty{
+                &.scoredbyme{
+                    .path2:before{
+                        color:@color-yellow;    
+                    }    
+                }    
+            }
+            &.scoredbyme{
+                color:@color-yellow;
+            }
+            &.scoredbyother{
+                color:@color-grey;
+            }
+        }
+        .score-number{
+            color: @color-grey;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+    }
+}

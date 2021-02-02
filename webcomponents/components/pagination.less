@@ -1,0 +1,35 @@
+@import "../../themes/less/variables";
+@import "../mixins";
+
+
+/******************************************************/
+/****************** pagination ************************/
+.pagination {
+  > li {
+    > a, > span {
+      font-size: @font-size-large;
+      color: @color-grey;
+      &:hover, &:focus {
+        color: darken(@color-darkgrey, @button-active-percent-darkness);
+      }
+    }
+  }
+  .active {
+    a,  span {
+      border-color: @color-action;
+      background-color: @color-action;
+      color: @color-white;
+      &:hover, &:focus {
+        border-color: @color-action-hover;
+        background-color: @color-action-hover;
+        color: @color-white;
+      }
+    }
+  }
+}
+.pagination-wrapper {
+  text-align: center;
+  .pagination-resume{
+    font-size: @font-size-large;
+  }
+}

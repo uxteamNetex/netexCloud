@@ -1,0 +1,119 @@
+@import "../../themes/less/variables";
+@import "../../themes/less/settings";
+
+
+.tabs-wrapper {
+  border-bottom: 1px solid @color-lightergrey;
+  &.tabs-bg-inverse {
+    background-color: @color-white;
+  }
+  &.tabs-pull-left {
+    .nav.nav-tabs {
+      margin-left: @padding-base;
+    }
+  }
+}
+.row .tabs-wrapper {
+  margin-right: -15px;
+  margin-left:  -15px;
+}
+
+  .nav.nav-tabs {
+    width: auto;
+    margin: 0 auto;
+    display: table;
+
+    border-bottom: 0 none;
+    background: @color-white;
+    padding: @padding-base 0 0 0 !important;
+
+    li {
+      float: left;
+      border: 0 none;
+      background: @color-white;
+      margin: 0;
+
+      &.active, &:hover, &:active, &:focus {
+        border: 0 none;
+        background: @color-white;
+        border-bottom: 5px solid @color-action;
+      }
+      &.active {
+        font-family: LatoBold;
+      }
+
+      a {
+        border: 0 none;
+        font-size: @font-size-large;
+        &:hover, &:active, &:focus {
+          border: 0 none;
+          background-color: inherit;
+          outline: 0 none;
+
+        }
+
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        padding: @padding-small @padding-base @padding-small;
+        text-align: center;
+        height: auto;
+        color: @color-grey;
+
+      }
+    }
+  }
+
+.tabs-wrapper.margin-reset {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.tab-pane > .row:not(:last-child) {
+  padding-bottom: @padding-xxlarge;
+}
+
+@media (max-width: @responsive-xm-min-width) {
+  .nav.nav-tabs {
+    padding-top: @padding-small;
+    li {
+      a {
+        font-size: @font-size-medium;
+        padding-left: @padding-small;
+        padding-right: @padding-small;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 670px) {
+  .tabs-wrapper {
+    .nav.nav-tabs {
+      li {
+        display: block !important;
+        /*width: 100%;*/
+        margin: 0;
+        margin-bottom: @padding-small;
+        &.active {
+          margin: 0;
+        }
+      }
+
+    }
+
+  }
+}
+
+.nav{
+  &.nav-tabs{
+    &.btn-group{
+      a.btn-default{
+        &.active{
+          background-color: @color-lightergrey;
+          color: @color-grey;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Configuración</title><!-- Bootstrap -->
+    <link href="apps/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--link( rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")-->
+    <link rel="stylesheet" href="apps/vendors/font-awesome-4.5.0/css/font-awesome.min.css"><!-- Theme -->
+    <link href="styles/theme_lcloud.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="apps/vendors/html5shiv/html5shiv.min.js"></script>
+    <script src="apps/vendors/respond/respond.min.js"></script><![endif]-->
+    <!-- jquery UI -->
+    <link href="apps/vendors/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet"><!-- bootstrap colorpicker -->
+    <link href="apps/vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet"><!-- bootstrap datetimepicker -->
+    <link href="apps/vendors/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"><!-- infinity repeteable form fields -->
+    <link href="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/css/infinity.min.css" rel="stylesheet"><!-- croppie -->
+    <link href="apps/vendors/croppie/croppie.css" rel="stylesheet"><!-- Slide slick -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick.css" rel="stylesheet"><!-- Add the new slick-theme.css if you want the default styling -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick-theme.css" rel="stylesheet"><!-- Bar rating theme -->
+    <link href="apps/vendors/jquery-bar-rating-master/dist/themes/css-stars.css" rel="stylesheet"><!-- bootstrap table -->
+    <link href="apps/vendors/bootstrap-table/dist/bootstrap-table.min.css" rel="stylesheet"><!-- animate -->
+    <link href="apps/vendors/animate/animate.css" rel="stylesheet"><!-- jquery autocomplete master -->
+    <link href="apps/vendors/jQuery-Autocomplete-master/content/styles.css" rel="stylesheet"><!-- Full Calendar Assets -->
+    <link href="apps/vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar_customized.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+    <link href="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.css" rel="stylesheet">
+  </head>
+  <body class="body-bg-inverse ">
+    <nav class="navbar navbar-topbar">
+      <div class="container-fluid topbar-wrapper">
+        <div class="navbar-header"><a href="#" class="navbar-brand">Configuración</a></div>
+        <div id="navbar" class="navbar-topbar-wrapper navbar-collapse"><a href="javascript:window.history.back();" class="navigation-back"><i class="fa fa-chevron-left"></i></a>
+          <label>Detalles</label>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="profile-username"><a href="#">Federica Garcia</a></li>
+            <li class="profile-notifications-wrapper">
+              <div class="dropdown">
+                <div id="dropdownMenu-profile" data-toggle="dropdown" aria-expanded="true" class="avatar-wrapper"><img src="apps/files/img/profile.png"></div>
+                <div class="profile-notifications-bubble">122</div>
+                <ul role="menu" aria-labelledby="dropdownMenu-profile" class="dropdown-menu contextual-menu">
+                  <li class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner"></span></li>
+                  <li class="menu-item-iconavatar"><img src="apps/files/img/profile.png" alt="" title="Perfil"></li>
+                  <li class="menu-item-iconavatar-right">
+                    <ul>
+                      <li class="menu-item-username"><i class="icon-ntx icon-cloud"></i><span>Federica Garcia   </span></li>
+                      <li class="menu-subitem-username"><span>federica.garcia                                                                                                                           </span></li>
+                      <li><a href="#">Tu cuenta</a></li>
+                      <li><a href="#">Notificaciones</a><span class="badge">7</span></li>
+                      <li><a href="#">Anuncios</a><span class="badge">4</span></li>
+                    </ul>
+                  </li>
+                  <li class="item-divisor"><span class="non-link"></span></li>
+                  <li><a href="#">Novedades en learningCloud</a></li>
+                  <li><a href="#">Acceso a manuales</a></li>
+                  <li><a href="#">Centro de ayuda</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#formModalSuggestions">Sugerencias</a></li>
+                  <li class="menu-item-important-action"><a href="#" rel="nofollow" class="btn btn-primary">Mi perfil Social</a></li>
+                  <li class="item-divisor"><span></span></li>
+                  <li class="menu-item-logout"><a href="#" rel="nofollow"><i class="icon-ntx icon-poweroff"></i> Salir de learningCloud</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="toggle-dashboard"><a href="javascript:void(0);" data-toggle="collapse" data-target="#menu-dashboard" class="collapsed"><span aria-hidden="true" class="glyphicon glyphicon-th"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard-wrapper-small">
+        <div id="menu-dashboard" class="row dashboard collapse">
+          <div class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner">    </span></div>
+          <div id="menu-apps" class="row">  
+            <div class="col-lg-12">   
+              <div class="col-md-1 app-wrapper">            <a href="apps/lcloud/index.html" data-toggle="tooltip" data-placement="top" title="CLOUD"><span class="icon-wrapper"><img src="apps/files/projects/lcloud.png"></span>
+                  <label>CLOUD</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/lcentral/index.html" data-toggle="tooltip" data-placement="top" title="CENTRAL"><span class="icon-wrapper"><img src="apps/files/projects/lcentral.png"></span>
+                  <label>CENTRAL                </label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/default/index.html" data-toggle="tooltip" data-placement="top" title="DEFAULT"><span class="icon-wrapper"><img src="apps/files/projects/default.png"></span>
+                  <label>DEFAULT</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/old/index.html" data-toggle="tooltip" data-placement="top" title="Old files"><span class="icon-wrapper"><img src="apps/files/projects/old.png"></span>
+                  <label>OLD</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="body-content">
+      <div id="menu-lateral" class="menu-lateral collapse in">
+        <nav role="navigation" class="navbar navbar-default">
+          <ul class="nav nav-stacked">
+            <li class="toggle"><a href="javascript:void(0);" data-toggle="collapse" data-target="#menu-lateral">                       <i class="icon icon-ntx icon-bars-menu fs-icon"></i></a></li>
+            <li class="active"><a href="apps/lcloud/users.html"><span class="icon icon icon-ntx icon-members"></span>
+                <label>Usuarios</label></a></li>
+            <li><a href="apps/lcloud/groups-table.html"><span class="icon icon icon-ntx icon-groups"></span>
+                <label>Grupos</label></a></li>
+            <li><a href="apps/lcloud/extensible_fields.html"><span class="icon icon icon-ntx icon-input"></span>
+                <label>Campos extend.</label></a></li>
+            <li><a href="apps/lcloudapps-list.html"><span class="icon icon icon-ntx icon-cubes"></span>
+                <label>Apps</label></a></li>
+            <li><a href="apps/lcloud/list-external-apps.html"><span class="icon icon icon-ntx icon-external-apps"></span>
+                <label>External Apps</label></a></li>
+            <li><a href="apps/lcloud/google-analytics-config.html"><span class="icon icon icon-ntx icon-collections"></span>
+                <label>Integrations</label></a></li>
+            <li><a href="#"><span class="icon icon icon-ntx icon-news"></span>
+                <label>Anuncios</label></a></li>
+            <li><a href="#"><span class="icon icon icon-ntx icon-ranking"></span>
+                <label>Sondeos</label></a></li>
+            <li><a href="apps/lcloud/lookandfeel.html"><span class="icon icon icon-ntx icon-appearance"></span>
+                <label>Apariencia</label></a></li>
+            <li><a href="apps/lcloud/password-config.html"><span class="icon icon icon-ntx icon-gear"></span>
+                <label>Conf. Avanzada</label></a></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row detail-header detail-header-bg-inverse unbordered">
+            <div class="col-data valign center separation-left-reset">
+              <div class="navegation"><a href="groups-table.html"><span class="icon icon-ntx icon-play-arrow-left fs-icon-8 margin-right-8"></span>Groups</a>
+                <div class="separator"><span class="icon icon-ntx icon-play-arrow-right fs-icon-8"></span></div>
+                <div data-toggle="tooltip" data-placement="top" title="Grupo Galicia" class="crumb firstCrumb">Grupo Galicia</div>
+                <div class="separator"><span class="icon icon-ntx icon-play-arrow-right fs-icon-8"></span></div>
+                <div data-toggle="tooltip" data-placement="top" title="Grupo A Coruna" class="crumb"><span>Grupo A Coruna</span></div>
+                <div class="separator"><span class="icon icon-ntx icon-play-arrow-right fs-icon-8"></span></div>
+                <div data-toggle="tooltip" data-placement="top" title="Grupo Empresa Netex Learning Technologies" class="crumb"><span>Grupo Empresa Netex Learning Technologies</span></div>
+                <div class="separator"><span class="icon icon-ntx icon-play-arrow-right fs-icon-8"></span></div>
+                <div data-toggle="tooltip" data-placement="top" title="322178 - Marcelo Ferran Garcia" class="crumb"><span>322178 - Marcelo Ferran Garcia</span></div>
+                <div class="separator"><span class="icon icon-ntx icon-play-arrow-right fs-icon-8"></span></div>
+                <div data-toggle="tooltip" data-placement="top" title="322178 - Marcelo Ferran Garcia Full Team" class="crumb"><span>322178 - Marcelo Ferran Garcia Full Team</span></div>
+                <div class="separator"><span class="icon icon-ntx icon-play-arrow-right fs-icon-8"></span></div>
+                <div data-toggle="tooltip" data-placement="top" title="1022987 - Group name" class="crumb lastCrumb">1022987 - Group name</div>
+              </div>
+              <h3 class="margin-top-medium">Add users</h3>
+            </div>
+          </div>
+          <!--Nuevo componente del toolbar para que el tamaño de los filtros se ajusten segun el numero de filtros que haya y no con px exactos-->
+          <form method="post">
+            <div class="row toolbar toolbar-with-filters-inside">
+              <div class="col-md-12 toolbar-search-wrapper pull-left toolbar-search-full-width">
+                <div class="form form-inline form-thin toolbar-search toolbarflex-contenedor">
+                  <div class="form-group margin-top-small margin-bottom-small toolbarflex-contenedor-searchbox">
+                    <div class="input-group">
+                      <div class="inner-addon left-addon right-addon clearfix">
+                        <button class="btn inner left fa fa-search btn-flat"></button>
+                        <input id="input-search" type="text" name="searchTerm" value="" placeholder="Search" onkeyup="isEmptyInputText(this)?jQuery('#btn-clear-search').hide().addClass('hide'):jQuery('#btn-clear-search').show().removeClass('hide')" class="form-control">
+                        <button id="btn-clear-search" onclick="jQuery('#input-search').val('');" class="btn btn-flat inner right fa fa-close hide"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="toolbar-actions separation-left toolbarflex-contenedor-options">
+                    <div class="dropdown menu-item menu-item-responsive">
+                      <div id="dropdownMenu-item_1" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-ellipsis-v">                       </i></div>
+                      <ul role="menu" aria-labelledby="dropdownMenu-item_1" class="dropdown-menu dropdown-menu-right"> 
+                        <li role="presentation"> 
+                          <button type="button" data-toggle="collapse" data-target="#form-add-users-filter,#form-simple" class="btn btn-toggle">                                 <i class="icon-ntx icon-funnel fs-icon-medium separation-right-small"></i>Filters</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 chips-wrapper margin-top-medium">
+                <div class="chip chip-with-field"><span><strong>Admin </strong></span><span>(Pack learningCloud)</span>
+                  <div class="close fa fa-close"></div>
+                </div>
+                <div class="chip chip-with-field"><span><strong>Admin </strong></span><span>(Pack learningCloud)</span>
+                  <div class="close fa fa-close"></div>
+                </div>
+                <div class="chip chip-with-field"><span><strong>Admin </strong></span><span>(Pack learningCloud)</span>
+                  <div class="close fa fa-close"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- Formulario de filtros de usuarios-->
+          <div class="row separation-all-reset">
+            <div class="col-md-12">
+              <form id="form-add-users-filter" class="form form-horizontal form-transparent form-add-users-filter collapse separation-top-xlarge separation-bottom-xlarge margin-bottom-xlarge"><a href="javascript:void(0);" data-toggle="collapse" data-target="#form-add-users-filter,#form-simple" class="toggle-form">Cerrar <span>X</span></a>
+                <legend>Búsqueda avanzada</legend>
+                <fieldset>
+                  <h4 class="sections-titles">Información básica</h4>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="input1" class="col-md-12 col-lg-4">Nombre de usuario</label>
+                    <div class="col-md-12 col-lg-8">
+                      <input id="input1" type="text" placeholder="Usuario" class="form-control"><span class="help-block"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="input2" class="col-md-12 col-lg-4">Nombre</label>
+                    <div class="col-md-12 col-lg-8">
+                      <input id="input2" type="text" placeholder="Nombre" class="form-control"><span class="help-block"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="input3" class="col-md-12 col-lg-4">Apellidos</label>
+                    <div class="col-md-12 col-lg-8">
+                      <input id="input3" type="text" placeholder="Apellidos" class="form-control"><span class="help-block"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="inputcorreo" class="col-md-12 col-lg-4">Correo electrónico</label>
+                    <div class="col-md-12 col-lg-8">
+                      <input id="inputcorreo" type="text" placeholder="correo" class="form-control"><span class="help-block"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="activeuser" class="col-md-12 col-lg-4">Activo</label>
+                    <div class="col-md-12 col-lg-8">
+                      <select id="activeuser" title="Seleccionar" data-live-search="true" class="selectpicker">
+                        <option>Sí</option>
+                        <option>No</option>
+                      </select><span class="help-block"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="activeuser" class="col-md-12 col-lg-4">Ver de subgrupos</label>
+                    <div class="col-md-12 col-lg-8">
+                      <div role="menuitem" tabindex="-1" type="button" class="btn collections-label-switch separation-left-reset left-align">
+                        <div class="switch-toggle-wrapper">
+                          <input id="switch-collections-filter" type="checkbox" checked class="switch-toggle switch-toggle-onoff">
+                          <label for="switch-collections-filter" class="switch-label-right"></label>
+                        </div>
+                      </div><span class="help-block">                  </span>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <h4 class="sections-titles">Acceso de usuario</h4>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="packLMS" class="col-md-12 col-lg-4">Pack LMS</label>
+                    <div class="col-md-12 col-lg-8">
+                      <select id="packLMS" title="Sin acceso" data-live-search="true" multiple="" data-max-options="1" class="selectpicker">
+                        <option>Sin acceso</option>
+                        <option>Apps de Admin</option>
+                        <option>Apps de Support</option>
+                      </select><span class="help-block"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="packlearningCloud" class="col-md-12 col-lg-4">Pack learningCloud</label>
+                    <div class="col-md-12 col-lg-8">
+                      <select id="packLMS" title="Sin acceso" data-live-search="true" multiple="" data-max-options="1" class="selectpicker">
+                        <option>Sin acceso</option>
+                        <option>Apps de Admin</option>
+                        <option>Apps de Support</option>
+                      </select><span class="help-block"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="learningMaker" class="col-md-12 col-lg-4">learningMaker</label>
+                    <div class="col-md-12 col-lg-8">
+                      <select id="learningMaker" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                        <option>Apps de Admin</option>
+                        <option>Apps de Support</option>
+                        <option>Apps de Trainer</option>
+                        <option>Apps de User</option>
+                      </select><span class="help-block"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="learningStories" class="col-md-12 col-lg-4">learningStories</label>
+                    <div class="col-md-12 col-lg-8">
+                      <select id="learningStories" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                        <option>Apps de Admin</option>
+                        <option>Apps de Support</option>
+                        <option>Apps de Trainer</option>
+                        <option>Apps de User</option>
+                      </select><span class="help-block"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="Social" class="col-md-12 col-lg-4">Social</label>
+                    <div class="col-md-12 col-lg-8">
+                      <select id="Social" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                        <option>Apps de Admin</option>
+                        <option>Apps de Support</option>
+                        <option>Apps de Trainer</option>
+                        <option>Apps de User</option>
+                      </select><span class="help-block"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="OpenSesame" class="col-md-12 col-lg-4">OpenSesame</label>
+                    <div class="col-md-12 col-lg-8">
+                      <select id="OpenSesame" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                        <option>Apps de Admin</option>
+                        <option>Apps de Support</option>
+                        <option>Apps de Trainer</option>
+                        <option>Apps de User</option>
+                      </select><span class="help-block"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="AndersPink" class="col-md-12 col-lg-4">AndersPink</label>
+                    <div class="col-md-12 col-lg-8">
+                      <select id="AndersPink" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                        <option>Apps de Admin</option>
+                        <option>Apps de Support</option>
+                        <option>Apps de Trainer</option>
+                        <option>Apps de User</option>
+                      </select><span class="help-block"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="GoogleAnalytics" class="col-md-12 col-lg-4">Google Analytics</label>
+                    <div class="col-md-12 col-lg-8">
+                      <select id="GoogleAnalytics" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                        <option>Apps de Admin</option>
+                        <option>Apps de Support</option>
+                        <option>Apps de Trainer</option>
+                        <option>Apps de User</option>
+                      </select><span class="help-block"> </span>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <label for="Kaltura" class="col-md-12 col-lg-4">Kaltura</label>
+                    <div class="col-md-12 col-lg-8">
+                      <select id="Kaltura" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                        <option>Apps de Admin</option>
+                        <option>Apps de Support</option>
+                        <option>Apps de Trainer</option>
+                        <option>Apps de User</option>
+                      </select><span class="help-block"> </span>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset> 
+                  <div class="col-xs-12 col-md-6">               
+                    <div class="col-md-12 separation-top-medium">
+                      <button type="submit" class="btn btn-primary">Search</button>
+                      <button role="button" class="btn btn-default margin-right-reset">Limpiar</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="row detail-header detail-header-sm">
+            <div class="col-md-9"><a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Add users</a></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table table-full-width table-responsive table-hover vertical-align-center">
+                <thead>
+                  <tr>  
+                    <th class="col-checkbox">
+                      <div class="checkbox checkbox-primary">
+                        <input id="checkbox" type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes" data-checkbox-selectall="">
+                        <label for="checkbox">    </label>
+                      </div>
+                    </th>
+                    <th class="sortable sorted desc"> <a href="#" role="button">Nombre</a></th>
+                    <th class="sortable"><a href="#" role="button">User name</a></th>
+                    <th class="sortable"><a href="#" role="button">Email </a></th>
+                    <th class="sortable"><a href="#" role="button">State</a></th>
+                    <th class="sortable"><a href="#" role="button">Added                 </a></th>
+                  </tr>
+                </thead>
+                <tbody>                      
+                  <tr class="tr-disabled"> 
+                    <td class="checkbox-app">
+                      <div class="checkbox checkbox-primary">
+                        <input id="checkbox1" type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td><a href="groups-table-subgroups.html" role="button" class="btn btn-link separation-left-reset display-flex-center">
+                        <div class="avatar-wrapper margin-right-xlarge"><img src="apps/files/img/profile.png"></div>Tamisha Faw</a></td>
+                    <td><span>tamisha.faw</span></td>
+                    <td><span>tamisha.faw@netexlearning.com</span></td>
+                    <td><span class="badge badge-transparent badge-inactive uppercase separation-left-reset">Inactivo</span></td>
+                    <td> <span class="badge badge-transparent badge-added separation-left-reset">Added</span></td>
+                  </tr>
+                  <tr> 
+                    <td class="checkbox-app">
+                      <div class="checkbox checkbox-primary">
+                        <input id="checkbox1" type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td><a href="groups-table-subgroups.html" role="button" class="btn btn-link separation-left-reset display-flex-center">
+                        <div class="avatar-wrapper margin-right-xlarge"><img src="apps/files/img/default_profile_user.png"></div>Alexandra Likes</a></td>
+                    <td><span>alexandra.likes</span></td>
+                    <td><span>alexandra.likes@netexlearning.com</span></td>
+                    <td><span class="badge badge-transparent badge-inactive uppercase separation-left-reset"></span></td>
+                    <td> <span class="badge badge-transparent badge-added separation-left-reset"></span></td>
+                  </tr>
+                  <tr> 
+                    <td class="checkbox-app">
+                      <div class="checkbox checkbox-primary">
+                        <input id="checkbox1" type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td><a href="groups-table-subgroups.html" role="button" class="btn btn-link separation-left-reset display-flex-center">
+                        <div class="avatar-wrapper margin-right-xlarge"><img src="apps/files/img/user-image.png"></div>Nicole Clemons</a></td>
+                    <td><span>nicole.clemons</span></td>
+                    <td><span>nicole.clemons@netexlearning.com</span></td>
+                    <td><span class="badge badge-transparent badge-inactive uppercase separation-left-reset"></span></td>
+                    <td> <span class="badge badge-transparent badge-added separation-left-reset"></span></td>
+                  </tr>
+                  <tr> 
+                    <td class="checkbox-app">
+                      <div class="checkbox checkbox-primary">
+                        <input id="checkbox1" type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td><a href="groups-table-subgroups.html" role="button" class="btn btn-link separation-left-reset display-flex-center">
+                        <div class="avatar-wrapper margin-right-xlarge"><img src="apps/files/img/profile.png"></div>Brock Gump</a></td>
+                    <td><span>bruck.gump</span></td>
+                    <td><span>bruck.gump@netexlearning.com</span></td>
+                    <td><span class="badge badge-transparent badge-inactive uppercase separation-left-reset">Inactivo</span></td>
+                    <td> <span class="badge badge-transparent badge-added separation-left-reset"></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="formModalSuggestions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal form-modal fade">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+              <h4 id="myModalLabel" class="modal-title">Enviar sugerencia</h4>
+            </div>
+            <div class="modal-body">
+              <!-- Contenido modal-->
+              <form class="form form-horizontal">
+                <fieldset>
+                  <div class="form-group-title">
+                    <label>Env&iacute;anos tu sugerencia</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject" class="col-sm-2 control-label">Asunto</label>
+                    <div class="col-sm-10">
+                      <input id="subject" type="text" placeholder="Asunto" class="form-control"><span class="help-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="content" class="col-sm-2 control-label">Descripci&oacute;n</label>
+                    <div class="col-sm-10">
+                      <textarea id="content" class="form-control"></textarea><span class="help-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group form-group-submit">
+                    <div class="col-sm-12">
+                      <button type="submit" class="btn btn-default">Cancelar</button>
+                      <button type="submit" class="btn btn-primary">Env&iacute;ar</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+              <!-- ./Contenido modal-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Formulario modal-->
+      <footer class="footer">
+        <div class="box">
+          <div class="developed">Developed by Netex Learning</div>
+          <div class="version">ver. X.Y.Z</div>
+        </div>
+      </footer>
+    </div><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="apps/vendors/jquery/jquery.1.11.2.min.js"></script><!-- jQuery UI -->
+    <script src="apps/vendors/jquery-ui-1.12.1/jquery-ui.min.js"></script><!-- Importante with locales para traducción cloud calendar -->
+    <script src="apps/vendors/momentjs/moment-with-locales.min.js"> </script><!-- Full Calendar scripts -->
+    <script src="apps/vendors/fullcalendar/lib/moment.min.js"></script>
+    <script src="apps/vendors/fullcalendar/fullcalendar.min.js"></script>
+    <script src="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.min.js"></script>
+    <script src="apps/vendors/fullcalendar/lang-all.js"></script><!-- jquery autocomplete master -->
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/jquery.mockjax.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/countries.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/demo.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/src/jquery.autocomplete.js"></script><!-- boostrap table -->
+    <script src="apps/vendors/bootstrap-table/dist/bootstrap-table.min.js"></script><!-- boostrap table locales para traducción -->
+    <script src="apps/vendors/bootstrap-table/dist/locale/bootstrap-table-es-ES.min.js"></script><!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="apps/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="apps/vendors/bootstrap-selects/bootstrap-select.min.js"></script>
+    <script src="apps/vendors/bootstrap-switches/js/bootstrap-switch.min.js"></script><!-- dropzone library -->
+    <script src="apps/vendors/dropzonejs/min/dropzone.min.js"></script><!-- js theme -->
+    <script src="apps/vendors/circles/circles.min.js"></script>
+    <script src="webcomponents/js/theme.js"></script><!-- bootstrap colorpicker -->
+    <script src="apps/vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script><!-- jquery ellipsis -->
+    <script src="apps/vendors/jquery-ellipsis/jquery.ellipsis.min.js"></script><!-- jquery mobile touch event -->
+    <script src="apps/vendors/jquery-mobile-touchevent/jquery.mobile.custom.min.js"></script><!-- bootstrap datetimepicker -->
+    <script src="apps/vendors/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script><!-- circular progress bar -->
+    <script src="apps/vendors/circular-progressbar/dist/progressbar.min.js"></script><!-- infinity repeteable form fields -->
+    <script src="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/js/infinity.min.js"></script><!-- croppie -->
+    <script src="apps/vendors/croppie/croppie.min.js"></script><!-- Slide slick -->
+    <script src="apps/vendors/slick-1.6.0/slick/slick.min.js"></script><!-- Bar rating -->
+    <script src="apps/vendors/jquery-bar-rating-master/dist/jquery.barrating.min.js"></script><!-- bootstrap responsive table dropdown -->
+    <script src="apps/vendors/bootstrap-responsive-table-dropdown-master/bs-responsive-table-dropdown.js"></script>
+  </body>
+</html>

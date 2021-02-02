@@ -1,0 +1,54 @@
+@import "../../themes/less/variables";
+@import "../mixins";
+
+.info-pills {
+  margin-bottom: @padding-base;
+  .info-pill {
+    color: @color-grey;
+    padding-bottom: @padding-small;
+    display: inline-block;
+    &:not(:last-child) {
+      border-right: 1px solid @color-lightergrey;
+    }
+    i.fa {
+      padding-top: @padding-small;
+      color: @color-lightgrey;
+      font-size: @font-size-xxlarge;
+    }
+    > * {
+      float:left;
+    }
+    > div {
+      padding-left: @padding-medium;
+      .calc( width ; "100% - 22px");
+      color: @color-grey !important;
+      font-size: @font-size-medium !important;
+      font-style: normal;
+      .text-pill-important {
+        font-size: @font-size-medium;
+        font-weight: bold;
+      }
+
+      > * {
+        float: left;
+        clear: both;
+      }
+    }
+  }
+
+}
+
+@media (max-width: (@responsive-md-min-width - 1px)) {
+  .info-pills {
+    .info-pill {
+      border-right: 0 none !important;
+    }
+  }
+}
+@media (min-width: @responsive-lg-min-width) {
+  .info-pills {
+    .info-pill {
+      min-width: 240px;
+    }
+  }
+}

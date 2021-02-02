@@ -1,0 +1,259 @@
+@tablet-width : 455px;
+@tablet-height: 312px;
+@tablet-content-width : 360px;
+@tablet-content-height: 272px;
+@tablet-frame-scale: 0.33;
+@mobile-width : 164px;
+@mobile-height: 325px;
+@mobile-content-width : 138px;
+@mobile-content-height: 245px;
+@mobile-frame-scale: 0.33;
+
+//Item (max height, max width of tablet and mobile):
+@item-width : @tablet-width;
+@item-height: @mobile-height;
+
+.carousel-app{  
+    padding-bottom: 0px;    
+    width: auto;
+    margin: 0 auto!important;
+    display: table;       
+    #tour {
+        //border:1px solid blue;
+        margin: 0 auto;         
+        position: relative;        
+        left: 0px;
+        
+        .frame-wrap{            
+            padding: 0; 
+            overflow: hidden; 
+            float: left;
+            background-color:black;                            
+            .frame{                  
+                border:1px solid black;                
+                pointer-events: none;                  
+            }
+        }  
+
+        .item{            
+            min-height: @item-height;
+            min-width: @item-width;
+
+            //Object tablet:
+            .tablet{
+                background: url('@{url_images}/lookandfeel/tablet.png') no-repeat;        
+                width: @tablet-width;
+                height: @tablet-height; 
+                .frame-wrap{
+                    top: 20px;
+                    position: relative;
+                    left: 47px;
+                    width: @tablet-content-width;
+                    height: @tablet-content-height;                                      
+                    .frame{                                      
+                        width: 1095px;
+                        height: 820px;                                   
+                        .transform-scale-initial(  @tablet-frame-scale); 
+                    }
+                }          
+            }
+
+            .mobile {
+                //border:1px solid red;
+                margin: 0 auto;
+                background: url('@{url_images}/lookandfeel/mobile.png') no-repeat;        
+                width: @mobile-width;
+                height: @mobile-height; 
+                .frame-wrap{
+                    top: 38px;
+                    position: relative;
+                    left: 12px;
+                    width: @mobile-content-width;
+                    height: @mobile-content-height;                                      
+                    .frame{   
+                        width: 420px; 
+                        height: 750px;
+                        .transform-scale-initial(  @mobile-frame-scale);                                                           
+                    }
+                }            
+            }
+        }            
+    }
+
+    //BOTTOM DOTS:
+    .carousel-indicators{
+        bottom: 0px;
+        position: inherit;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        li {
+           background-color:@color-lightgrey;
+        }       
+        li.active{
+            background-color: @color-primary;
+        }
+    }
+   
+    //ARROWS:
+    .carousel-control{
+        opacity: 0;
+        background-image:none;
+        &.left,&.right{
+            opacity: 1;
+        }
+    }   
+    .arrow-left,.arrow-right{       
+        position: absolute;
+        top: 50%;
+        z-index: 5;
+        display: inline-block;
+        color: @color-lightgrey
+    }   
+    .arrow-left{
+        margin-left: -180px;      
+    }   
+    .arrow-right{
+        margin-right: -170px; 
+        right: 50%;     
+    }     
+}
+
+@media screen and (max-width: 1024px) {
+
+     .carousel-app{       
+        .arrow-left{
+            margin-left: -80px;      
+        }   
+        .arrow-right{
+            margin-right: -80px;                 
+        }
+     }
+
+}
+@media screen and (max-width: 768px) {
+
+    @tablet-width : 400px;
+    @tablet-height: 275px;
+    @tablet-content-width : 320px;
+    @tablet-content-height: 238px;
+    @tablet-frame-scale:0.292;
+
+    @mobile-width : 135px;
+    @mobile-height: 275px;
+    @mobile-content-width : 115px;
+    @mobile-content-height: 205px;
+    @mobile-frame-scale: 0.27;
+
+    //Item (max height, max width of tablet and mobile):
+    @item-width : @tablet-width;
+    @item-height: @mobile-height;
+
+    .carousel-app{
+        #tour .item{
+            min-width: @item-width;
+            min-height: @mobile-height;        
+            .tablet {    
+                background-size: 100%;                   
+                width: @tablet-width;    
+                height: @tablet-height;                                                 
+                .frame-wrap{  
+                    position: relative;
+                    top: 18px;                
+                    left: 42px;                    
+                    width: @tablet-content-width;
+                    height: @tablet-content-height;                              
+                    .frame{  
+                        .transform-scale-initial(  @tablet-frame-scale);                                                                                           
+                    }
+                }     
+            }
+            .mobile {    
+                background-size: 100%;               
+                width: @mobile-width;   
+                height: @mobile-height;                                          
+                .frame-wrap{  
+                    position: relative;
+                    top: 32px;
+                    left: 10px;
+                    width: @mobile-content-width;
+                    height: @mobile-content-height;                              
+                    .frame{   
+                        .transform-scale-initial(  @mobile-frame-scale);                                                                                            
+                    }
+                }     
+            }
+        }
+
+        .arrow-left{
+            margin-left: -80px;      
+        }   
+        .arrow-right{
+            margin-right: -80px;                 
+        }
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    
+    @tablet-width : 210px;
+    @tablet-height: 144px;
+    @tablet-content-width : 167px;
+    @tablet-content-height: 125px;
+    @tablet-frame-scale:0.15;
+
+    @mobile-width : 100px;
+    @mobile-height: 200px;
+    @mobile-content-width : 87px;
+    @mobile-content-height: 155px;
+    @mobile-frame-scale: 0.21;
+
+    //Item (max height, max width of tablet and mobile):
+    @item-width : @tablet-width;
+    @item-height: @mobile-height;
+
+    .carousel-app{
+        #tour .item{
+            min-width: @item-width;
+            min-height: @mobile-height;        
+            .tablet {    
+                background-size: 100%;                   
+                width: @tablet-width;    
+                height: @tablet-height;   
+                position: absolute;
+                bottom: 0px;                                              
+                .frame-wrap{  
+                    position: relative;
+                    top: 10px;                
+                    left: 21px;                    
+                    width: @tablet-content-width;
+                    height: @tablet-content-height;                              
+                    .frame{  
+                        .transform-scale-initial(  @tablet-frame-scale);                                                                                           
+                    }
+                }     
+            }
+            .mobile {    
+                background-size: 100%;               
+                width: @mobile-width;   
+                height: @mobile-height;                                          
+                .frame-wrap{  
+                    position: relative;
+                    top: 24px;
+                    left: 7px;
+                    width: @mobile-content-width;
+                    height: @mobile-content-height;                              
+                    .frame{   
+                        .transform-scale-initial(  @mobile-frame-scale);                                                                                            
+                    }
+                }     
+            }
+        }
+
+        .arrow-left{
+            margin-left: -40px;      
+        }   
+        .arrow-right{
+            margin-right: -40px;                 
+        }
+    }
+}

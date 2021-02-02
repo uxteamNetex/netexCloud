@@ -1,0 +1,45 @@
+@import "../../themes/less/variables";
+@import "../mixins";
+
+
+.tokenizer {
+  min-height: 40px;
+  height: auto;
+  > span {
+    background: @color-extralightgrey;
+    padding: 4px 12px 0 12px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    height: 30px;
+    margin: 4px 8px 4px 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    font-size: 14px;
+    outline: none;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    max-width: 98%;
+    position: relative;
+
+    > span {
+      color: @color-darkgrey;
+    }
+    > a {
+      top: 3px;
+      position: relative;
+      padding-left: @padding-medium;
+      display: inherit;
+    }
+
+  }
+}

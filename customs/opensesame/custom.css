@@ -1,0 +1,46 @@
+.navbar .topbar-wrapper .navbar-header {
+  background: #F58220;
+  background: -moz-linear-gradient(left, #F58220 0%, #FEBC10 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #F58220), color-stop(100%, #FEBC10));
+  background: -webkit-linear-gradient(left, #F58220 0%, #FEBC10 100%);
+  background: -o-linear-gradient(left, #F58220 0%, #FEBC10 100%);
+  background: -ms-linear-gradient(left, #F58220 0%, #FEBC10 100%);
+  background: linear-gradient(to right, #F58220 0%, #FEBC10 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F58220, endColorstr=#FEBC10, GradientType=1);
+}
+.profile-notifications-wrapper .profile-notifications-bubble{
+    background-color: #F58220 !important;
+}
+.profile-notifications-wrapper a {
+    color: #F58220 !important;
+}
+.profile-notifications-wrapper a:hover {
+    color: #CD620A !important;
+}
+.profile-notifications-wrapper span.badge {
+    background-color: #F58220 !important;
+}
+.profile-notifications-wrapper .contextual-menu .menu-item-important-action a.btn.btn-primary {
+    background-color: #F58220;
+    color: #ffffff !important;
+}
+.profile-notifications-wrapper .contextual-menu .menu-item-important-action a.btn.btn-primary:hover {
+    background-color: #CD620A;
+}
+.footer a{
+    color: #F58220 !important;
+}
+
+
+@media (max-width: 820px) {
+    .topbar-wrapper .navbar-topbar-wrapper {
+        background: #F58220;
+        background: -moz-linear-gradient(left, #F58220 0%, #FEBC10 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, #F58220), color-stop(100%, #FEBC10));
+        background: -webkit-linear-gradient(left, #F58220 0%, #FEBC10 100%);
+        background: -o-linear-gradient(left, #F58220 0%, #FEBC10 100%);
+        background: -ms-linear-gradient(left, #F58220 0%, #FEBC10 100%);
+        background: linear-gradient(to right, #F58220 0%, #FEBC10 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F58220, endColorstr=#FEBC10, GradientType=1);
+    }
+}

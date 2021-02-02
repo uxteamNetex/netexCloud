@@ -1,0 +1,182 @@
+@import "../../themes/less/variables";
+@import "../../themes/less/settings";
+@import "../mixins";
+
+@form-login-width: 350px;
+
+body.login {
+  font-size: @font-size-medium;
+  font-family: @font-family-base;
+  background: url('@{url_wallpapers}wallpaper_01.png');
+  background-size: cover !important;
+
+  &.wallpaper_1 {
+    background: url('@{url_wallpapers}wallpaper_01.png');
+  }
+  &.wallpaper_2 {
+    background: url('@{url_wallpapers}wallpaper_02.png');
+  }
+  &.wallpaper_3 {
+    background: url('@{url_wallpapers}wallpaper_03.png');
+  }
+  &.wallpaper_4 {
+    background: url('@{url_wallpapers}wallpaper_04.png');
+  }
+
+  /* Centra verticalmente el formulario de login */
+  .body-content {
+    height: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    .content {
+      height: 100%;
+      width: 100%;
+      display: table;
+      position: absolute;
+      .container-fluid {
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .login-wrapper {
+    width: @form-login-width;
+    margin: 0 auto;
+
+    .login-logo {
+      display: block;
+      background: url('@{url_logos}@{logoimagename}') no-repeat top center;
+      background-size: contain !important;
+      height: @login-logo-dimensions-height;
+      margin: 0 auto 30px;
+      width: @login-logo-dimensions-width;
+    }
+    .login-messages {
+      color: @color-darkgrey; /* @color-lightgrey*/;             
+      .login-message {
+        background-color: @color-white;/*@color-darkgrey;*/
+        opacity: 0.5;
+        text-align: center;
+        padding: @padding-medium @padding-small;
+        border-radius: @border-radius-default;
+      }
+    }
+    .login-instructions {
+      color: @color-white;
+      padding-bottom: @padding-base;
+    }
+
+    .form-login {
+      background-color: transparent;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding: @padding-base 0;
+      width: 100% !important;
+
+      .form-group, .form-group > *:not(input) {
+        text-align: center;
+      }
+      .form-group {
+        margin-bottom: @padding-base;
+        .btn.btn-link{
+          text-decoration: underline;
+          color: @color-white;  
+        }
+      }
+      label {
+        color: @color-white;
+      }
+    }
+    .form-group{
+      a{
+        color: @color-white;  
+      }
+    }
+    .forgot-password-wrapper {
+      text-align: center;
+      a {
+        color: @color-white;
+        text-decoration: underline;
+      }
+    }
+  }
+  .footer-content {
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    position: absolute;
+    color: @color-white;
+    font-size: 11px;
+    bottom: 0;
+    width: 100%;
+    padding: @padding-base @padding-xxlarge;
+    .footer-ntx-right{
+      float: right;
+    }
+    p, span{
+      margin: 0;
+      opacity: 0.5;
+    }
+  }
+}
+
+//Necesaria para que el footer no se ponga por encima de alguna zona del login.
+@media (max-height: 600px) {
+  body.login{        
+    .body-content {
+      min-height: 610px;
+    }    
+    .footer-content {
+      position: static;           
+    }
+  }
+}
+//Cambio de imagen del logo
+@media (max-height: 700px) {
+  body.login{        
+    .login-wrapper {            
+      .login-logo {
+        background: url('@{url_logos}@{logoimagename_small}') no-repeat top center;
+        background-repeat: no-repeat;
+        background-position: bottom 0 center;
+        background-size: contain;
+        height: 35px;
+      }
+    } 
+  }
+}
+
+@media (max-width: @responsive-xm-min-width) { //480px
+  body.login{        
+    .login-wrapper {            
+      width: 260px;
+      .login-logo {
+        margin-top: 30px;
+        height: 150px;
+        background-size: contain;
+      }
+    } 
+  }
+}
+@media (max-width: 480px) and (max-height: 700px) {
+  body.login{        
+    .login-wrapper {            
+      width: 260px;
+      .login-logo {
+        margin-top: 30px;
+        height: 35px;
+        background-size: contain;
+      }
+    } 
+  }
+}
+@media (max-width: @responsive-md-min-width) { //992px
+  body.login{ 
+    .footer-content {
+      .footer-ntx-right{
+        float: none;
+        margin-top: 5px;
+      }
+    }
+  }
+}

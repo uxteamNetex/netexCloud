@@ -1,0 +1,32 @@
+.htmlcanvas span {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -130px;
+  font-size: 3.5em;
+}
+.navbar-desktop-classic {
+  background: #383C46;
+}
+.navbar-desktop-classic .navbar-header-logo {
+  background: #383C46;
+}
+.navbar-desktop-classic .navbar-topbar-wrapper {
+  background: #383C46;
+}
+.navbar-desktop-classic ul.navbar-nav > li > a {
+  color: #999999;
+}
+.navbar-desktop-classic a.navbar-brand{
+  background: url('/apps/files/icons/logo/logocloud.png');
+  background-repeat: no-repeat;
+  background-position: top 0 left 0;
+  background-size: contain;
+}
+footer.footer {
+  color: #999999;
+}
+footer.footer a {
+  color: #999999;
+}

@@ -1,0 +1,452 @@
+@laptop-width : 592px;
+@laptop-height: 326px;
+@laptop-content-width : 423px;
+@laptop-content-height: 264px;
+@laptop-frame-scale: 0.33;
+
+
+
+//Item (max height, max width of laptop and mobile):
+@item-width : @laptop-width;
+@item-height: @laptop-height;
+
+.carousel-laptop{  
+    padding-bottom: 0px;    
+    width: auto;
+    margin: 0 auto!important;
+    display: table;       
+    #tour {
+        //border:1px solid blue;
+        margin: 0 auto;         
+        position: relative;        
+        left: 0px;
+        
+        .frame-wrap{            
+            padding: 0; 
+            overflow: hidden; 
+            float: left;
+            background-color:black;                            
+            .frame{                  
+                border:1px solid black;                
+                pointer-events: none;                  
+            }
+        }  
+
+        .item{            
+            min-height: @item-height;
+            min-width: @item-width;
+
+            //Object laptop:
+            .laptop{
+                background: url('@{url_images}/lookandfeel/laptop.png') no-repeat;        
+                width: @laptop-width;
+                height: @laptop-height; 
+                .frame-wrap{
+                    top: 18px;
+                    position: relative;
+                    left: 85px;
+                    width: @laptop-content-width;
+                    height: @laptop-content-height;                                      
+                    .frame{                                      
+                        width: 1280px; 
+                        height: 800px;   
+                        .transform-scale-initial(@laptop-frame-scale);                                                               
+                    }
+                }          
+            }
+        }            
+    }
+
+    //BOTTOM DOTS:
+    .carousel-indicators{
+        bottom: 0px;
+        position: inherit;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        li {
+           background-color:@color-lightgrey;
+        }       
+        li.active{
+            background-color: @color-primary;
+        }
+    }
+   
+    //ARROWS:
+    .carousel-control{
+        opacity: 0;
+        background-image:none;
+        &.left,&.right{
+            opacity: 1;
+        }
+    }   
+    .arrow-left,.arrow-right{       
+        position: absolute;
+        top: 50%;
+        z-index: 5;
+        display: inline-block;
+        color: @color-lightgrey
+    }   
+    .arrow-left{
+        margin-left: -180px;      
+    }   
+    .arrow-right{
+        margin-right: -170px; 
+        right: 50%;     
+    }     
+}
+
+
+@media screen and (max-width: 1024px) {
+
+     .carousel-laptop{       
+        .arrow-left{
+            margin-left: -70px;      
+        }   
+        .arrow-right{
+            margin-right: -70px;                 
+        }
+     }
+
+}
+@media screen and (max-width: 768px) {
+
+    @laptop-width : 400px;
+    @laptop-height: 222px;
+    @laptop-content-width : 284px;
+    @laptop-content-height: 178px;
+    @laptop-frame-scale:0.223;
+   
+    //Item (max height, max width of laptop and mobile):
+    @item-width : @laptop-width;
+    @item-height: @laptop-height;
+
+    .carousel-laptop{
+        #tour .item{
+            min-width: @item-width;
+            min-height: @item-height;        
+            .laptop {    
+                background-size: 100%;                   
+                width: @laptop-width;    
+                height: @laptop-height;                                                 
+                .frame-wrap{  
+                    position: relative;
+                    top: 12px;                
+                    left: 57px;                    
+                    width: @laptop-content-width;
+                    height: @laptop-content-height;                              
+                    .frame{  
+                        .transform-scale-initial(  @laptop-frame-scale);                                                                                           
+                    }
+                }     
+            }            
+        }
+
+        .arrow-left{
+            margin-left: -80px;      
+        }   
+        .arrow-right{
+            margin-right: -80px;                 
+        }
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    
+    @laptop-width : 210px;
+    @laptop-height: 120px;
+    @laptop-content-width : 149px;
+    @laptop-content-height: 93px;
+    @laptop-frame-scale:0.117;
+
+    //Item (max height, max width of laptop and mobile):
+    @item-width : @laptop-width;
+    @item-height: @laptop-height;
+
+    .carousel-laptop{
+        #tour .item{
+            min-width: @item-width;
+            min-height: @item-height;        
+            .laptop {    
+                background-size: 100%;                   
+                width: @laptop-width;    
+                height: @laptop-height;   
+                position: absolute;
+                bottom: 0px;                                              
+                .frame-wrap{  
+                    position: relative;
+                    top: 6px;                
+                    left: 30px;                    
+                    width: @laptop-content-width;
+                    height: @laptop-content-height;                              
+                    .frame{  
+                        .transform-scale-initial(  @laptop-frame-scale);                                                                                           
+                    }
+                }     
+            }           
+        }
+
+        .arrow-left{
+            margin-left: -40px;      
+        }   
+        .arrow-right{
+            margin-right: -40px;                 
+        }
+    }
+}
+
+/*.carousel-laptop{  
+    padding-bottom: 35px;    
+    width: auto;
+    margin: 0 auto!important;
+    display: table;
+    #laptop {
+        //border:1px solid red;
+        background: url('@{url_images}/lookandfeel/laptop.png') no-repeat;        
+        width: @laptop-width;
+        height: @laptop-height;       
+    }
+   
+    #tour {
+        //border:1px solid blue;
+        margin: 0 auto;         
+        position: relative;
+        top: 18px;
+        left: 0px;
+        
+        .frame-wrap{
+           width: @laptop-content-width;
+           height: @laptop-content-height;
+           padding: 0; 
+           overflow: hidden; 
+           float: left;
+           background-color:black;                            
+            .frame{                  
+                border:1px solid black;                
+                pointer-events: none;   
+                width: 1280px; 
+                height: 800px;                                   
+                -moz-transform: scale(@laptop-frame-scale);
+                -moz-transform-origin: 0 0;
+                -o-transform: scale(@laptop-frame-scale);
+                -o-transform-origin: 0 0;
+                -webkit-transform: scale(@laptop-frame-scale);
+                -webkit-transform-origin: 0 0;
+            }
+        }        
+    }
+   
+   //CONTENIDO:
+    #tour,  
+    #tour .carousel-inner img, 
+    #tour .desktop-preview, 
+    #tour .desktop-elements{
+       width: @laptop-content-width;
+       height: @laptop-content-height;
+    }
+   
+    
+   .carousel-indicators{
+       bottom:-90px;
+       li {
+           background-color:@color-lightgrey;
+       }       
+       li.active{
+            background-color: @color-primary;
+       }
+   }
+   
+   //ARROWS:
+   .arrow-left,.arrow-right{
+        position: absolute;
+        top: 50%;
+        z-index: 5;
+        display: inline-block;
+        color: @color-lightgrey
+   }   
+   .arrow-left{
+        margin-left: -180px;      
+   }   
+   .arrow-right{
+        margin-right: -170px; 
+        right: 50%;     
+   }
+   
+   .carousel-inner .desktop-preview-wrapper{                
+        padding: 0px;            
+        .desktop-preview {
+            //border:1px solid red;
+            width: @laptop-content-width;
+            height: @laptop-content-height;               
+        }
+        
+        .logo-preview {
+            //border:1px solid red;
+            //display:none;            
+        }
+       
+        .desktop-elements {
+            //border:1px solid red;
+            position: absolute;
+            top:0;
+            left:0;            
+            padding:0px;
+            margin:0px;           
+        }        
+   }
+     
+}
+
+ @media screen and (max-width: 1024px) {
+    @laptop-frame-scale : 0.31 ;
+    .carousel-laptop{ 
+        margin-left:80px;
+        padding-bottom: 55px;
+        #laptop {            
+            width: 550px;
+            height: 303px;
+            background-size: 100%;
+            margin-left: 0px;            
+            margin-bottom: -20px;
+            position: static;
+        }
+        #tour {           
+            top: 14px;
+        }
+
+        #tour,  
+        #tour .carousel-inner img, 
+        #tour .desktop-preview, 
+        #tour .desktop-elements,
+        #tour .frame-wrap{
+            width: 393px;
+            height: 246px;
+        }
+                  
+        #tour .frame-wrap{                                
+            .frame{                                                                           
+                -moz-transform: scale(@laptop-frame-scale);
+                -moz-transform-origin: 0 0;
+                -o-transform: scale(@laptop-frame-scale);
+                -o-transform-origin: 0 0;
+                -webkit-transform: scale(@laptop-frame-scale);
+                -webkit-transform-origin: 0 0;
+            }
+        }           
+        
+        .desktop-preview-wrapper .logo-preview{
+            height: 50px;
+            width: 90px;            
+            margin: 10px 0 0 10px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {  
+    @laptop-frame-scale:0.224;
+    
+    .carousel-laptop{  
+        padding-bottom: 95px;
+        margin-left:50px;    
+        #laptop {
+            width: 400px;
+            height: 235px;
+            background-size: 100%;
+            margin-left: 0px;     
+            margin-bottom: -56px;
+            position: static;
+        }
+        #tour {
+            top: 12px;            
+        }
+        #tour,  
+        #tour .carousel-inner img, 
+        #tour .desktop-preview, 
+        #tour .desktop-elements,
+        #tour .frame-wrap{
+            width: 286px;
+            height: 178px;
+        }     
+        #tour .frame-wrap{                                
+            .frame{                                                                           
+                -moz-transform: scale(@laptop-frame-scale);
+                -moz-transform-origin: 0 0;
+                -o-transform: scale(@laptop-frame-scale);
+                -o-transform-origin: 0 0;
+                -webkit-transform: scale(@laptop-frame-scale);
+                -webkit-transform-origin: 0 0;
+            }
+        } 
+        
+        .desktop-preview-wrapper .logo-preview{
+            height: 30px;
+            width: 70px;            
+            margin: 7px 0 0 7px;
+        }
+        
+        .arrow-left{
+            margin-left: -100px;      
+        }   
+        .arrow-right{
+            margin-right: -100px;                 
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+     @laptop-frame-scale:0.118;
+     
+    .carousel-laptop{         
+        margin-left:-20px;
+        padding-bottom:35px;
+        
+        #laptop {
+            //background-image: none;
+            text-align: center;
+            width: 210px;
+            height: 165px;
+        }
+        #tour {
+            top: 6px;
+            left: 0;                                
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #tour .carousel-inner img {           
+            overflow: hidden;
+        }
+        
+        #tour,  
+        #tour .carousel-inner img, 
+        #tour .desktop-preview, 
+        #tour .desktop-elements,
+        #tour .frame-wrap{
+            width: 150px;
+            height: 94px;
+        }    
+        
+        #tour .frame-wrap{                                
+            .frame{                                                                           
+                -moz-transform: scale(@laptop-frame-scale);
+                -moz-transform-origin: 0 0;
+                -o-transform: scale(@laptop-frame-scale);
+                -o-transform-origin: 0 0;
+                -webkit-transform: scale(@laptop-frame-scale);
+                -webkit-transform-origin: 0 0;
+            }
+        }         
+        
+        .desktop-preview-wrapper .logo-preview{
+            height: 15px;
+            width: 50px;            
+            margin: 5px 0 0 5px;
+        }
+        
+        .carousel-indicators{
+            bottom:-60px;
+        }
+        .arrow-left{
+            margin-left: -50px;      
+        }   
+        .arrow-right{
+            margin-right: -50px;                 
+        }
+    }
+}*/

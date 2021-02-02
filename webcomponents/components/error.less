@@ -1,0 +1,97 @@
+@import "../../themes/less/variables";
+@import "../mixins";
+@import "helpers";
+@import "icons";
+
+/************************************************/
+/***************** UXIA ***********************/
+
+body.page-error {
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .error-text-box {
+    margin-top: 15%;
+    margin-left: 5%;
+  }
+  .error-text-box h1 {
+    color: @color-primary;
+    margin-bottom: 30px;
+  }
+  .error-text-box button {
+    margin-top: 30px;
+  }
+}
+
+body.page-error.page-error-01 {
+  background-image: url('@{url_images}error/error_01_bg.png');
+}
+@media screen and (max-width: 820px) {
+  body.page-error.page-error-01 {
+    background-image: url('@{url_images}error/error_01_bg_820.png');
+  }
+}
+@media screen and (max-width: 600px) {
+  body.page-error.page-error-01 {
+    background-image: url('@{url_images}error/error_01_bg_600.png');
+  }
+}
+@media screen and (max-width: 320px) {
+  body.page-error.page-error-01 {
+    background-image: url('@{url_images}error/error_01_bg_320.png');
+  }
+}
+
+
+body.page-error.page-error-02 {
+  background-image: url('@{url_images}error/error_02_bg.png');
+
+}
+@media screen and (max-width: 820px) {
+  body.page-error.page-error-02 {
+    background-image: url('@{url_images}error/error_02_bg_820.png');
+
+  }
+}
+@media screen and (max-width: 600px) {
+  body.page-error.page-error-02 {
+    background-image: url('@{url_images}error/error_02_bg_600.png');
+
+  }
+}
+@media screen and (max-width: 320px) {
+  body.page-error.page-error-02 {
+    background-image: url('@{url_images}error/error_02_bg_320.png');
+
+  }
+}
+
+body.page-error.page-error-03 {
+  background-image: url('@{url_images}error/error_03_bg.png');
+
+}
+@media screen and (max-width: 820px) {
+  body.page-error.page-error-03 {
+    background-image: url('@{url_images}error/error_03_bg_820.png');
+
+  }
+}
+@media screen and (max-width: 600px) {
+  body.page-error.page-error-03 {
+    background-image: url('@{url_images}error/error_03_bg_600.png');
+
+  }
+}
+@media screen and (max-width: 320px) {
+  body.page-error.page-error-03 {
+    background-image: url('@{url_images}error/error_03_bg_320.png');
+  }
+}
+
+

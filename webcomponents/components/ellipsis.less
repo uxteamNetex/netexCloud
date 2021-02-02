@@ -1,0 +1,70 @@
+/*Solo funciona en chrome*/
+.ellipsis-chrome-1{
+  display: -webkit-box;
+  -webkit-line-clamp: 1; // max nb lines to show
+  -webkit-box-orient: vertical;
+}
+
+.ellipsis-chrome-2{
+  display: -webkit-box;
+  -webkit-line-clamp: 2; // max nb lines to show
+  -webkit-box-orient: vertical;
+}
+.ellipsis-chrome-3{
+  display: -webkit-box;
+  -webkit-line-clamp: 3; // max nb lines to show
+  -webkit-box-orient: vertical;
+}
+
+/* Aplicando shadows */
+.ellipsis-shadow-1{    
+    .ellipsis-multiline(1; 30px);
+}
+.ellipsis-shadow-2{    
+    .ellipsis-multiline(2; 60px);
+}
+.ellipsis-shadow-3{    
+    .ellipsis-multiline(3; 90px);
+}
+.ellipsis-shadow-1:after, .ellipsis-shadow-2:after, .ellipsis-shadow-3:after{
+    content: "";            
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%;            
+    height: 1.5em;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 100%);
+    pointer-events: none;
+} 
+
+
+/* Aplicandos puntos*/
+.ellipsis-points-1{  
+  .ellipsis-multiline(1; 30px);
+}
+.ellipsis-points-2{  
+  .ellipsis-multiline(2; 60px);
+}
+.ellipsis-points-3{  
+  .ellipsis-multiline(3; 90px);
+}
+
+//Mediante javascript jquery.ellipsis   
+.ellip {
+  display: block;
+  height: 100%;
+}
+
+.ellip-line {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  max-width: 100%;
+}
+
+.ellip,
+.ellip-line {
+  position: relative;
+  overflow: hidden;
+}

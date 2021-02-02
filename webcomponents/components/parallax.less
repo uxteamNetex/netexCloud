@@ -1,0 +1,237 @@
+@import "../../themes/less/variables";
+@import "../../themes/less/settings";
+@import "../mixins";
+@import "helpers";
+@import "icons";
+
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: @parallax-height;
+  margin-right: -@padding-base;
+  margin-left: -@padding-base;
+  &.parallax-container-small{
+    height: 250px;
+    .parallax{
+      background-color: @color-black;
+      img{
+        opacity: 0.9;
+      }
+    }
+    .parallax-titles{
+      .img-wrapper{
+        border-radius: 50%;
+        overflow: hidden;
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+        &.img-wrapper-round-borders{
+          border-radius: 8px !important;  
+        }
+        img{
+          max-height: 100px;  
+        }
+      }
+      h3{
+        font-size: @font-size-xxxxlarge;
+      }
+      h3, p{
+        text-shadow: 1px 1px 4px @color-black;  
+      }
+    }
+    .tabs-wrapper{
+      .nav.nav-tabs{
+        li{
+          a{
+            text-shadow: 1px 1px 4px @color-black;
+          }
+        }
+      }  
+    }
+  }
+  &.parallax-container-xs{
+    height: 180px;
+    .header-group-image{
+      height: 180px;
+    }
+    .img-wrapper{
+      border-radius: 50%;
+      height: 40px;
+      left: 20px;
+      overflow: hidden;
+      position: absolute;
+      top: 50px;
+      width: 40px;
+      img {
+        max-height: 40px;
+      }
+    }
+    .breadcrumbs_title{
+      left: 68px;  
+    }
+  }
+  .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    img {
+      display: none;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      transform: translateX(-50%);
+    }
+  }
+
+  .menu-item-dropdown{
+    color: @color-white;
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 30px;
+  }
+  .parallax-titles {
+    color: @color-white;
+    left: 50%;
+    margin-right: -50%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+  .tabs-wrapper {
+    bottom: 0;
+    border: none;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+    position: absolute;
+    width: 100%;
+    .nav.nav-tabs {
+      background: transparent;
+      li {
+        background: transparent;
+        padding-bottom: 5px;
+        a{
+          color: @color-white;
+          font-size: @font-size-medium;
+          opacity: 0.7;
+        }
+        &.active, &:hover, &:active, &:focus {
+          background: transparent; 
+          border-bottom: 5px solid @color-white;
+          font-weight: normal;
+          padding-bottom: 0;
+          a{
+            background: transparent;
+            cursor: pointer; 
+            opacity: 1;  
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Detalle de un contenedor que va a continuacion de un parallax
+
+.parallax-container + .detail-parallax-container-wrapper {
+
+  margin: 0 auto;
+  max-width: @parallax-container-width;
+  width: @parallax-container-width;
+  .z-depth-1();
+  margin-top: -@parallax-container-offset-top;
+
+  .detail-parallax-container {
+    padding: 0 @padding-base;
+    width: 100%;
+
+    background-color: @color-white;
+  /*  margin: 0 auto; */
+    min-height: @parallax-container-min-height;
+    .detail-header {
+      background-color: inherit;
+      h3, h4 {
+        font-weight: inherit;
+        span.badge { margin-left: @padding-medium; vertical-align: middle; }
+      }
+    }
+  }
+}
+
+@media(max-width: @responsive-md-min-width) { //992px
+  .parallax-container {
+    .tabs-wrapper {
+      .nav.nav-tabs {
+        li {
+          a{
+            font-size: 12px;
+            padding: 5px 8px;
+          }
+        }
+      }
+    }  
+  }  
+}
+
+@media all and (max-width: @responsive-sm-min-width) {
+  .parallax-container + .detail-parallax-container-wrapper {
+    margin-top: 0;
+    margin-left: -@padding-base;
+    margin-right: -@padding-base;
+    .calc(width; '100% + @{padding-base} + @{padding-base}');
+  }
+}
+
+@media all and (min-width: (@responsive-sm-min-width + 1px)) and (max-width: 1100px) {
+  .parallax-container + .detail-parallax-container-wrapper {
+    .calc(width; '100% - @{padding-base} - @{padding-base}');
+  }
+}
+
+//imagenes
+@header-img-width: 170px;
+@header-img-height: 170px;
+
+.parallax-detail-content-image(@_header-img-width; @_header-img-height; @_min-width; @_max-width) {
+
+  @media all and (min-width: @_min-width) and (max-width: @_max-width) {
+    .parallax-container + .detail-parallax-container-wrapper {
+      //tama�os de la imagen
+      .col-image {
+        max-width: @_header-img-width + @padding-base + @padding-base;
+      }
+      .col-data {
+        .calc(width, "100% - @{_header-img-width} - @{padding-base} - @{padding-base}");
+      }
+      .image-circle-wrapper(@_header-img-width; @_header-img-height; @img-border: 0; @circle-padding: 5px);
+      .image-circle {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.parallax-detail-content-image(@header-img-width; @header-img-height; @responsive-md-min-width; 999999px);
+
+@media all and (max-width: 320px) {
+  .parallax-container {
+    height: 90px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .parallax-container {
+    height: 216px;
+  }
+}

@@ -1,0 +1,38 @@
+
+@import "../../themes/less/variables";
+@import "../mixins";
+
+@media (min-width:769px) and (orientation: portrait),
+  (min-width:1025px) and (orientation: landscape) {
+
+  .stickybar {
+
+    position: relative;
+    z-index: @zindex-sticky-fixed;
+    &.fixed {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: @zindex-sticky;
+    }
+    &.fixed.absolute {
+      position: absolute;
+    }
+  }
+
+  .body-content .content .container-fluid {
+    .stickybar.fixed {
+      margin-top: @navbar-height;
+    }
+    > .stickybar.fixed {
+      width: 100%;
+      .transiction-stickybar;
+    }
+  }
+  .menu-lateral.collapse ~ .content .container-fluid > .stickybar.fixed {
+    .calc(width; "100% - @{navbar-lateral-width}");
+  }
+  .menu-lateral.collapse:not(.in) ~ .content .container-fluid > .stickybar.fixed {
+      .calc(width; "100% - @{menu-lateral-collapse-width}");
+  }
+}

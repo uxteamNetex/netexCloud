@@ -1,0 +1,75 @@
+.floated-actions-space {
+    height: 20px;
+}
+.floated-actions{
+    background-color: #eee;
+    bottom: 0;
+    border-top: 1px solid @color-lightergrey;
+    min-height: 80px;
+    margin-left: -15px;
+    padding: 10px 15px 20px;
+    position: fixed;
+    text-align: right;
+    .calc(width; "100% - @{navbar-header-width}");
+    z-index: 9999;
+    ul.navbar-nav{
+        float: right;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        width: auto;
+        li{
+            float: left;
+            margin-top: 10px;
+            label{
+                margin-top: 10px;
+            }
+            .select-report-type{
+                margin-bottom: 0;
+                width: 150px;
+            }
+            .form-group{
+                width: 250px;
+                margin-bottom: 0;
+                margin-right: 15px;    
+            }
+            .btn{
+                margin: 0;
+            }
+        }  
+    }
+}
+.content-floated-actions{
+    padding-bottom: 80px;
+}
+.footer-floated-actions{
+    bottom: 80px !important;
+}
+
+
+@media (max-width: 810px) { 
+    .floated-actions{
+        text-align: left;
+        ul.navbar-nav{
+            display: inline-block;
+            width: 100%;
+            li{
+                float: none;
+                label{
+                    margin-top: 0;
+                }
+                .select-report-type{
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
+                .form-group{
+                    margin-bottom: 10px;
+                    width: 100%;   
+                }
+            }
+        }
+    }
+    .content-floated-actions{
+        padding-bottom: 200px;
+    }
+}

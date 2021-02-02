@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>LCloud</title><!-- Bootstrap -->
+    <link href="apps/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--link( rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")-->
+    <link rel="stylesheet" href="apps/vendors/font-awesome-4.5.0/css/font-awesome.min.css"><!-- Theme -->
+    <link href="styles/theme_lcloud.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="apps/vendors/html5shiv/html5shiv.min.js"></script>
+    <script src="apps/vendors/respond/respond.min.js"></script><![endif]-->
+    <!-- jquery UI -->
+    <link href="apps/vendors/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet"><!-- bootstrap colorpicker -->
+    <link href="apps/vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet"><!-- bootstrap datetimepicker -->
+    <link href="apps/vendors/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"><!-- infinity repeteable form fields -->
+    <link href="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/css/infinity.min.css" rel="stylesheet"><!-- croppie -->
+    <link href="apps/vendors/croppie/croppie.css" rel="stylesheet"><!-- Slide slick -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick.css" rel="stylesheet"><!-- Add the new slick-theme.css if you want the default styling -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick-theme.css" rel="stylesheet"><!-- Bar rating theme -->
+    <link href="apps/vendors/jquery-bar-rating-master/dist/themes/css-stars.css" rel="stylesheet"><!-- bootstrap table -->
+    <link href="apps/vendors/bootstrap-table/dist/bootstrap-table.min.css" rel="stylesheet"><!-- animate -->
+    <link href="apps/vendors/animate/animate.css" rel="stylesheet"><!-- jquery autocomplete master -->
+    <link href="apps/vendors/jQuery-Autocomplete-master/content/styles.css" rel="stylesheet"><!-- Full Calendar Assets -->
+    <link href="apps/vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar_customized.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+    <link href="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.css" rel="stylesheet">
+  </head>
+  <body class=" ">
+    <nav class="navbar navbar-topbar">
+      <div class="container-fluid topbar-wrapper">
+        <div class="navbar-header"><a href="#" class="navbar-brand">LCloud</a></div>
+        <div id="navbar" class="navbar-topbar-wrapper navbar-collapse"><a href="javascript:window.history.back();" class="navigation-back"><i class="fa fa-chevron-left"></i></a>
+          <label>New user</label>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="profile-username"><a href="#">Federica Garcia</a></li>
+            <li class="profile-notifications-wrapper">
+              <div class="dropdown">
+                <div id="dropdownMenu-profile" data-toggle="dropdown" aria-expanded="true" class="avatar-wrapper"><img src="apps/files/img/profile.png"></div>
+                <div class="profile-notifications-bubble">122</div>
+                <ul role="menu" aria-labelledby="dropdownMenu-profile" class="dropdown-menu contextual-menu">
+                  <li class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner"></span></li>
+                  <li class="menu-item-iconavatar"><img src="apps/files/img/profile.png" alt="" title="Perfil"></li>
+                  <li class="menu-item-iconavatar-right">
+                    <ul>
+                      <li class="menu-item-username"><i class="icon-ntx icon-cloud"></i><span>Federica Garcia   </span></li>
+                      <li class="menu-subitem-username"><span>federica.garcia                                                                                                                           </span></li>
+                      <li><a href="#">Tu cuenta</a></li>
+                      <li><a href="#">Notificaciones</a><span class="badge">7</span></li>
+                      <li><a href="#">Anuncios</a><span class="badge">4</span></li>
+                    </ul>
+                  </li>
+                  <li class="item-divisor"><span class="non-link"></span></li>
+                  <li><a href="#">Novedades en learningCloud</a></li>
+                  <li><a href="#">Acceso a manuales</a></li>
+                  <li><a href="#">Centro de ayuda</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#formModalSuggestions">Sugerencias</a></li>
+                  <li class="menu-item-important-action"><a href="#" rel="nofollow" class="btn btn-primary">Mi perfil Social</a></li>
+                  <li class="item-divisor"><span></span></li>
+                  <li class="menu-item-logout"><a href="#" rel="nofollow"><i class="icon-ntx icon-poweroff"></i> Salir de learningCloud</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="toggle-dashboard"><a href="javascript:void(0);" data-toggle="collapse" data-target="#menu-dashboard" class="collapsed"><span aria-hidden="true" class="glyphicon glyphicon-th"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard-wrapper-small">
+        <div id="menu-dashboard" class="row dashboard collapse">
+          <div class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner">    </span></div>
+          <div id="menu-apps" class="row">  
+            <div class="col-lg-12">   
+              <div class="col-md-1 app-wrapper">            <a href="apps/lcloud/index.html" data-toggle="tooltip" data-placement="top" title="CLOUD"><span class="icon-wrapper"><img src="apps/files/projects/lcloud.png"></span>
+                  <label>CLOUD</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/lcentral/index.html" data-toggle="tooltip" data-placement="top" title="CENTRAL"><span class="icon-wrapper"><img src="apps/files/projects/lcentral.png"></span>
+                  <label>CENTRAL                </label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/default/index.html" data-toggle="tooltip" data-placement="top" title="DEFAULT"><span class="icon-wrapper"><img src="apps/files/projects/default.png"></span>
+                  <label>DEFAULT</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/old/index.html" data-toggle="tooltip" data-placement="top" title="Old files"><span class="icon-wrapper"><img src="apps/files/projects/old.png"></span>
+                  <label>OLD</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="body-content">
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Button trigger modal-->
+              <form class="form form-horizontal">
+                <fieldset>
+                  <div class="form-group">
+                    <button type="button" data-toggle="modal" data-target="#formModal" class="btn btn-primary btn-lg"><i class="fa fa-user"></i> Editar usuario</button>
+                  </div>
+                </fieldset>
+              </form>
+              <!-- Formulario Modal-->
+              <div id="formModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal form-modal fade">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                      <h4 id="myModalLabel" class="modal-title">Edici&oacute;n de usuario</h4>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Contenido modal-->
+                      <form class="form form-horizontal">
+                        <fieldset>
+                          <div class="form-group-title">
+                            <label>Informaci&oacute;n de registro</label>
+                          </div>
+                          <div class="form-group form-group-two-columns col-reverse-responsive col-reverse-responsive-md">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                              <div class="form-group">
+                                <!--label.col-sm-2.control-label| User photo
+                                -->
+                                <div class="col-sm-12">
+                                  <div id="dzupload_1" class="dropzone">
+                                    <div class="dz-default dz-message">
+                                      <label class="title">Arrastra tu imagen aqu&iacute;...</label><span>&oacute;</span>
+                                      <button id="btn_dzupload_3" onclick="return false;" class="btn btn-default">Selecciona en tu disco</button><span class="info">Formatos: jpg, png &oacute; gif<br>Dimensiones: 280x280 px, máximo 2Mb                                    </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="select_timezone" class="control-label col-sm-4 col-xs-12">Timezone *</label>
+                                <div class="col-sm-8 col-xs-12">
+                                  <select id="select_timezone" title="Timezone" data-live-search="true" class="selectpicker">
+                                    <option>Espa&ntilde;ol</option>
+                                    <option>Ingl&eacute;s</option>
+                                    <option>Alem&aacute;n</option>
+                                    <option>Italiano</option>
+                                    <option>Holand&eacute;s</option>
+                                    <option>Gallego</option>
+                                    <option>Franc&eacute;s</option>
+                                    <option>Ruso</option>
+                                    <option>Catal&aacute;n</option>
+                                    <option>Euskera</option>
+                                  </select><span class="help-block"></span>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="select_language" class="control-label col-sm-4 col-xs-12">Language *</label>
+                                <div class="col-sm-8 col-xs-12">
+                                  <select id="select_language" title="Language" data-live-search="true" class="selectpicker">
+                                    <option>Espa&ntilde;ol</option>
+                                    <option>Ingl&eacute;s</option>
+                                    <option>Alem&aacute;n</option>
+                                    <option>Italiano</option>
+                                    <option>Holand&eacute;s</option>
+                                    <option>Gallego</option>
+                                    <option>Franc&eacute;s</option>
+                                    <option>Ruso</option>
+                                    <option>Catal&aacute;n</option>
+                                    <option>Euskera</option>
+                                  </select><span class="help-block"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                              <div class="form-group">
+                                <label for="username" class="control-label col-sm-4 col-xs-12">Username *</label>
+                                <div class="col-sm-8 col-xs-12">                                       <span id="username" class="form-control"> username2                                  </span><span class="help-block"></span></div>
+                              </div>
+                              <div class="form-group">
+                                <label for="name" class="control-label col-sm-4 col-xs-12">Name *</label>
+                                <div class="col-sm-8 col-xs-12">
+                                  <input id="name" type="text" placeholder="Name" class="form-control"><span class="help-block"></span>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="surname" class="control-label col-sm-4 col-xs-12">Surname *</label>
+                                <div class="col-sm-8 col-xs-12">
+                                  <input id="surname" type="text" placeholder="Surname" class="form-control"><span class="help-block"></span>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="email" class="control-label col-sm-4 col-xs-12">Email *</label>
+                                <div class="col-sm-8 col-xs-12">
+                                  <input id="email" type="email" placeholder="Email" class="form-control"><span class="help-block"></span>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="username" class="control-label col-sm-4 col-xs-12">Username *</label>
+                                <div class="col-sm-8 col-xs-12">
+                                  <input id="username" type="text" placeholder="Username" class="form-control"><span class="help-block"></span>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="password" class="control-label col-sm-4 col-xs-12">Password *</label>
+                                <div class="col-sm-8 col-xs-12">
+                                  <input id="password" type="password" placeholder="Password" class="form-control"><span class="help-block"></span>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="select_customer" class="control-label col-sm-4 col-xs-12">Customer</label>
+                                <div class="col-sm-8 col-xs-12">
+                                  <select id="select_customer" title="Customer" data-live-search="true" multiple="" class="selectpicker">
+                                    <option>Netex</option>
+                                    <option data-subtext="option subtext">Acme</option>
+                                    <option>Inditex</option>
+                                    <option>Tecnocom</option>
+                                  </select><span class="help-block"></span>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="officephone" class="control-label col-sm-4 col-xs-12">
+                                  Office
+                                  phone
+                                </label>
+                                <div class="col-sm-8 col-xs-12">
+                                  <input id="officephone" type="tel" placeholder="Office phone" class="form-control"><span class="help-block"></span>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="mobilephone" class="control-label col-sm-4 col-xs-12">
+                                  Mobile
+                                  phone
+                                </label>
+                                <div class="col-sm-8 col-xs-12">
+                                  <input id="mobilephone" type="tel" placeholder="Mobile phone" class="form-control"><span class="help-block"></span>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="location" class="control-label col-sm-4 col-xs-12">Location</label>
+                                <div class="col-sm-8 col-xs-12">
+                                  <input id="location" type="text" placeholder="Location" class="form-control"><span class="help-block"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group-title">
+                            <label>Acceso de usuario</label>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                              <div class="row form-groups-checkboxes">
+                                <div class="col-sm-4 col-xs-6 form-group-checkbox">
+                                  <div class="title">
+                                    <label>learningCloud *</label>
+                                  </div>
+                                  <div class="checkbox checkbox-primary">
+                                    <input id="chk_lc_admin" type="checkbox">
+                                    <label for="chk_lc_admin">Apps de Admin</label>
+                                  </div>
+                                  <div class="checkbox checkbox-primary">
+                                    <input id="chk_lc_user" type="checkbox">
+                                    <label for="chk_lc_user">Apps de User</label>
+                                  </div>
+                                  <div class="checkbox checkbox-primary">
+                                    <input id="chk_lc_superadmin" type="checkbox">
+                                    <label for="chk_lc_superadmin">Apps de Superadmin</label>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-6 form-group-checkbox">
+                                  <div class="title">
+                                    <label>learningCentral</label>
+                                  </div>
+                                  <div class="checkbox checkbox-primary">
+                                    <input id="chk_lce_admin" type="checkbox">
+                                    <label for="chk_lce_admin">Apps de Admin</label>
+                                  </div>
+                                  <div class="checkbox checkbox-primary">
+                                    <input id="chk_lce_trainer" type="checkbox">
+                                    <label for="chk_lce_trainer">Apps de Trainer</label>
+                                  </div>
+                                  <div class="checkbox checkbox-primary">
+                                    <input id="chk_lce_user" type="checkbox">
+                                    <label for="chk_lce_user">Apps de User</label>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-6 form-group-checkbox">
+                                  <div class="title">
+                                    <label>learningSocial</label>
+                                  </div>
+                                  <div class="checkbox checkbox-primary">
+                                    <input id="chk_ls_admin" type="checkbox">
+                                    <label for="chk_ls_admin">Apps de Admin</label>
+                                  </div>
+                                  <div class="checkbox checkbox-primary">
+                                    <input id="chk_ls_user" type="checkbox">
+                                    <label for="chk_ls_user">Apps de User</label>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-6 form-group-checkbox">
+                                  <div class="title">
+                                    <label>learningCentral</label>
+                                  </div>
+                                  <div class="checkbox checkbox-primary">
+                                    <input id="chk_lce2_admin" type="checkbox">
+                                    <label for="chk_lce2_admin">Apps de Admin</label>
+                                  </div>
+                                  <div class="checkbox checkbox-primary">
+                                    <input id="chk_lce2_trainer" type="checkbox">
+                                    <label for="chk_lce2_trainer">Apps de Trainer</label>
+                                  </div>
+                                  <div class="checkbox checkbox-primary">
+                                    <input id="chk_lce2_user" type="checkbox">
+                                    <label for="chk_lce2_user">Apps de User</label>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-6 form-group-checkbox">
+                                  <div class="title">
+                                    <label>learningPlay</label>
+                                  </div>
+                                  <div class="checkbox checkbox-primary">
+                                    <input id="chk_lp_admin" type="checkbox">
+                                    <label for="chk_lp_admin">Apps de Admin</label>
+                                  </div>
+                                  <div class="checkbox checkbox-primary">
+                                    <input id="chk_lp_trainer" type="checkbox">
+                                    <label for="chk_lp_trainer">Apps de Trainer</label>
+                                  </div>
+                                  <div class="checkbox checkbox-primary">
+                                    <input id="chk_lp_user" type="checkbox">
+                                    <label for="chk_lp_user">Apps de User</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group-title separation-bottom-xxxlarge">
+                            <label class="pull-left">Otra informaci&oacute;n</label>
+                            <div class="toggle pull-right separation-right"><a href="#" data-toggle="collapse" data-target="#aboutme,#interests,#skills" onclick="$(this).find('i').hasClass('fa-caret-down')?$(this).find('i').removeClass('fa-caret-down').addClass('fa-caret-up'):$(this).find('i').removeClass('fa-caret-up').addClass('fa-caret-down')"><i class="fa fa-caret-down fa-color-default"></i></a></div>
+                          </div>
+                          <div id="aboutme" class="form-group collapse">
+                            <label for="aboutme" class="col-sm-2 control-label">About me</label>
+                            <div class="col-sm-10">
+                              <textarea id="aboutme" class="form-control"></textarea><span class="help-block"></span>
+                            </div>
+                          </div>
+                          <div id="interests" class="form-group collapse">
+                            <label for="interests" class="col-sm-2 control-label">Interests</label>
+                            <div class="col-sm-10">
+                              <textarea id="interests" class="form-control"></textarea><span class="help-block"></span>
+                            </div>
+                          </div>
+                          <div id="skills" class="form-group collapse">
+                            <label for="skills" class="col-sm-2 control-label">Skills</label>
+                            <div class="col-sm-10">
+                              <textarea id="skills" class="form-control"></textarea><span class="help-block"></span>
+                            </div>
+                          </div>
+                          <div class="form-group form-group-submit">
+                            <div class="col-sm-12">
+                              <div class="checkbox checkbox-primary separation-right">
+                                <input id="chk_send_email_wellcome" type="checkbox">
+                                <label for="chk_send_email_wellcome">Enviar correo de bienvenida</label>
+                              </div>
+                              <button type="submit" class="btn btn-default">Cancelar</button>
+                              <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o"></i>Guardar</button>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </form>
+                      <!-- ./Contenido modal-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ./Formulario modal-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="formModalSuggestions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal form-modal fade">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+              <h4 id="myModalLabel" class="modal-title">Enviar sugerencia</h4>
+            </div>
+            <div class="modal-body">
+              <!-- Contenido modal-->
+              <form class="form form-horizontal">
+                <fieldset>
+                  <div class="form-group-title">
+                    <label>Env&iacute;anos tu sugerencia</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject" class="col-sm-2 control-label">Asunto</label>
+                    <div class="col-sm-10">
+                      <input id="subject" type="text" placeholder="Asunto" class="form-control"><span class="help-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="content" class="col-sm-2 control-label">Descripci&oacute;n</label>
+                    <div class="col-sm-10">
+                      <textarea id="content" class="form-control"></textarea><span class="help-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group form-group-submit">
+                    <div class="col-sm-12">
+                      <button type="submit" class="btn btn-default">Cancelar</button>
+                      <button type="submit" class="btn btn-primary">Env&iacute;ar</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+              <!-- ./Contenido modal-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Formulario modal-->
+      <footer class="footer">
+        <div class="box">
+          <div class="developed">Developed by Netex Learning</div>
+          <div class="version">ver. X.Y.Z</div>
+        </div>
+      </footer>
+    </div><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="apps/vendors/jquery/jquery.1.11.2.min.js"></script><!-- jQuery UI -->
+    <script src="apps/vendors/jquery-ui-1.12.1/jquery-ui.min.js"></script><!-- Importante with locales para traducción cloud calendar -->
+    <script src="apps/vendors/momentjs/moment-with-locales.min.js"> </script><!-- Full Calendar scripts -->
+    <script src="apps/vendors/fullcalendar/lib/moment.min.js"></script>
+    <script src="apps/vendors/fullcalendar/fullcalendar.min.js"></script>
+    <script src="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.min.js"></script>
+    <script src="apps/vendors/fullcalendar/lang-all.js"></script><!-- jquery autocomplete master -->
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/jquery.mockjax.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/countries.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/demo.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/src/jquery.autocomplete.js"></script><!-- boostrap table -->
+    <script src="apps/vendors/bootstrap-table/dist/bootstrap-table.min.js"></script><!-- boostrap table locales para traducción -->
+    <script src="apps/vendors/bootstrap-table/dist/locale/bootstrap-table-es-ES.min.js"></script><!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="apps/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="apps/vendors/bootstrap-selects/bootstrap-select.min.js"></script>
+    <script src="apps/vendors/bootstrap-switches/js/bootstrap-switch.min.js"></script><!-- dropzone library -->
+    <script src="apps/vendors/dropzonejs/min/dropzone.min.js"></script><!-- js theme -->
+    <script src="apps/vendors/circles/circles.min.js"></script>
+    <script src="webcomponents/js/theme.js"></script><!-- bootstrap colorpicker -->
+    <script src="apps/vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script><!-- jquery ellipsis -->
+    <script src="apps/vendors/jquery-ellipsis/jquery.ellipsis.min.js"></script><!-- jquery mobile touch event -->
+    <script src="apps/vendors/jquery-mobile-touchevent/jquery.mobile.custom.min.js"></script><!-- bootstrap datetimepicker -->
+    <script src="apps/vendors/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script><!-- circular progress bar -->
+    <script src="apps/vendors/circular-progressbar/dist/progressbar.min.js"></script><!-- infinity repeteable form fields -->
+    <script src="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/js/infinity.min.js"></script><!-- croppie -->
+    <script src="apps/vendors/croppie/croppie.min.js"></script><!-- Slide slick -->
+    <script src="apps/vendors/slick-1.6.0/slick/slick.min.js"></script><!-- Bar rating -->
+    <script src="apps/vendors/jquery-bar-rating-master/dist/jquery.barrating.min.js"></script><!-- bootstrap responsive table dropdown -->
+    <script src="apps/vendors/bootstrap-responsive-table-dropdown-master/bs-responsive-table-dropdown.js"></script>
+    <script src="webcomponents/js/init.formuser.js"></script>
+  </body>
+</html>

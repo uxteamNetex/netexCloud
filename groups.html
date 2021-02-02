@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Configuración</title><!-- Bootstrap -->
+    <link href="apps/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--link( rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")-->
+    <link rel="stylesheet" href="apps/vendors/font-awesome-4.5.0/css/font-awesome.min.css"><!-- Theme -->
+    <link href="styles/theme_lcloud.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="apps/vendors/html5shiv/html5shiv.min.js"></script>
+    <script src="apps/vendors/respond/respond.min.js"></script><![endif]-->
+    <!-- jquery UI -->
+    <link href="apps/vendors/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet"><!-- bootstrap colorpicker -->
+    <link href="apps/vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet"><!-- bootstrap datetimepicker -->
+    <link href="apps/vendors/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"><!-- infinity repeteable form fields -->
+    <link href="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/css/infinity.min.css" rel="stylesheet"><!-- croppie -->
+    <link href="apps/vendors/croppie/croppie.css" rel="stylesheet"><!-- Slide slick -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick.css" rel="stylesheet"><!-- Add the new slick-theme.css if you want the default styling -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick-theme.css" rel="stylesheet"><!-- Bar rating theme -->
+    <link href="apps/vendors/jquery-bar-rating-master/dist/themes/css-stars.css" rel="stylesheet"><!-- bootstrap table -->
+    <link href="apps/vendors/bootstrap-table/dist/bootstrap-table.min.css" rel="stylesheet"><!-- animate -->
+    <link href="apps/vendors/animate/animate.css" rel="stylesheet"><!-- jquery autocomplete master -->
+    <link href="apps/vendors/jQuery-Autocomplete-master/content/styles.css" rel="stylesheet"><!-- Full Calendar Assets -->
+    <link href="apps/vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar_customized.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+    <link href="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.css" rel="stylesheet">
+  </head>
+  <body class=" body-welcome">
+    <nav class="navbar navbar-topbar">
+      <div class="container-fluid topbar-wrapper">
+        <div class="navbar-header"><a href="#" class="navbar-brand">Configuración</a></div>
+        <div id="navbar" class="navbar-topbar-wrapper navbar-collapse"><a href="javascript:window.history.back();" class="navigation-back"><i class="fa fa-chevron-left"></i></a>
+          <label>Detalles</label>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="profile-username"><a href="#">Federica Garcia</a></li>
+            <li class="profile-notifications-wrapper">
+              <div class="dropdown">
+                <div id="dropdownMenu-profile" data-toggle="dropdown" aria-expanded="true" class="avatar-wrapper"><img src="apps/files/img/profile.png"></div>
+                <div class="profile-notifications-bubble">122</div>
+                <ul role="menu" aria-labelledby="dropdownMenu-profile" class="dropdown-menu contextual-menu">
+                  <li class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner"></span></li>
+                  <li class="menu-item-iconavatar"><img src="apps/files/img/profile.png" alt="" title="Perfil"></li>
+                  <li class="menu-item-iconavatar-right">
+                    <ul>
+                      <li class="menu-item-username"><i class="icon-ntx icon-cloud"></i><span>Federica Garcia   </span></li>
+                      <li class="menu-subitem-username"><span>federica.garcia                                                                                                                           </span></li>
+                      <li><a href="#">Tu cuenta</a></li>
+                      <li><a href="#">Notificaciones</a><span class="badge">7</span></li>
+                      <li><a href="#">Anuncios</a><span class="badge">4</span></li>
+                    </ul>
+                  </li>
+                  <li class="item-divisor"><span class="non-link"></span></li>
+                  <li><a href="#">Novedades en learningCloud</a></li>
+                  <li><a href="#">Acceso a manuales</a></li>
+                  <li><a href="#">Centro de ayuda</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#formModalSuggestions">Sugerencias</a></li>
+                  <li class="menu-item-important-action"><a href="#" rel="nofollow" class="btn btn-primary">Mi perfil Social</a></li>
+                  <li class="item-divisor"><span></span></li>
+                  <li class="menu-item-logout"><a href="#" rel="nofollow"><i class="icon-ntx icon-poweroff"></i> Salir de learningCloud</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="toggle-dashboard"><a href="javascript:void(0);" data-toggle="collapse" data-target="#menu-dashboard" class="collapsed"><span aria-hidden="true" class="glyphicon glyphicon-th"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard-wrapper-small">
+        <div id="menu-dashboard" class="row dashboard collapse">
+          <div class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner">    </span></div>
+          <div id="menu-apps" class="row">  
+            <div class="col-lg-12">   
+              <div class="col-md-1 app-wrapper">            <a href="apps/lcloud/index.html" data-toggle="tooltip" data-placement="top" title="CLOUD"><span class="icon-wrapper"><img src="apps/files/projects/lcloud.png"></span>
+                  <label>CLOUD</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/lcentral/index.html" data-toggle="tooltip" data-placement="top" title="CENTRAL"><span class="icon-wrapper"><img src="apps/files/projects/lcentral.png"></span>
+                  <label>CENTRAL                </label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/default/index.html" data-toggle="tooltip" data-placement="top" title="DEFAULT"><span class="icon-wrapper"><img src="apps/files/projects/default.png"></span>
+                  <label>DEFAULT</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/old/index.html" data-toggle="tooltip" data-placement="top" title="Old files"><span class="icon-wrapper"><img src="apps/files/projects/old.png"></span>
+                  <label>OLD</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="body-content">
+      <div id="menu-lateral" class="menu-lateral collapse in">
+        <nav role="navigation" class="navbar navbar-default">
+          <ul class="nav nav-stacked">
+            <li class="toggle"><a href="javascript:void(0);" data-toggle="collapse" data-target="#menu-lateral">                       <i class="icon icon-ntx icon-bars-menu fs-icon"></i></a></li>
+            <li class="active"><a href="apps/lcloud/users.html"><span class="icon icon icon-ntx icon-members"></span>
+                <label>Usuarios</label></a></li>
+            <li><a href="apps/lcloud/groups-table.html"><span class="icon icon icon-ntx icon-groups"></span>
+                <label>Grupos</label></a></li>
+            <li><a href="apps/lcloud/extensible_fields.html"><span class="icon icon icon-ntx icon-input"></span>
+                <label>Campos extend.</label></a></li>
+            <li><a href="apps/lcloudapps-list.html"><span class="icon icon icon-ntx icon-cubes"></span>
+                <label>Apps</label></a></li>
+            <li><a href="apps/lcloud/list-external-apps.html"><span class="icon icon icon-ntx icon-external-apps"></span>
+                <label>External Apps</label></a></li>
+            <li><a href="apps/lcloud/google-analytics-config.html"><span class="icon icon icon-ntx icon-collections"></span>
+                <label>Integrations</label></a></li>
+            <li><a href="#"><span class="icon icon icon-ntx icon-news"></span>
+                <label>Anuncios</label></a></li>
+            <li><a href="#"><span class="icon icon icon-ntx icon-ranking"></span>
+                <label>Sondeos</label></a></li>
+            <li><a href="apps/lcloud/lookandfeel.html"><span class="icon icon icon-ntx icon-appearance"></span>
+                <label>Apariencia</label></a></li>
+            <li><a href="apps/lcloud/password-config.html"><span class="icon icon icon-ntx icon-gear"></span>
+                <label>Conf. Avanzada</label></a></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="tabs-wrapper tabs-bg-inverse"><!-- Tabs -->
+                <ul role="tablist" class="nav nav-tabs">
+                  <li role="presentation" class="active"><a href="#tab1">Grupos</a></li>
+                  <li role="presentation"><a href="groups-imports.html">Importaciones</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row toolbar">
+            <div class="toolbar-search-wrapper pull-left toolbar-search-full-width">
+              <form action="#" method="post" name="SearchForm" class="form form-inline form-thin toolbar-search">
+                <fieldset>
+                  <div class="form-group form-group-search form-group-search-full-width">
+                    <div class="input-group">
+                      <div class="inner-addon left-addon right-addon clearfix">
+                        <button class="btn inner left fa fa-search btn-flat"></button>
+                        <input id="input-search" type="text" name="searchTerm" value="" placeholder="Search" onkeyup="isEmptyInputText(this)?jQuery('#btn-clear-search').hide().addClass('hide'):jQuery('#btn-clear-search').show().removeClass('hide')" class="form-control">
+                        <button id="btn-clear-search" onclick="jQuery('#input-search').val('');" class="btn btn-flat inner right fa fa-close hide"></button>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="tab-content">
+                <div id="tabactive" role="tabpanel" class="tab-pane active">
+                  <div class="row">
+                    <div class="row-height">
+                      <div id="groupstree" class="col-lg-3 col-md-3 col-sm-4 col-xs-4 widget-column col-sm-height bg bg-white z-depth-1 col-top">
+                        <div class="inside">
+                          <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg bg-white separation-all-reset"><a href="#" class="create-new-group">
+                                <label>Nuevo grupo</label><span class="icon glyphicon glyphicon-plus-sign"></span></a>
+                              <ul id="tree" class="ztree separation-all-reset"></ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8 col-sm-height col-top">
+                        <div class="parallax-container parallax-container-small z-depth-1">
+                          <div class="header-group-image"><img src="apps/files/img/coffee-home.jpg" class="vertical-align"></div>
+                          <div class="menu-item-dropdown options-header-group">
+                            <div class="dropdown">
+                              <div id="dropdownMenu-item_1" data-toggle="dropdown" aria-expanded="true"><i class="icon glyphicon glyphicon-option-vertical"></i></div>
+                              <ul role="menu" aria-labelledby="dropdownMenu-item_1" class="dropdown-menu pull-right">
+                                <li role="presentation"><a href="#" role="menuitem" tabindex="-1" data-toggle="modal" data-target="#formAddGroup"><span class="icon glyphicon glyphicon-pencil margin-right-small"></span>Editar</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="groups-lookandfeel.html"><span class="icon glyphicon glyphicon-picture margin-right-small"></span>Cambiar apariencia</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="icon glyphicon glyphicon-save-file margin-right-small"></span>Crear subgrupo</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="groups-assignment-rules.html"><span class="icon icon-ntx icon-assignments_rules margin-right-small"></span>Reglas de asignación</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="icon glyphicon glyphicon-trash margin-right-small"></span>Eliminar</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="parallax-titles">
+                            <div class="img-wrapper"><img src="apps/files/img/birrete.png"></div>
+                            <h3 class="margin-bottom-reset margin-top-medium">
+                               
+                              Nombre del grupo
+                            </h3>
+                            <p>0 usuarios</p>
+                          </div>
+                          <div class="tabs-wrapper">
+                            <ul role="tablist" class="nav nav-tabs">
+                              <li role="presentation" class="active"><a href="#tabactive1" aria-controls="tabactive1" role="tab" data-toggle="tab">Usuarios</a></li>
+                              <li role="presentation"><a href="#tabnext2" aria-controls="tabnext2" role="tab" data-toggle="tab">Detalles</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="tab-content tabs-groups">
+                              <div id="tabactive1" role="tabpanel" class="tab-pane tab-usersgroup active">
+                                <!--Nuevo componente del toolbar para que el tamaño de los filtros se ajusten segun el numero de filtros que haya y no con px exactos-->
+                                <form method="post">
+                                  <div class="row toolbar toolbar-with-filters-inside">
+                                    <div class="col-md-12 toolbar-search-wrapper pull-left toolbar-search-full-width">
+                                      <div class="form form-inline form-thin toolbar-search toolbarflex-contenedor">
+                                        <div class="form-group margin-top-small margin-bottom-small toolbarflex-contenedor-searchbox">
+                                          <div class="input-group">
+                                            <div class="inner-addon left-addon right-addon clearfix">
+                                              <button class="btn inner left fa fa-search btn-flat"></button>
+                                              <input id="input-search" type="text" name="searchTerm" value="" placeholder="Search" onkeyup="isEmptyInputText(this)?jQuery('#btn-clear-search').hide().addClass('hide'):jQuery('#btn-clear-search').show().removeClass('hide')" class="form-control">
+                                              <button id="btn-clear-search" onclick="jQuery('#input-search').val('');" class="btn btn-flat inner right fa fa-close hide"></button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="toolbar-actions separation-left toolbarflex-contenedor-options">
+                                          <div class="dropdown menu-item menu-item-responsive">
+                                            <div id="dropdownMenu-item_1" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-ellipsis-v">                       </i></div>
+                                            <ul role="menu" aria-labelledby="dropdownMenu-item_1" class="dropdown-menu dropdown-menu-right"> 
+                                              <li role="presentation"> 
+                                                <button type="button" data-toggle="collapse" data-target="#form-add-users-filter,#form-simple" class="btn btn-toggle">                                 <i class="icon-ntx icon-funnel fs-icon-medium separation-right-small"></i>Filters</button>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-12 chips-wrapper margin-top-medium">
+                                      <div class="chip chip-with-field"><span><strong>Admin </strong></span><span>(Pack learningCloud)</span>
+                                        <div class="close fa fa-close"></div>
+                                      </div>
+                                      <div class="chip chip-with-field"><span><strong>Admin </strong></span><span>(Pack learningCloud)</span>
+                                        <div class="close fa fa-close"></div>
+                                      </div>
+                                      <div class="chip chip-with-field"><span><strong>Admin </strong></span><span>(Pack learningCloud)</span>
+                                        <div class="close fa fa-close"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </form>
+                                <!-- Formulario de filtros de usuarios-->
+                                <div class="row separation-all-reset margin-top-xlarge">
+                                  <div class="col-md-12">
+                                    <form id="form-add-users-filter" class="form form-horizontal form-transparent form-add-users-filter collapse separation-top-reset separation-bottom-xlarge margin-bottom-xlarge"><a href="javascript:void(0);" data-toggle="collapse" data-target="#form-add-users-filter,#form-simple" class="toggle-form">Cerrar <span>X</span></a>
+                                      <legend>Búsqueda avanzada</legend>
+                                      <fieldset>
+                                        <h4 class="sections-titles">Información básica</h4>
+                                        <div class="col-xs-12 col-md-6">
+                                          <label for="input1" class="col-md-12 col-lg-4">Nombre de usuario</label>
+                                          <div class="col-md-12 col-lg-8">
+                                            <input id="input1" type="text" placeholder="Usuario" class="form-control"><span class="help-block"> </span>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                          <label for="input2" class="col-md-12 col-lg-4">Nombre</label>
+                                          <div class="col-md-12 col-lg-8">
+                                            <input id="input2" type="text" placeholder="Nombre" class="form-control"><span class="help-block"> </span>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                          <label for="input3" class="col-md-12 col-lg-4">Apellidos</label>
+                                          <div class="col-md-12 col-lg-8">
+                                            <input id="input3" type="text" placeholder="Apellidos" class="form-control"><span class="help-block"> </span>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                          <label for="inputcorreo" class="col-md-12 col-lg-4">Correo electrónico</label>
+                                          <div class="col-md-12 col-lg-8">
+                                            <input id="inputcorreo" type="text" placeholder="correo" class="form-control"><span class="help-block"> </span>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                          <label for="activeuser" class="col-md-12 col-lg-4">Activo</label>
+                                          <div class="col-md-12 col-lg-8">
+                                            <select id="activeuser" title="Seleccionar" data-live-search="true" class="selectpicker">
+                                              <option>Sí</option>
+                                              <option>No</option>
+                                            </select><span class="help-block"> </span>
+                                          </div>
+                                        </div>
+                                      </fieldset>
+                                      <fieldset>
+                                        <h4 class="sections-titles">Acceso de usuario</h4>
+                                        <div class="col-xs-12 col-md-6">
+                                          <label for="packLMS" class="col-md-12 col-lg-4">Pack LMS</label>
+                                          <div class="col-md-12 col-lg-8">
+                                            <select id="packLMS" title="Sin acceso" data-live-search="true" multiple="" data-max-options="1" class="selectpicker">
+                                              <option>Sin acceso</option>
+                                              <option>Apps de Admin</option>
+                                              <option>Apps de Support</option>
+                                            </select><span class="help-block"> </span>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                          <label for="packlearningCloud" class="col-md-12 col-lg-4">Pack learningCloud</label>
+                                          <div class="col-md-12 col-lg-8">
+                                            <select id="packlearningCloud" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                              <option>Apps de Admin</option>
+                                              <option>Apps de Support</option>
+                                              <option>Apps de Trainer</option>
+                                              <option>Apps de User</option>
+                                            </select><span class="help-block"> </span>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                          <label for="learningMaker" class="col-md-12 col-lg-4">learningMaker</label>
+                                          <div class="col-md-12 col-lg-8">
+                                            <select id="learningMaker" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                              <option>Apps de Admin</option>
+                                              <option>Apps de Support</option>
+                                              <option>Apps de Trainer</option>
+                                              <option>Apps de User</option>
+                                            </select><span class="help-block"> </span>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                          <label for="learningStories" class="col-md-12 col-lg-4">learningStories</label>
+                                          <div class="col-md-12 col-lg-8">
+                                            <select id="learningStories" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                              <option>Apps de Admin</option>
+                                              <option>Apps de Support</option>
+                                              <option>Apps de Trainer</option>
+                                              <option>Apps de User</option>
+                                            </select><span class="help-block"> </span>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                          <label for="Social" class="col-md-12 col-lg-4">Social</label>
+                                          <div class="col-md-12 col-lg-8">
+                                            <select id="Social" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                              <option>Apps de Admin</option>
+                                              <option>Apps de Support</option>
+                                              <option>Apps de Trainer</option>
+                                              <option>Apps de User</option>
+                                            </select><span class="help-block"> </span>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                          <label for="OpenSesame" class="col-md-12 col-lg-4">OpenSesame</label>
+                                          <div class="col-md-12 col-lg-8">
+                                            <select id="OpenSesame" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                              <option>Apps de Admin</option>
+                                              <option>Apps de Support</option>
+                                              <option>Apps de Trainer</option>
+                                              <option>Apps de User</option>
+                                            </select><span class="help-block"> </span>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                          <label for="AndersPink" class="col-md-12 col-lg-4">AndersPink</label>
+                                          <div class="col-md-12 col-lg-8">
+                                            <select id="AndersPink" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                              <option>Apps de Admin</option>
+                                              <option>Apps de Support</option>
+                                              <option>Apps de Trainer</option>
+                                              <option>vUser</option>
+                                            </select><span class="help-block"> </span>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                          <label for="GoogleAnalytics" class="col-md-12 col-lg-4">Google Analytics</label>
+                                          <div class="col-md-12 col-lg-8">
+                                            <select id="GoogleAnalytics" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                              <option>Apps de Admin</option>
+                                              <option>Apps de Support</option>
+                                              <option>Apps de Trainer</option>
+                                              <option>Apps de User</option>
+                                            </select><span class="help-block"> </span>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6">
+                                          <label for="Kaltura" class="col-md-12 col-lg-4">Kaltura</label>
+                                          <div class="col-md-12 col-lg-8">
+                                            <select id="Kaltura" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                              <option>Apps de Admin</option>
+                                              <option>Apps de Support</option>
+                                              <option>Apps de Trainer</option>
+                                              <option>Apps de User</option>
+                                            </select><span class="help-block"> </span>
+                                          </div>
+                                        </div>
+                                      </fieldset>
+                                      <fieldset> 
+                                        <div class="col-xs-12 col-md-6">               
+                                          <div class="col-md-12 separation-top-medium">
+                                            <button type="submit" class="btn btn-primary">Search</button>
+                                            <button role="button" class="btn btn-default margin-right-reset">Limpiar</button>
+                                          </div>
+                                        </div>
+                                      </fieldset>
+                                    </form>
+                                  </div>
+                                </div>
+                                <div id="bottomsUsersContent" class="row separation-bottom">
+                                  <div id="buttomsUsersCol" class="col-md-6"><a id="buttomAddUser" role="menuitem" tabindex="-1" href="groups-add-users.html" class="btn btn-primary btn-icon-left pull-left"><span class="icon glyphicon glyphicon-plus margin-right-small"></span>Añadir usuarios</a>
+                                    <div id="containerDropdown">
+                                      <div id="dropdownOrderUsers" class="dropdown dropdown-flat display-inline">
+                                        <button id="dropdownMenu1" type="button" data-toggle="dropdown" aria-expanded="true" class="btn btn-default bg bg-transparent dropdown-toggle separation-all-reset">Ordenar por
+                                          <label>Nombre</label>&nbsp;&nbsp;<span class="caret"></span>
+                                        </button>
+                                        <ul role="menu" aria-labelledby="dropdownMenu1" class="dropdown-menu">
+                                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Nombre</a></li>
+                                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fecha inicio</a></li>
+                                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fecha fin</a></li>
+                                          <li role="presentation" class="separator">              </li>
+                                          <li role="presentation" class="selected"><a role="menuitem" tabindex="-1" href="#"> <span>Ascendente</span><i class="icon-ntx fs-icon-xxmedium icon-success"></i></a></li>
+                                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> <span>Descendente</span><i class="icon-ntx fs-icon-xxmedium icon-success"></i></a></li>
+                                        </ul>
+                                      </div>
+                                      <div id="checkSubgroupUsers" class="checkbox checkbox-primary separation-right display-inline">
+                                        <input id="view_subgroup_users" type="checkbox" checked class="checked">
+                                        <label for="view_subgroup_users">Ver de subgrupos</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div id="selectsUsersCol" class="col-md-6 right-align margin-top-medium">
+                                    <div id="buttomUsersSelected" class="userSelectActions right-align hidden">
+                                      <p class="margin-bottom-reset">0 Usuarios seleccionados</p>
+                                      <button id="buttonSelectAll" class="btn btn-flat margin-right-reset separation-right-reset">Seleccionar todos</button>
+                                    </div>
+                                    <div role="menuitem" tabindex="-1" type="button" class="btn selection-mode-switch">
+                                      <label for="switch-select-mode">
+                                                                             
+                                        Seleccionar
+                                      </label>
+                                      <div class="switch-toggle-wrapper">
+                                        <input id="switch-select-mode" type="checkbox" class="switch-toggle switch-toggle-onoff">
+                                        <label for="switch-select-mode" class="switch-label-right"></label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div id="alert-select-all-pages" class="alert alert-info alert-dismissable margin-bottom-medium margin-top-medium hidden">
+                                  <button type="button" data-dismiss="alert" class="close">&times;</button>Has seleccionado <strong>20 items</strong>&nbsp;en esta página.
+                                  <button id="button-select-all-pages" type="button" class="btn btn-link separation-all-reset">Seleccionar los <strong>35 items</strong>&nbsp;en todas las páginas.</button>
+                                </div>
+                                <div id="alert-deselect-all-pages" class="alert alert-info alert-dismissable margin-bottom-medium margin-top-medium hidden">
+                                  <button type="button" data-dismiss="alert" class="close">&times;</button>Has seleccionado <strong>35 items</strong>&nbsp;en todas las páginas.
+                                  <button id="button-deselect-all-pages" type="button" class="btn btn-link separation-all-reset">Anular selección</button>
+                                </div>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="material-card-wrapper users-card">
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card material-user-subgroup navigable"><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="info info-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</div>
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!--.menu-item-dropdown
+                                          .dropdown
+                                              #dropdownMenu-item_1(data-toggle='dropdown', aria-expanded='true')
+                                                  i.icon.glyphicon.glyphicon-option-vertical
+                                              ul.dropdown-menu.pull-right(role='menu', aria-labelledby='dropdownMenu-item_1')
+                                                  li(role='presentation')
+                                                      a(role='menuitem', tabindex='-1', href='user-profile.html')
+                                                          span.icon.icon-ntx.icon-members.margin-right-small
+                                                          | Ver perfil
+                                          --></a></div>
+                                      <div class="material-card material-user-inactive navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer"><span class="badge badge-transparent badge-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</span>
+                                              <div class="actions"><span class="badge badge-transparent badge-inactive">INACTIVO</span></div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card material-user-subgroup navigable"><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="info info-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</div>
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!--.menu-item-dropdown
+                                          .dropdown
+                                              #dropdownMenu-item_1(data-toggle='dropdown', aria-expanded='true')
+                                                  i.icon.glyphicon.glyphicon-option-vertical
+                                              ul.dropdown-menu.pull-right(role='menu', aria-labelledby='dropdownMenu-item_1')
+                                                  li(role='presentation')
+                                                      a(role='menuitem', tabindex='-1', href='user-profile.html')
+                                                          span.icon.icon-ntx.icon-members.margin-right-small
+                                                          | Ver perfil
+                                          --></a></div>
+                                      <div class="material-card material-user-inactive navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer"><span class="badge badge-transparent badge-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</span>
+                                              <div class="actions"><span class="badge badge-transparent badge-inactive">INACTIVO</span></div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card material-user-subgroup navigable"><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="info info-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</div>
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!--.menu-item-dropdown
+                                          .dropdown
+                                              #dropdownMenu-item_1(data-toggle='dropdown', aria-expanded='true')
+                                                  i.icon.glyphicon.glyphicon-option-vertical
+                                              ul.dropdown-menu.pull-right(role='menu', aria-labelledby='dropdownMenu-item_1')
+                                                  li(role='presentation')
+                                                      a(role='menuitem', tabindex='-1', href='user-profile.html')
+                                                          span.icon.icon-ntx.icon-members.margin-right-small
+                                                          | Ver perfil
+                                          --></a></div>
+                                      <div class="material-card material-user-inactive navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer"><span class="badge badge-transparent badge-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</span>
+                                              <div class="actions"><span class="badge badge-transparent badge-inactive">INACTIVO</span></div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card material-user-subgroup navigable"><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="info info-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</div>
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!--.menu-item-dropdown
+                                          .dropdown
+                                              #dropdownMenu-item_1(data-toggle='dropdown', aria-expanded='true')
+                                                  i.icon.glyphicon.glyphicon-option-vertical
+                                              ul.dropdown-menu.pull-right(role='menu', aria-labelledby='dropdownMenu-item_1')
+                                                  li(role='presentation')
+                                                      a(role='menuitem', tabindex='-1', href='user-profile.html')
+                                                          span.icon.icon-ntx.icon-members.margin-right-small
+                                                          | Ver perfil
+                                          --></a></div>
+                                      <div class="material-card material-user-inactive navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer"><span class="badge badge-transparent badge-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</span>
+                                              <div class="actions"><span class="badge badge-transparent badge-inactive">INACTIVO</span></div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card material-user-subgroup navigable"><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="info info-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</div>
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!--.menu-item-dropdown
+                                          .dropdown
+                                              #dropdownMenu-item_1(data-toggle='dropdown', aria-expanded='true')
+                                                  i.icon.glyphicon.glyphicon-option-vertical
+                                              ul.dropdown-menu.pull-right(role='menu', aria-labelledby='dropdownMenu-item_1')
+                                                  li(role='presentation')
+                                                      a(role='menuitem', tabindex='-1', href='user-profile.html')
+                                                          span.icon.icon-ntx.icon-members.margin-right-small
+                                                          | Ver perfil
+                                          --></a></div>
+                                      <div class="material-card material-user-inactive navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer"><span class="badge badge-transparent badge-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</span>
+                                              <div class="actions"><span class="badge badge-transparent badge-inactive">INACTIVO</span></div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card material-user-subgroup navigable"><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="info info-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</div>
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!--.menu-item-dropdown
+                                          .dropdown
+                                              #dropdownMenu-item_1(data-toggle='dropdown', aria-expanded='true')
+                                                  i.icon.glyphicon.glyphicon-option-vertical
+                                              ul.dropdown-menu.pull-right(role='menu', aria-labelledby='dropdownMenu-item_1')
+                                                  li(role='presentation')
+                                                      a(role='menuitem', tabindex='-1', href='user-profile.html')
+                                                          span.icon.icon-ntx.icon-members.margin-right-small
+                                                          | Ver perfil
+                                          --></a></div>
+                                      <div class="material-card material-user-inactive navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer"><span class="badge badge-transparent badge-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</span>
+                                              <div class="actions"><span class="badge badge-transparent badge-inactive">INACTIVO</span></div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card material-user-subgroup navigable"><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="info info-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</div>
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!--.menu-item-dropdown
+                                          .dropdown
+                                              #dropdownMenu-item_1(data-toggle='dropdown', aria-expanded='true')
+                                                  i.icon.glyphicon.glyphicon-option-vertical
+                                              ul.dropdown-menu.pull-right(role='menu', aria-labelledby='dropdownMenu-item_1')
+                                                  li(role='presentation')
+                                                      a(role='menuitem', tabindex='-1', href='user-profile.html')
+                                                          span.icon.icon-ntx.icon-members.margin-right-small
+                                                          | Ver perfil
+                                          --></a></div>
+                                      <div class="material-card material-user-inactive navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer"><span class="badge badge-transparent badge-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</span>
+                                              <div class="actions"><span class="badge badge-transparent badge-inactive">INACTIVO</span></div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card material-user-subgroup navigable"><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="info info-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</div>
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!--.menu-item-dropdown
+                                          .dropdown
+                                              #dropdownMenu-item_1(data-toggle='dropdown', aria-expanded='true')
+                                                  i.icon.glyphicon.glyphicon-option-vertical
+                                              ul.dropdown-menu.pull-right(role='menu', aria-labelledby='dropdownMenu-item_1')
+                                                  li(role='presentation')
+                                                      a(role='menuitem', tabindex='-1', href='user-profile.html')
+                                                          span.icon.icon-ntx.icon-members.margin-right-small
+                                                          | Ver perfil
+                                          --></a></div>
+                                      <div class="material-card material-user-inactive navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer"><span class="badge badge-transparent badge-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</span>
+                                              <div class="actions"><span class="badge badge-transparent badge-inactive">INACTIVO</span></div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card material-user-subgroup navigable"><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="info info-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</div>
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!--.menu-item-dropdown
+                                          .dropdown
+                                              #dropdownMenu-item_1(data-toggle='dropdown', aria-expanded='true')
+                                                  i.icon.glyphicon.glyphicon-option-vertical
+                                              ul.dropdown-menu.pull-right(role='menu', aria-labelledby='dropdownMenu-item_1')
+                                                  li(role='presentation')
+                                                      a(role='menuitem', tabindex='-1', href='user-profile.html')
+                                                          span.icon.icon-ntx.icon-members.margin-right-small
+                                                          | Ver perfil
+                                          --></a></div>
+                                      <div class="material-card material-user-inactive navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer"><span class="badge badge-transparent badge-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</span>
+                                              <div class="actions"><span class="badge badge-transparent badge-inactive">INACTIVO</span></div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card material-user-subgroup navigable"><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="info info-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</div>
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!--.menu-item-dropdown
+                                          .dropdown
+                                              #dropdownMenu-item_1(data-toggle='dropdown', aria-expanded='true')
+                                                  i.icon.glyphicon.glyphicon-option-vertical
+                                              ul.dropdown-menu.pull-right(role='menu', aria-labelledby='dropdownMenu-item_1')
+                                                  li(role='presentation')
+                                                      a(role='menuitem', tabindex='-1', href='user-profile.html')
+                                                          span.icon.icon-ntx.icon-members.margin-right-small
+                                                          | Ver perfil
+                                          --></a></div>
+                                      <div class="material-card material-user-inactive navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer"><span class="badge badge-transparent badge-subgroup"><i class="icon-ntx icon-collections vertical-align-middle text-warning separation-right-small"></i>En subgrupo</span>
+                                              <div class="actions"><span class="badge badge-transparent badge-inactive">INACTIVO</span></div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                      <div class="material-card navigable">
+                                        <div class="checkbox checkbox-primary">
+                                          <input id="checkUserSelect" type="checkbox">
+                                          <label for="checkbox"> </label>
+                                        </div><a href="user-profile.html">
+                                          <div class="material-content-wrapper">
+                                            <div class="material-image-wrapper image-circle">
+                                              <div class="image-wrapper"><img src="apps/files/img/default_profile_user.png" class="material-image material-image-rounded"></div>
+                                            </div>
+                                            <div class="material-content"> <span class="title">Ana Garcia Casanueva-MartinezCasanueva</span><span class="subtitle">ana.garcia.casanueva.martinez@netexlearning.com</span></div>
+                                            <div class="card-footer">
+                                              <div class="actions">
+                                              </div>
+                                            </div>
+                                          </div></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="action-buttons-container hidden"><a href="#" data-toggle="modal" data-target="#formModal" class="btn btn-action"><span class="icon icon-ntx icon-users-dot"></span><span class="text-button">Excluir</span></a></div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <nav class="pagination-wrapper">
+                                          <ul class="pagination">
+                                            <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li class="active"><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                                          </ul>
+                                          <div class="clearfix">
+                                            <label class="pagination-resume">Encontrados 1.257 items</label>
+                                          </div>
+                                        </nav>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="tabnext2" role="tabpanel" class="tab-pane tab-usersgroup">
+                                <div class="row separation-bottom">
+                                  <div class="col-md-12 separation-top-xxlarge">
+                                    <h4 class="sections-titles center-align">Información básica</h4>
+                                  </div>
+                                  <div class="info-lists-container separation-left-xlarge separation-right-xlarge">
+                                    <!--Listado de Información personal en perfil de usuario, sin más opciones desplegables-->
+                                    <!--Listado de Información básica en grupos, sin más opciones desplegables-->
+                                    <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                      <div class="col-md-5 info-list-platform">
+                                        <!--Utilizamos la variable basicInfo para las listas de Información básica--><span class="icon glyphicon glyphicon-pencil fs-icon vertical-align-middle separation-right-small"></span>
+                                        <label class="separation-bottom-reset">Descripción</label>
+                                      </div>
+                                      <div class="col-md-7"><span class="margin-bottom-reset">Change the way every person in your organization approaches appraisals. Every organisation has a differenst kind of performance review system. Even so, the reaction to reviews is often the same - one of horror.</span>
+                                      </div>
+                                    </div>
+                                    <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                      <div class="col-md-5 info-list-platform">
+                                        <!--Utilizamos la variable basicInfo para las listas de Información básica--><span class="icon glyphicon glyphicon-barcode fs-icon vertical-align-middle separation-right-small"></span>
+                                        <label class="separation-bottom-reset">Id externo</label>
+                                      </div>
+                                      <div class="col-md-7"><span class="margin-bottom-reset">662345612345 </span>
+                                      </div>
+                                    </div>
+                                    <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                      <div class="col-md-5 info-list-platform">
+                                        <!--Utilizamos la variable basicInfo para las listas de Información básica--><span class="icon icon-ntx icon-groups fs-icon vertical-align-middle separation-right-small"></span>
+                                        <label class="separation-bottom-reset">Administradores de grupo</label>
+                                      </div>
+                                      <div class="col-md-7"><span class="margin-bottom-reset">Ramón López </span>
+                                      </div>
+                                    </div>
+                                    <!--Sólo a las listas de perfil de usuario le añadimos opciones desplegables-->
+                                    <!--Listado de Detalle de App externa, con más opciones desplegables-->
+                                  </div>
+                                </div>
+                                <div class="row separation-bottom">
+                                  <div class="col-md-12 separation-top-xxlarge">
+                                    <h4 class="sections-titles center-align">Acceso de usuario</h4>
+                                  </div>
+                                  <div class="info-lists-container separation-left-xlarge separation-right-xlarge">
+                                    <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                      <div class="col-md-5 info-list-platform">
+                                        <div class="img-app-icon-roles-wrapper margin-right-small"><img src="apps/files/icons/desktop/ajustes.png"></div>
+                                        <label class="separation-bottom-reset">Pack learningCloud  </label>
+                                      </div>
+                                      <div class="col-md-7"><span class="margin-bottom-reset">Usuario,  </span><span class="margin-bottom-reset role-inherited">Profesor  <small>(Heredado)</small>, </span><span class="margin-bottom-reset role-inherited"> Alumno <small>(Heredado)</small></span>
+                                      </div>
+                                    </div>
+                                    <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                      <div class="col-md-5 info-list-platform">
+                                        <div class="img-app-icon-roles-wrapper margin-right-small"><img src="apps/files/icons/desktop/tuformacion.png"></div>
+                                        <label class="separation-bottom-reset">Pack LMS  </label>
+                                      </div>
+                                      <div class="col-md-7"><span class="margin-bottom-reset">Administrador, Profesor,  </span><span class="margin-bottom-reset role-inherited">Revisor  <small>(Heredado)</small>, </span><span class="margin-bottom-reset role-inherited"> Alumno <small>(Heredado)</small></span>
+                                      </div>
+                                    </div>
+                                    <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                      <div class="col-md-5 info-list-platform">
+                                        <div class="img-app-icon-roles-wrapper margin-right-small"><img src="apps/files/icons/desktop/maker.png"></div>
+                                        <label class="separation-bottom-reset">learningMaker  </label>
+                                      </div>
+                                      <div class="col-md-7"><span class="margin-bottom-reset">Usuario, Author, Reviewer,  </span><span class="margin-bottom-reset role-inherited">Profesor  <small>(Heredado)</small>, </span><span class="margin-bottom-reset role-inherited"> Alumno <small>(Heredado)</small></span>
+                                      </div>
+                                    </div>
+                                    <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                      <div class="col-md-5 info-list-platform">
+                                        <div class="img-app-icon-roles-wrapper margin-right-small"><img src="apps/files/icons/desktop/play.png"></div>
+                                        <label class="separation-bottom-reset">learningStories  </label>
+                                      </div>
+                                      <div class="col-md-7"><span class="margin-bottom-reset">Administrador </span><span class="margin-bottom-reset role-inherited"> <small></small></span><span class="margin-bottom-reset role-inherited"> <small></small></span>
+                                      </div>
+                                    </div>
+                                    <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                      <div class="col-md-5 info-list-platform">
+                                        <div class="img-app-icon-roles-wrapper margin-right-small"><img src="apps/files/icons/desktop/social.png"></div>
+                                        <label class="separation-bottom-reset">Social  </label>
+                                      </div>
+                                      <div class="col-md-7"><span class="margin-bottom-reset">Profesor </span><span class="margin-bottom-reset role-inherited"> <small></small></span><span class="margin-bottom-reset role-inherited"> <small></small></span>
+                                      </div>
+                                    </div>
+                                    <div id="collapseRoleList" aria-expanded="false" class="collapse">
+                                      <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                        <div class="col-md-5 info-list-platform">
+                                          <div class="img-app-icon-roles-wrapper margin-right-small"><img src="apps/files/icons/desktop/opensesame.png"></div>
+                                          <label class="separation-bottom-reset">OpenSesame  </label>
+                                        </div>
+                                        <div class="col-md-7">
+                                          <p class="margin-bottom-reset">Administrador,  </p>
+                                        </div>
+                                      </div>
+                                      <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                        <div class="col-md-5 info-list-platform">
+                                          <div class="img-app-icon-roles-wrapper margin-right-small"><img src="apps/files/icons/desktop/anderspink.png"></div>
+                                          <label class="separation-bottom-reset">Anders Pink  </label>
+                                        </div>
+                                        <div class="col-md-7">
+                                          <p class="margin-bottom-reset">Administrador,  </p>
+                                        </div>
+                                      </div>
+                                      <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                        <div class="col-md-5 info-list-platform">
+                                          <div class="img-app-icon-roles-wrapper margin-right-small"><img src="apps/files/icons/desktop/googleanalytics.png"></div>
+                                          <label class="separation-bottom-reset">Google Analytics  </label>
+                                        </div>
+                                        <div class="col-md-7">
+                                          <p class="margin-bottom-reset">Usuario, Author, Reviewer </p>
+                                        </div>
+                                      </div>
+                                      <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                        <div class="col-md-5 info-list-platform">
+                                          <div class="img-app-icon-roles-wrapper margin-right-small"><img src="apps/files/icons/desktop/kaltura.png"></div>
+                                          <label class="separation-bottom-reset">Kaltura  </label>
+                                        </div>
+                                        <div class="col-md-7">
+                                          <p class="margin-bottom-reset">Usuario, Author, Reviewer,  </p>
+                                        </div>
+                                      </div>
+                                    </div><a href="javascript:void(0)" data-target="#collapseRoleList" data-toggle="collapse" aria-expanded="false" class="row collapsed info-list-more border-bottom separation-top-xxlarge separation-bottom-small">
+                                      <div class="col-xs-11 separation-right-reset">
+                                        <label class="separation-bottom-reset">Ver más información</label>
+                                      </div>
+                                      <div class="col-xs-1 separation-left-reset"><span class="icon glyphicon glyphicon-chevron-down"></span></div></a>
+                                  </div>
+                                </div>
+                                <div class="row separation-bottom">
+                                  <div class="col-md-12 separation-top-xxlarge">
+                                    <h4 class="sections-titles center-align">Apariencia</h4>
+                                  </div>
+                                  <div class="info-lists-container separation-left-xlarge separation-right-xlarge">
+                                    <!--Listado de Información personal en perfil de usuario, sin más opciones desplegables-->
+                                    <!--Listado de Información básica en grupos, sin más opciones desplegables-->
+                                    <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                      <div class="col-md-5 info-list-platform">
+                                        <!--Utilizamos la variable basicInfo para las listas de Información básica-->
+                                        <label class="separation-bottom-reset">Logo principal</label>
+                                      </div>
+                                      <div class="col-md-7">
+                                        <div class="img-app-logo-wrapper"><img src="apps/files/icons/logo/logocloud.png"></div>
+                                      </div>
+                                    </div>
+                                    <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                      <div class="col-md-5 info-list-platform">
+                                        <!--Utilizamos la variable basicInfo para las listas de Información básica-->
+                                        <label class="separation-bottom-reset">Logo secundario</label>
+                                      </div>
+                                      <div class="col-md-7">
+                                        <div class="img-app-logo-wrapper"><img src="apps/files/icons/logo/logocloudlarge.png"></div>
+                                      </div>
+                                    </div>
+                                    <div class="row info-list border-bottom separation-top-xxlarge separation-bottom-small">
+                                      <div class="col-md-5 info-list-platform">
+                                        <!--Utilizamos la variable basicInfo para las listas de Información básica-->
+                                        <label class="separation-bottom-reset"></label>
+                                      </div>
+                                      <div class="col-md-7">
+                                        <div class="img-app-logo-wrapper"><img src="undefined"></div>
+                                      </div>
+                                    </div>
+                                    <!--Sólo a las listas de perfil de usuario le añadimos opciones desplegables-->
+                                    <!--Listado de Detalle de App externa, con más opciones desplegables-->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="formModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal form-modal fade formModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">Añadir grupo</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form form-horizontal">
+                    <fieldset>
+                      <p class="center-align separation-top separation-bottom grey dark fs-large">¿Estás seguro que deseas excluir a este usuario?   </p>
+                      <div class="form-group form-group-submit">
+                        <div class="col-sm-12">
+                          <button type="submit" class="btn btn-default">Cancelar</button>
+                          <button type="submit" class="btn btn-primary">Excluir               </button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="formAddGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal form-modal fade formAddGroup">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">Nuevo grupo</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form form-horizontal">
+                    <fieldset>
+                      <div class="form-two-columns">
+                        <div class="form-group-title">
+                          <label>Informaci&oacute;n de registro </label>
+                        </div>
+                        <div class="form-group form-group-modal">
+                          <label for="groupname" class="control-label col-xs-12 col-md-3">Nombre</label>
+                          <div class="col-xs-12 col-md-9">           
+                            <input id="groupname" type="text" placeholder="Nombre del grupo" class="form-control"><span class="help-block"> </span>
+                          </div>
+                          <label for="groupdescription" class="control-label col-xs-12 col-md-3">Descripción</label>
+                          <div class="col-xs-12 col-md-9"> 
+                            <textarea id="groupdescription" type="text" placeholder="Descripción..." class="form-control"></textarea><span class="help-block"> </span>
+                          </div>
+                          <label for="groupidexterno" class="control-label col-xs-12 col-md-3">ID Externo</label>
+                          <div class="col-xs-12 col-md-9">  
+                            <input id="groupidexterno" type="text" placeholder="ID externo del grupo" class="form-control"><span class="help-block"> </span>
+                          </div>
+                          <label for="groupimage" class="control-label col-xs-12 col-md-3">Imagen</label>
+                          <div class="col-xs-12 col-md-9"> 
+                            <div id="dzupload_1" class="dropzone">
+                              <div class="dz-default dz-message">
+                                <label class="title">Arrastra tu imagen aqu&iacute;...</label><span>&oacute;</span>
+                                <button id="btn_dzupload_3" onclick="return false;" class="btn btn-default">Selecciona en tu disco</button><span class="info">Formatos: jpg, png &oacute; gif<br>Dimensiones: 280x280 px, máximo 2Mb</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group-title">
+                          <label>Información adicional</label>
+                        </div>
+                        <div class="form-group form-group-modal">
+                          <div class="col-xs-12 col-md-3"></div>
+                          <div class="separation-all-reset col-xs-12 col-md-9"> 
+                            <div class="col-xs-12 col-md-6">
+                              <label for="extensible_field_1" class="separation-left-reset col-md-12">Campo extendido</label>
+                              <div class="separation-left-reset separation-right-reset col-md-12">
+                                <input id="extensible_field_1" type="text" placeholder="Valor" class="form-control"><span class="help-block"> </span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <label for="extensible_field_2" class="separation-left-reset col-md-12">Campo extendido</label>
+                              <div class="separation-left-reset separation-right-reset col-md-12">
+                                <input id="extensible_field_2" type="text" placeholder="Valor" class="form-control"><span class="help-block"> </span>
+                              </div>
+                            </div>
+                            <div class="clearfix"> </div>
+                            <div class="col-xs-12 col-md-6">
+                              <label for="extensible_field_3" class="separation-left-reset col-md-12">Campo extendido</label>
+                              <div class="separation-left-reset separation-right-reset col-md-12">
+                                <input id="extensible_field_3" type="text" placeholder="Valor" class="form-control"><span class="help-block"> </span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <label for="extensible_field_4" class="separation-left-reset col-md-12">Campo extendido</label>
+                              <div class="separation-left-reset separation-right-reset col-md-12">
+                                <input id="extensible_field_4" type="text" placeholder="Valor" class="form-control"><span class="help-block"> </span>
+                              </div>
+                            </div>
+                            <div class="clearfix"> </div>
+                          </div>
+                        </div>
+                        <div class="form-group-title">
+                          <label>Acceso de usuario</label>
+                        </div>
+                        <div class="form-group form-group-modal">
+                          <div class="col-xs-12 col-md-3"></div>
+                          <div class="separation-all-reset col-xs-12 col-md-9"> 
+                            <div class="col-xs-12 col-md-6">
+                              <label for="packLMS" class="separation-left-reset col-md-12">Pack LMS</label>
+                              <div class="separation-left-reset separation-right-reset col-md-12">
+                                <select id="packLMS" title="Sin acceso" data-live-search="true" multiple="" data-max-options="1" class="selectpicker">
+                                  <option>Sin acceso</option>
+                                  <option>Apps de Admin</option>
+                                  <option>Apps de Support</option>
+                                </select><span class="help-block"> </span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <label for="packcloud" class="separation-left-reset col-md-12">Pack learningCloud</label>
+                              <div class="separation-left-reset separation-right-reset col-md-12">
+                                <select id="packcloud" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                  <option>Apps de Admin</option>
+                                  <option>Apps de Support</option>
+                                  <option>Apps de Trainer</option>
+                                  <option>Apps de User</option>
+                                </select><span class="help-block"> </span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <label for="maker" class="separation-left-reset col-md-12">learningMaker</label>
+                              <div class="separation-left-reset separation-right-reset col-md-12">
+                                <select id="packmaker" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                  <option>Apps de Admin</option>
+                                  <option>Apps de Support</option>
+                                  <option>Apps de Trainer</option>
+                                  <option>Apps de User</option>
+                                </select><span class="help-block"> </span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <label for="stories" class="separation-left-reset col-md-12">learningStories</label>
+                              <div class="separation-left-reset separation-right-reset col-md-12">
+                                <select id="packstories" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                  <option>Apps de Admin</option>
+                                  <option>Apps de Support</option>
+                                  <option>Apps de Trainer</option>
+                                  <option>Apps de User</option>
+                                </select><span class="help-block"> </span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <label for="social" class="separation-left-reset col-md-12">Social</label>
+                              <div class="separation-left-reset separation-right-reset col-md-12">
+                                <select id="packsocial" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                  <option>Apps de Admin</option>
+                                  <option>Apps de Support</option>
+                                  <option>Apps de Trainer</option>
+                                  <option>Apps de User</option>
+                                </select><span class="help-block"></span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <label for="social" class="separation-left-reset col-md-12">OpenSesame</label>
+                              <div class="separation-left-reset separation-right-reset col-md-12">
+                                <select id="packopensesame" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                  <option>Apps de Admin</option>
+                                  <option>Apps de Support</option>
+                                  <option>Apps de Trainer</option>
+                                  <option>Apps de User</option>
+                                </select><span class="help-block"> </span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <label for="social" class="separation-left-reset col-md-12">Anders Pink</label>
+                              <div class="separation-left-reset separation-right-reset col-md-12">
+                                <select id="packanderspink" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                  <option>Apps de Admin</option>
+                                  <option>Apps de Support</option>
+                                  <option>Apps de Trainer</option>
+                                  <option>Apps de User</option>
+                                </select><span class="help-block"> </span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <label for="social" class="separation-left-reset col-md-12">Google Analytics</label>
+                              <div class="separation-left-reset separation-right-reset col-md-12">
+                                <select id="packgoogleanalytics" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                  <option>Apps de Admin</option>
+                                  <option>Apps de Support</option>
+                                  <option>Apps de Trainer</option>
+                                  <option>Apps de User</option>
+                                </select><span class="help-block"> </span>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                              <label for="social" class="separation-left-reset col-md-12">Kaltura</label>
+                              <div class="separation-left-reset separation-right-reset col-md-12">
+                                <select id="packkaltura" title="Sin acceso" data-live-search="true" multiple="" class="selectpicker">
+                                  <option>Apps de Admin</option>
+                                  <option>Apps de Support</option>
+                                  <option>Apps de Trainer</option>
+                                  <option>Apps de User</option>
+                                </select><span class="help-block"> </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group form-group-submit">
+                        <div class="col-sm-12">
+                          <button type="submit" class="btn btn-default">Cancelar</button>
+                          <button type="submit" class="btn btn-primary">Guardar </button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="formModalSuggestions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal form-modal fade">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+              <h4 id="myModalLabel" class="modal-title">Enviar sugerencia</h4>
+            </div>
+            <div class="modal-body">
+              <!-- Contenido modal-->
+              <form class="form form-horizontal">
+                <fieldset>
+                  <div class="form-group-title">
+                    <label>Env&iacute;anos tu sugerencia</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject" class="col-sm-2 control-label">Asunto</label>
+                    <div class="col-sm-10">
+                      <input id="subject" type="text" placeholder="Asunto" class="form-control"><span class="help-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="content" class="col-sm-2 control-label">Descripci&oacute;n</label>
+                    <div class="col-sm-10">
+                      <textarea id="content" class="form-control"></textarea><span class="help-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group form-group-submit">
+                    <div class="col-sm-12">
+                      <button type="submit" class="btn btn-default">Cancelar</button>
+                      <button type="submit" class="btn btn-primary">Env&iacute;ar</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+              <!-- ./Contenido modal-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Formulario modal-->
+      <footer class="footer">
+        <div class="box">
+          <div class="developed">Developed by Netex Learning</div>
+          <div class="version">ver. X.Y.Z</div>
+        </div>
+      </footer>
+    </div><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="apps/vendors/jquery/jquery.1.11.2.min.js"></script><!-- jQuery UI -->
+    <script src="apps/vendors/jquery-ui-1.12.1/jquery-ui.min.js"></script><!-- Importante with locales para traducción cloud calendar -->
+    <script src="apps/vendors/momentjs/moment-with-locales.min.js"> </script><!-- Full Calendar scripts -->
+    <script src="apps/vendors/fullcalendar/lib/moment.min.js"></script>
+    <script src="apps/vendors/fullcalendar/fullcalendar.min.js"></script>
+    <script src="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.min.js"></script>
+    <script src="apps/vendors/fullcalendar/lang-all.js"></script><!-- jquery autocomplete master -->
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/jquery.mockjax.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/countries.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/demo.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/src/jquery.autocomplete.js"></script><!-- boostrap table -->
+    <script src="apps/vendors/bootstrap-table/dist/bootstrap-table.min.js"></script><!-- boostrap table locales para traducción -->
+    <script src="apps/vendors/bootstrap-table/dist/locale/bootstrap-table-es-ES.min.js"></script><!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="apps/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="apps/vendors/bootstrap-selects/bootstrap-select.min.js"></script>
+    <script src="apps/vendors/bootstrap-switches/js/bootstrap-switch.min.js"></script><!-- dropzone library -->
+    <script src="apps/vendors/dropzonejs/min/dropzone.min.js"></script><!-- js theme -->
+    <script src="apps/vendors/circles/circles.min.js"></script>
+    <script src="webcomponents/js/theme.js"></script><!-- bootstrap colorpicker -->
+    <script src="apps/vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script><!-- jquery ellipsis -->
+    <script src="apps/vendors/jquery-ellipsis/jquery.ellipsis.min.js"></script><!-- jquery mobile touch event -->
+    <script src="apps/vendors/jquery-mobile-touchevent/jquery.mobile.custom.min.js"></script><!-- bootstrap datetimepicker -->
+    <script src="apps/vendors/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script><!-- circular progress bar -->
+    <script src="apps/vendors/circular-progressbar/dist/progressbar.min.js"></script><!-- infinity repeteable form fields -->
+    <script src="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/js/infinity.min.js"></script><!-- croppie -->
+    <script src="apps/vendors/croppie/croppie.min.js"></script><!-- Slide slick -->
+    <script src="apps/vendors/slick-1.6.0/slick/slick.min.js"></script><!-- Bar rating -->
+    <script src="apps/vendors/jquery-bar-rating-master/dist/jquery.barrating.min.js"></script><!-- bootstrap responsive table dropdown -->
+    <script src="apps/vendors/bootstrap-responsive-table-dropdown-master/bs-responsive-table-dropdown.js"></script>
+    <script src="webcomponents/js/init.groups-assignment-rules.js">   </script>
+    <script src="apps/vendors/zTree-3.5.28/js/jquery.ztree.all.min.js"></script>
+    <script src="apps/vendors/zTree-3.5.28/js/jquery.ztree.core.min.js"></script>
+    <link rel="stylesheet" href="apps/vendors/zTree-3.5.28/css/zTreeStyle/zTreeStyle.css" type="text/css">
+    <script src="webcomponents/js/init.groups.js"> </script>
+    <script src="webcomponents/js/init.ztree.js"></script>
+    <script src="webcomponents/js/init.materialcards.ellipsis.js"></script>
+    <script src="webcomponents/js/init.multipleselectcards.js"> </script>
+    <script src="webcomponents/js/init.user-list.js"></script>
+  </body>
+</html>

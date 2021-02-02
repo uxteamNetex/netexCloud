@@ -1,0 +1,47 @@
+@import "../../themes/less/variables";
+@import "../../themes/less/settings";
+@import "../mixins";
+@import "helpers";
+
+div.chips-wrapper {
+  padding: 0 10px!important;
+  div.chips-title {
+    float: left;
+    line-height: 32px;
+    padding-right: 10px;
+    color: @color-grey;
+    font-weight: bold;
+  }
+}
+
+.chip {
+  display: inline-block!important;
+  height: 32px;
+  /*font-size: 13px; */
+  /*font-weight: 500;*/
+ /* color: rgba(0, 0, 0, 0.6);*/
+  color: @color-darkgrey;
+  line-height: 32px;
+  padding: 0 12px;
+  border-radius: 8px;
+  background-color: @color-lightergrey;
+  margin: 0 @padding-small @padding-small 0;
+  &.chip-with-field{
+    max-width: none;
+    white-space: normal;
+    .close {
+      float: right;
+      font-size: @font-size-icon-xxmedium;
+      padding: 0 0 0 8px;
+    }
+  }
+  .ellipsis();
+  max-width: 200px;
+  div.close {
+    line-height: 32px;
+    float: left;
+    padding: 0 8px 0 0;
+    cursor: pointer;
+  }
+
+}

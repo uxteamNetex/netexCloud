@@ -1,0 +1,77 @@
+@import "../../themes/less/variables";
+@import "../../webcomponents/mixins";
+
+.body-content{
+    opacity: 0.8;
+    height: 100%!important;
+}
+.body-content .content{    
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    background-image: url("/apps/files/img/lookandfeel/mobile-bg-body.png");
+    background-size: 100%;    
+}
+
+#menu-lateral-app {   
+    opacity:1 !important;
+    z-index:9999;
+    max-width: 330px;
+    width: 330px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100% !important;
+    //background-color: @color-darkgrey;
+    background-color: @color-white;
+    box-shadow: 0px 0px 20px black;     
+    position: fixed; 
+
+    .profile{
+        width:330px;
+        height:196px;
+        padding-top: 30px;        
+        background-color:@color-primary;
+        color: @color-white; 
+        margin-bottom: 15px;  
+        
+        .profile-avatar{
+            border-radius: 100px;
+            img{
+                width: 65px;
+                height: 65px;
+            }
+            overflow: hidden;
+            margin-top: 5px;
+            display: inline-block;
+        }
+        .profile-data{
+            //margin-top:20px;
+            h4{
+                font-weight: bold;
+            }
+            h4,h5{
+               line-height: 20px;
+            }          
+        }    
+    }   
+
+    .options{
+        padding-top:15px;
+        padding-bottom: 15px;
+        &.separator{
+            padding-top:15px;
+            padding-bottom:15px;
+            border-top:1px solid #ddd;
+        }
+        .col-preffix{
+            margin-left:20px;
+            float:left;
+            width:20px;
+        }
+        div.zone{
+            height: 20px;
+            padding-left:5px;
+            padding-right: 5px;                      
+            background-color: #ddd;
+        }
+    }
+}

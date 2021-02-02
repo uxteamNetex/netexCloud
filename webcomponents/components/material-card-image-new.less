@@ -1,0 +1,208 @@
+.reticle-view{
+    .material-card-image-new{
+        float: left;
+        margin-bottom: 26px;
+    }
+}
+@media (max-width: 380px){ //Se muestra 1 card
+    .reticle-view{
+        .material-card-image-new{
+            width: 100%; 
+        }
+    }
+}
+@media (min-width: 380px) and (max-width: 530px){ //Se muestran 2 cards
+    .reticle-view{
+        .material-card-image-new{
+            width: 45%; 
+        }
+    }
+}
+@media (min-width: 530px) and (max-width: 800px){ //Se muestran 3 cards
+    .reticle-view{
+        .material-card-image-new{
+            width: 29%; 
+        }
+    }
+}
+@media (min-width: 800px) and (max-width: 1130px){ //Se muestran 4 cards
+    .reticle-view{
+        .material-card-image-new{
+            width: 22%; 
+        }
+    }
+}
+@media (min-width: 1130px) and (max-width: 1350px){ //Se muestran 5 cards
+    .reticle-view{
+        .material-card-image-new{
+            width: 18%; 
+        }
+    }
+}
+@media (min-width: 1350px) and (max-width: 1500px){ //Se muestran 6 cards
+    .reticle-view{
+        .material-card-image-new{
+            width: 15%; 
+        }
+    }
+}
+@media (min-width: 1500px) and (max-width: 1800px){ //Se muestran 7 cards
+    .reticle-view{
+        .material-card-image-new{
+            width: 13%; 
+        }
+    }
+}
+@media (min-width: 1800px) and (max-width: 2100px){ //Se muestran 8 cards
+    .reticle-view{
+        .material-card-image-new{
+            width: 11%; 
+        }
+    }
+}
+@media (min-width: 2100px){ //Se muestran 9 cards
+    .reticle-view{
+        .material-card-image-new{
+            width: 9%; 
+        }
+    }
+}
+
+.material-card-image-new{  
+    cursor: pointer;     
+    border-radius: 4px;    
+    background-color: #fff;
+    display: block;
+    margin: 0 8px 6px;
+    position: relative;           
+    width: 200px;   
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); 
+    float: left;
+    &:hover{
+        box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.38), 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+    }
+    .card-info-icon{
+        bottom:51px;
+        color: @color-lightergrey;
+        position: absolute;
+        right: 7px;
+        z-index: 9;
+        span{
+            margin: 0;  
+            font-size: @font-size-icon;   
+        }
+    }
+    a{
+        display: block;
+        outline: none;
+        &.card-selected{
+            border: 6px solid @color-action;
+            border-radius: 10px;
+            margin: -6px;
+            .card-image{
+                margin-left: 0;
+                margin-top: 0;           
+                width: 100%;
+                img{
+                    width: 100%;    
+                }
+            }
+            .card-info{
+                padding: 16px 36px 16px 16px;
+            }
+            .dropdown-caret{
+                bottom: -16px;
+                height: 10px;
+                left: 50%;
+                margin-right: -50%;
+                overflow: hidden;
+                position: absolute;
+                transform: translate(-50%, 0);
+                width: 18px;
+                span.caret-outer{
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top-color: rgba(0, 0, 0, 0.1);
+                    display: inline-block;
+                    height: auto;
+                    left: 0;
+                    margin-left: -1px;
+                    position: absolute;
+                    top: 0;
+                    width: auto;
+                }
+                span.caret-inner {
+                    border-left: 9px solid transparent;
+                    border-right: 9px solid transparent;
+                    border-top: 9px solid @color-action;
+                    border-top-color: @color-action;
+                    display: inline-block;
+                    left: 0;
+                    margin-left: -1px;
+                    position: absolute;
+                    top: 0; 
+                }
+            }
+        }
+        .card-image{
+            border-radius: 4px 4px 0 0;
+            overflow: hidden;
+            padding: 0;
+            position: relative;
+            width: 100%;         
+            &.disabled{
+                opacity: 1;
+                .card-icon-disabled{
+                    color: #fff;
+                    display: block;
+                    font-size: 50px;
+                    position: absolute;
+                    z-index: 9;    
+                }
+                .card-image-disabled-background{
+                    background-color: #d73d7b;
+                    display: block;
+                    height: 100%;
+                    position: absolute;
+                    width: 100%;
+                }
+                img{
+                    opacity: 0.4; 
+                }
+            }
+            .card-icon-disabled{
+                display: none;
+            }
+            .card-image-disabled-background{
+                display: none;
+            }
+            img{ 
+                width: 100%;
+            }
+        }
+        .card-info{
+            padding: 16px 36px 16px 16px;
+            position: relative;
+            .card-title{
+                color: @color-darkgrey;
+                font-size: @font-size-large;
+                font-weight: normal;
+                line-height: 18px;
+                margin: 0;
+                &.ellipsis-points-2{
+                    height: 38px;
+                }
+            } 
+            .card-courses{
+                color: @color-lightgrey;
+                font-size: @font-size-base;
+                font-weight: normal;
+                margin: 0;
+                line-height: @font-size-base;
+            }   
+        }
+        &:focus, &:active{
+            text-decoration: none;
+        }
+    }
+}

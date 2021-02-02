@@ -1,0 +1,438 @@
+@import "../../themes/less/variables";
+@import "../mixins";
+
+/*******************************************************/
+/************** buttons  *******************************/
+.btn {
+  border-radius: 6px;
+  color: @color-white;
+  font-size: @button-font-size-base;
+  line-height: 1.3333333;
+  min-width: @button-width;
+  padding: 8px 16px 8px 16px;
+  &:not(.btn-default) {
+    border: 0 none;
+  }
+  &:hover {
+    color: @color-white;
+  }
+  &:focus, :hover, :active, :visited {
+    box-shadow: none !important;
+    outline: 0 !important;
+  }
+
+  &.btn-default {
+    background-color: @color-action-default;
+    &:hover {
+      background-color: @color-action-default-hover;
+    }
+    color: @color-grey;
+    &:hover {
+      color: @color-grey;
+    }
+  }
+  &.btn-color-default {
+    color: @color-grey !important;
+  }
+  &.btn-primary {
+    background-color: @color-action;
+    &:hover {
+      background-color: @color-action-hover;
+    }
+  }
+  &.btn-link {
+    color: @color-action;
+    height: auto;
+    min-width: 0;
+    &:focus{
+      text-decoration: none;
+    }
+    &:hover, &:active {
+      color: @color-action-hover;
+      text-decoration: none;
+    }
+  }
+  &.btn-link-disabled {
+    background-color: transparent;
+    color: @color-lightgrey;
+    cursor: not-allowed;
+    height: auto;
+    min-width: 0;
+    opacity: .65;
+    pointer-events: none;
+  }
+  &.btn-gray {
+    background-color: @color-lightergrey;
+    border: 1px solid @color-lightgrey;
+    color: @color-darkgrey;
+    &:hover {
+      background-color: @color-lightergrey;
+    }
+  }
+  &.btn-success {
+    background-color: @color-success;
+    &:hover {
+      background-color: darken(@color-success, @button-active-percent-darkness);
+    }
+  }
+  &.btn-info {
+    background-color: @color-info;
+    &:hover {
+      background-color: darken(@color-info, @button-active-percent-darkness);
+    }
+  }
+  &.btn-warning {
+    background-color: @color-warning;
+    &:hover {
+      background-color: darken(@color-warning, @button-active-percent-darkness);
+    }
+  }
+  &.btn-danger {
+    background-color: @color-error;
+    &:hover {
+      background-color: darken(@color-error, @button-active-percent-darkness);
+    }
+  }
+  &.btn-blue {
+    background-color: @color-action;
+    &:hover {
+      background-color: darken(@color-action, @button-active-percent-darkness);
+    }
+  }
+  &.btn-turquoise {
+    background-color: @color-turquoise;
+    &:hover {
+      background-color: darken(@color-turquoise, @button-active-percent-darkness);
+    }
+  }
+  &.btn-green {
+    background-color: @color-green;
+    &:hover {
+      background-color: darken(@color-green, @button-active-percent-darkness);
+    }
+  }
+  &.btn-orange {
+    background-color: @color-orange;
+    &:hover {
+      background-color: darken(@color-orange, @button-active-percent-darkness);
+    }
+  }
+  &.btn-pink {
+    background-color: @color-pink;
+    &:hover {
+      background-color: darken(@color-pink , @button-active-percent-darkness);
+    }
+  }
+  &.btn-white {
+    background-color: @color-white;
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+  &.btn-white-line {
+    background-color: @color-white;
+    border: 1px solid @color-lightgrey;
+    color: @color-grey;
+    outline: 0;
+    &:hover {
+      background-color: @color-extralightgrey;
+    }
+  }
+  &.btn-transparent {
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  &.btn-icon {
+    box-shadow: none;
+    background-color: transparent;
+    color: transparent;
+    cursor: pointer;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+    outline: 0 none !important;
+  }
+  &.btn-custom-line {
+    background-color: @color-white;
+    border: 1px solid @color-black;
+    border-radius: 0;
+    color: @color-black;
+    outline: 0;
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+  &.dropdown-toggle {
+    min-width: 0 !important;
+  }
+  &.btn-full-width {
+    width: 100%;
+  }
+  &.btn-full-width-responsive {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  &.btn-flat {
+    box-shadow: none;
+    background-color: transparent;
+    color: @color-action;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    outline: 0 none !important;
+    min-width: 0;
+    &:hover{
+      color: @color-action-hover;  
+    }
+  }
+  &.btn-underline {
+    box-shadow: none;
+    background-color: transparent;
+    color: @color-action;
+    cursor: pointer;
+    padding: 0;
+    outline: 0 none !important;
+    min-width: 0;
+    text-decoration: underline;
+  }
+  &.btn-icon {
+    box-shadow: none;
+    background-color: transparent;
+    color: @color-grey;
+    cursor: pointer;
+    margin: 0;
+    min-width: 0;
+    outline: 0 none !important;
+    padding:0;
+    &:hover{
+    color: @color-grey;
+    }
+  }
+  &.btn-with-checkbox {
+    background-color: @color-action-default;
+    border: 1px solid @color-lightergrey;
+    color: @color-grey;
+    margin-right: 0 !important;
+    &:hover {
+      background-color: @color-action-default-hover;
+      border:1px solid #adadad;
+      color: @color-grey;
+    }
+    input{
+      display: none;
+    }
+    &.selected{
+      background-color: @color-action;
+      color: @color-white;
+      border: none;
+      &:hover {
+        background-color: @color-action-hover;
+      } 
+    }
+  }
+  span.glyphicon, .fa, .icon-ntx {
+    margin-right: @padding-small;
+    font-size: @button-icon-font-size-base;
+  }
+
+  &.btn-icon-right{
+    span.glyphicon, .fa, .icon-ntx {
+      margin-left: @padding-small;
+      font-size: @button-icon-font-size-base;
+    }
+  }
+  &.btn-icon-left{
+    span.glyphicon, .fa, .icon-ntx {
+      margin-right: @padding-small;
+      font-size: @button-icon-font-size-base;
+    }
+  }
+
+  &.btn-side-left {
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+  }
+  &.btn-side-right {
+    border-top-right-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+  }
+
+  &.btn-action {
+    background-color: @color-black;
+    border-radius: 6px;
+    border-right: 1px solid #fff;
+    height: 64px;
+    margin: 0;
+    opacity: 0.8;
+    &:last-child {
+      border-right: none;
+    }
+    span.icon{
+      font-size: @font-size-icon;
+    }
+    span.text-button{
+      display: block;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+.action-buttons-container{
+  bottom: 20px;
+  position: fixed;
+  right: 10px;
+  z-index: 99;
+  &.action-more-buttons{
+    display: flex;
+    :first-child{
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 0;
+    }
+    :nth-child(2n), :nth-child(3n), :nth-child(4n) {
+      border-radius: 0;
+    }
+    :last-child {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 6px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 6px;
+    }
+    .btn-action{
+      &.disabled{
+        span{
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+
+.dropdown-toggle{
+  + ul.dropdown-menu{
+    li{
+      button.btn{
+        border-radius: 0;
+        padding: 4px 20px;
+        label{
+          font-weight: normal;
+        }
+        &.btn-white{
+          color: @color-darkgrey;
+        }
+        &:hover{
+          background-color: @color-extralightgrey;
+        }
+      }
+      &:hover{
+        background-color: @color-extralightgrey;
+      }
+    }  
+  }
+}
+
+.btn-group {
+  vertical-align: top;
+  .btn {
+    border-left-width: 1px;
+  }
+}
+
+.btn-lg {
+  padding: 14px 20px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.btn-sm {
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+}
+.btn-xs {
+  padding: 5px 10px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-xxs {
+  padding: 1px 5px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+/* Botón cerrar introducir en etiquetas*/
+.btn-circle-close{   
+    float: right;
+    font-size: 10px;    
+    line-height: 1;   
+    //color: #fff;
+    //text-shadow: 0 0px 0 #fff; 
+    cursor: pointer;    
+    filter:alpha(opacity=80);
+    opacity:0.8;           
+}
+.btn-circle-close .fa-circle{
+    color:@color-action;
+}
+.btn-circle-close .icon-ntx{
+    color:#fff!important;    
+    line-height:20px;
+    z-index:9999;
+}
+/*----------------*/
+
+@media (max-width: @responsive-max-width) {
+  .btn-group > * {
+    margin-bottom: @padding-medium;
+  }
+}
+@media (min-width: 600px) {
+  .btn{
+    &.btn-full-width-responsive {
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .action-buttons-container{
+    width: auto;
+    max-width: 600px;
+    &.action-more-buttons{
+      display: block;
+      margin: 0 20px 0 65px;
+      right: 0;
+      :first-child{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 6px;
+      }
+      :last-child {
+        border-bottom-left-radius: 6px;
+        border-top-right-radius: 0;
+      }
+      .btn-action{
+        height: 45px;
+      }
+    }
+    .btn-action{
+      border-bottom: 1px solid #fff;
+      border-right: none;
+      width: 100%;
+      &:last-child {
+        border-bottom: none;  
+      }
+      span.icon{
+        vertical-align: middle;
+      }
+      span.text-button{
+        display: inline;
+      }
+    }
+  }
+}

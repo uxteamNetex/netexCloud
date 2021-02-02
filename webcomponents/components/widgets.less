@@ -1,0 +1,206 @@
+@import "../../themes/less/variables";
+@import "../../themes/less/settings";
+@import "../mixins";
+
+.widget-wrapper {
+
+  .widget-title {
+    color: @color-darkgrey;
+    margin-bottom: @padding-medium;
+    font-size: @font-size-large;
+    .fa {
+      padding-right: @padding-medium;
+    }
+  }
+
+  .widget-subtitle {
+    color: @color-lightgrey;
+    margin-bottom: @padding-medium;
+    font-size: @font-size-subtitle;
+  }
+
+  .widget-content {
+    margin-top: @padding-medium;
+    margin-bottom: @padding-medium;
+    color: @color-darkgrey;
+    label {
+      font-size: @font-size-medium;
+      color: @color-darkgrey;
+    }
+
+    .btn {
+      margin: @padding-base 0;
+    }
+  }
+}
+
+.widget-column hr {
+  margin-right: -@padding-base;
+  margin-left: -@padding-base;
+}
+
+.welcome-cards-group-title {
+  font-size: @font-size-xlarge;
+  color: @color-grey;
+  margin: @padding-xxlarge 0 @padding-medium @padding-base;
+}
+
+.body-welcome .content {
+  padding-bottom: 0;
+}
+@media (max-width: 820px) {
+  .body-welcome{
+    .navbar-topbar.navbar-partner{
+      + .navbar-topbar{
+        + .body-content {
+          margin-top: 74px !important;
+        }
+      }
+    }
+  }
+}
+
+.carousel-panel {
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+    list-style-type: none;
+    width: 33%;
+    .carousel-content-wrapper {
+      padding: @padding-base;
+
+      background-color: @color-white;
+      border: 1px solid @color-lightergrey;
+      border-radius: 20px;
+      height: 130px;
+      margin: 0 @padding-small;
+
+      .carousel-image {
+        float: left;
+      }
+      .carousel-content {
+        padding-left: @padding-medium;
+        float: left;
+        .calc(width; '100% - 60px');
+        .carousel-title {
+          padding-top: @padding-small;
+          .ellipsis-multiline(2; 48px);
+        }
+        .carousel-summary {
+          padding-top: @padding-medium;
+          .ellipsis-multiline(2; 48px);
+        }
+      }
+    }
+  }
+
+}
+.carousel-indicators-welcome {
+  bottom: inherit;
+  position: relative;
+  padding-top: @padding-medium;
+  padding-bottom: @padding-small;
+  li {
+    background-color: @color-lightgrey;
+    border: 1px solid transparent;
+    &.active {
+      background-color: @color-primary;
+    }
+  }
+}
+
+@media all and (max-width: (@responsive-md-min-width - 1px)) {
+  .carousel-panel {
+    li {
+      width: 100%;
+    }
+  }
+
+}
+
+.home.wrap {
+  padding-top: @padding-xxxlarge;
+  .empty-title {
+    font-size: 6em;
+  }
+
+  p {
+    margin: 0 0 10px;
+    line-height: 1.42857143;
+    color: @color-darkgrey;
+  }
+
+  ul, li {
+    list-style: none;
+    display: inline-block;
+    .sprite-rsc {
+      display: block;
+    }
+
+    .sprite-rsc {
+      margin: -4px 10px 0 0;
+      background: url('@{url_images}SpriteIconos.png') no-repeat; 
+      height: 46px;
+      width: 46px;
+      margin-left: 10px;
+
+      &.pc {
+        background-position: -1px -2px;
+      }
+
+      &.note {
+        background-position: -2px -52px;
+      }
+
+      &.cam {
+        background-position: -2px -102px;
+      }
+
+      &.upload {
+        background-position: -2px -152px;
+      }
+
+      &.hyperlink {
+        background-position: -2px -202px;
+      }
+
+      &.clac {
+        background-position: -1px -252px;
+      }
+
+      &.download {
+        background-position: -2px -302px;
+      }
+
+      &.board {
+        background-position: -2px -352px;
+      }
+
+      &.horn {
+        background-position: -2px -402px;
+      }
+
+      &.check {
+        background-position: -2px -452px;
+      }
+
+      &.extcam {
+        background-position: -2px -502px;
+      }
+
+      &.quest {
+        background-position: -2px -552px;
+      }
+
+      &.none {
+        background: none;
+      }
+
+    }
+
+  }
+}
+
+
+

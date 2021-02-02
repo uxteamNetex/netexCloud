@@ -1,0 +1,40 @@
+@navbar-bg-color:  #383C46;
+@navbar-color-text: #999999;
+
+.htmlcanvas span{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -130px;
+    font-size: 3.5em;
+}
+    
+    
+.navbar-desktop-classic{
+    background: @navbar-bg-color;
+    .navbar-header-logo{
+        background: @navbar-bg-color;
+    }
+    .navbar-topbar-wrapper{
+        background: @navbar-bg-color;
+    }
+    
+    ul.navbar-nav > li > a{
+        color: @navbar-color-text;
+    }
+    a.navbar-brand {
+        background: url('@{url_logos}logocloud.png');
+        background-repeat: no-repeat;
+        background-position: top 0 left 0;
+        background-size: contain;
+      }
+}
+
+footer.footer{
+    color: @navbar-color-text;
+    a{
+        color: @navbar-color-text;
+    }    
+}
+

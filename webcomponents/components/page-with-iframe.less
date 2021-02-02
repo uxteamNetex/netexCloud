@@ -1,0 +1,84 @@
+//BI iframe
+.biEmbededContainer {
+    background-size: cover !important;
+    background-position: top left;
+    background-attachment: fixed;
+    margin-left: -15px;
+    margin-right: -15px;
+    .calc(height; "100vh - @{navbar-footer-height}");
+    margin-bottom: -200px;
+}
+.biEmbededContainer-tabs {
+    background-size: cover !important;
+    background-position: top left;
+    background-attachment: fixed;
+    margin-left: -15px;
+    margin-right: -15px;
+    .calc(height; "100vh - @{navbar-footer-tabs-height}");
+    margin-bottom: -200px;
+}
+.biEmbededContainer iframe, .biEmbededContainer-tabs iframe{
+	border: none;
+}
+
+
+
+.embed-responsive {
+    position: inherit;    
+}
+
+.content.content-iframe {
+    height: 100%;
+    padding-bottom: 0;
+    .container-fluid{
+        height: 100%;  
+        .row.embed-responsive.embed-responsive-16by9{
+            display: -moz-grid;
+            height: 100%;
+            padding-bottom: 0; 
+        }  
+        iframe{
+            width: 100%;
+            //top: @navbar-height;
+            //.calc(height; "100% - @{navbar-footer-height}");
+            .calc(height; "100% - @{footer-height}");
+            &.zapierFrame{
+                .calc(height; "100% - 147px");
+                .calc(width; "100% - @{navbar-lateral-width}"); 
+                left: auto;
+                right: 0;  
+                top: 107px;
+            }
+        }
+    }
+}
+
+// OpenSesame feedback pages
+.opensesame-image-content{
+    padding-bottom: 0px !important;
+    padding-top: 25px !important; 
+    img{
+        max-width: 50%;
+    }  
+}
+/* text-responsive-small devices (tablets, 768px and up) */
+@media (min-width: @responsive-sm-min-width) { 
+    .opensesame-image-content{
+        padding-bottom: 20px !important;
+        padding-top: 45px !important; 
+        img{
+            max-width: 100%;
+        }  
+    }    
+}
+/* text-responsive-small devices (tablets, 820px and up) */
+@media (max-width: @responsive-max-width) { 
+    .content.content-iframe {
+        .container-fluid{ 
+            iframe{
+                top: @navbar-height-responsive;
+                .calc(height; "100% - @{navbar-footer-height-responsive}");
+            }
+        }
+    }   
+}

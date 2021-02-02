@@ -1,0 +1,35 @@
+@desktop-bg-image : '/apps/files/wallpapers/wallpaper_02.png';
+@desktop-logo : '/apps/files/icons/logo/logocentral.png';
+@desktop-text-color:  #fff;
+@desktop-color-primary:  #fff;
+
+body.desktop {
+    background: url(@desktop-bg-image);
+}
+body.desktop .navbar .topbar-wrapper .navbar-header a.navbar-brand{
+    background: url(@desktop-logo);
+    background-image: url(@desktop-logo);
+    background-repeat: no-repeat;
+    background-position: top 0 left 0;
+    background-size: contain;
+}
+
+body.desktop,
+body.desktop .navbar .topbar-wrapper .navbar-topbar-wrapper .nav > li.profile-username span,
+body.desktop .desktop-apps-wrapper .desktop-app a,
+body.desktop footer.footer .developed, 
+body.desktop footer.footer .version, 
+body.desktop footer.footer .manual, 
+body.desktop footer.footer .manual a,
+body.desktop footer.footer .help,
+body.desktop footer.footer .help a{    
+    color: @desktop-text-color;
+}
+
+
+body.desktop .desktop-apps-paginator ul li, 
+body.desktop .desktop-apps-paginator ol li,
+body.desktop .carousel-control{ 
+    background-color:  @desktop-color-primary;
+    border: @desktop-color-primary;
+}

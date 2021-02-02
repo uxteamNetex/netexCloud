@@ -1,0 +1,186 @@
+@import "../../themes/less/variables";
+@import "../mixins";
+
+/*******************************************************/
+/************** modal  *********************************/
+.modal {
+  z-index: @zindex-modal;
+  cursor: default;
+  .modal-header {
+    .background-gradient(@navbar-header-color-dg-min; @navbar-header-color-dg-max);
+    color: @color-white;
+    height: inherit; // @modal-header-height;
+    padding-left: @padding-large;
+
+    h4 {
+      font-size: @font-size-large;
+      font-weight: bold;
+      color: @color-white;
+    }
+
+    a.close, button.close {
+      color: @color-white;
+      opacity: 1;
+      span {
+        color: @color-white;
+        opacity: 1;
+      }
+    }
+  }
+
+  .modal-footer {
+    background-color: @color-extralightgrey;
+    padding: @padding-base @padding-large;
+  }
+
+  &.form-modal {
+    .modal-sm{
+      margin: 30px auto;
+      width: 350px;
+      .modal-header{
+        background: none;
+        border-bottom: none;
+        padding: 24px 24px 0;
+        h4{
+          color: @color-black;
+        }
+      }
+      .modal-body{
+        padding: 20px 24px 0;
+        .form{
+          margin: 0 !important;
+          max-width: 100% !important;
+          padding: 0;
+          width: 100% !important;
+          fieldset{
+            p{
+              margin: 0;
+            }
+            .form-group{
+              &.form-group-submit{
+                background-color: transparent;
+                border-top: none;
+                margin: 0 !important;
+                max-width: 100% !important;
+                padding-top: 32px;
+                width: 100% !important;
+                > * {
+                  padding: 0;
+                }
+              }
+            }
+          }
+        }  
+      }  
+    }
+
+    .modal-body {
+      padding-bottom: 0;
+      .form {
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+        padding-left: @padding-base;
+        .form-group:last-child {
+          margin-bottom: 0;
+          &.form-group-submit {
+            margin-left: -@padding-base !important;
+            .calc_important(width, '100% + @{padding-xxlarge}');
+            padding-left: 0;
+          }
+        }
+        .form-group-submit-top {
+          margin-bottom: 0;
+          margin-top: -16px;
+          margin-left: -@padding-base !important;
+          .calc_important(width, '100% + @{padding-xxlarge}');
+          padding-left: 0;
+        }
+        .form-group-submit .btn:last-child,
+        .form-group-submit .btn-group:last-child {
+          margin-right: 0;
+        }
+
+        &.form-horizontal {
+          fieldset {
+            .form-group-full-width{              
+            }
+            div.form-group:not(.form-group-submit):not(.form-group-full-width):not(.form-group-modal) {
+              .calc(width; '100% - @{padding-xxlarge}');
+            }
+            .row.detail-header{
+              margin-top: -@padding-large;
+              margin-bottom:@padding-large;
+              .detail-header-sm{
+
+              }  
+              .title{
+                text-transform: uppercase;
+                font-size: 16px;
+                color: @color-grey;
+                font-weight: bold;
+                &.icon-left{
+                  span.glyphicon, .fa, .icon-ntx {
+                    margin-right:5px;                    
+                  }
+                }
+              }
+              .text-error{                                 
+                 color: @color-error;
+              }            
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .form {
+    &.form-horizontal fieldset div.form-group:not(.form-group-submit) {
+      width: auto;
+    }
+  }
+   
+  .vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    .vertical-align-center {
+      /* To center vertically */
+      display: table-cell;
+      vertical-align: middle;
+      .modal-content {
+        /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+        width:inherit;
+        height:inherit;
+        /* To center horizontally */
+        margin: 0 auto;
+        &.modal-no-radius{
+          border-radius: 0;
+        }
+      }
+    }        
+ }
+
+  @media (max-width: @responsive-sm-min-width) { //768px;
+    .vertical-alignment-helper {
+      .vertical-align-center {
+        padding-left:15px;
+        padding-right:15px;
+      }                 
+    }        
+  }
+
+}
+ 
+ 
+@media (max-width: @responsive-xm-min-width) { //480px;
+  .modal{
+    &.form-modal {
+      .modal-sm{
+        margin: 30px 10px;
+        width: auto;
+      }
+    }  
+  }       
+}

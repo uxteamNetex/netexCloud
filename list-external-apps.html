@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CONFIGURACIÓN</title><!-- Bootstrap -->
+    <link href="apps/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--link( rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")-->
+    <link rel="stylesheet" href="apps/vendors/font-awesome-4.5.0/css/font-awesome.min.css"><!-- Theme -->
+    <link href="styles/theme_lcloud.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="apps/vendors/html5shiv/html5shiv.min.js"></script>
+    <script src="apps/vendors/respond/respond.min.js"></script><![endif]-->
+    <!-- jquery UI -->
+    <link href="apps/vendors/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet"><!-- bootstrap colorpicker -->
+    <link href="apps/vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet"><!-- bootstrap datetimepicker -->
+    <link href="apps/vendors/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"><!-- infinity repeteable form fields -->
+    <link href="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/css/infinity.min.css" rel="stylesheet"><!-- croppie -->
+    <link href="apps/vendors/croppie/croppie.css" rel="stylesheet"><!-- Slide slick -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick.css" rel="stylesheet"><!-- Add the new slick-theme.css if you want the default styling -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick-theme.css" rel="stylesheet"><!-- Bar rating theme -->
+    <link href="apps/vendors/jquery-bar-rating-master/dist/themes/css-stars.css" rel="stylesheet"><!-- bootstrap table -->
+    <link href="apps/vendors/bootstrap-table/dist/bootstrap-table.min.css" rel="stylesheet"><!-- animate -->
+    <link href="apps/vendors/animate/animate.css" rel="stylesheet"><!-- jquery autocomplete master -->
+    <link href="apps/vendors/jQuery-Autocomplete-master/content/styles.css" rel="stylesheet"><!-- Full Calendar Assets -->
+    <link href="apps/vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar_customized.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+    <link href="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.css" rel="stylesheet">
+  </head>
+  <body class="body-bg-inverse ">
+    <nav class="navbar navbar-topbar">
+      <div class="container-fluid topbar-wrapper">
+        <div class="navbar-header"><a href="#" class="navbar-brand">CONFIGURACIÓN</a></div>
+        <div id="navbar" class="navbar-topbar-wrapper navbar-collapse"><a href="javascript:window.history.back();" class="navigation-back"><i class="fa fa-chevron-left"></i></a>
+          <label>EXTERNAL APPS</label>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="profile-username"><a href="#">Federica Garcia</a></li>
+            <li class="profile-notifications-wrapper">
+              <div class="dropdown">
+                <div id="dropdownMenu-profile" data-toggle="dropdown" aria-expanded="true" class="avatar-wrapper"><img src="apps/files/img/profile.png"></div>
+                <div class="profile-notifications-bubble">122</div>
+                <ul role="menu" aria-labelledby="dropdownMenu-profile" class="dropdown-menu contextual-menu">
+                  <li class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner"></span></li>
+                  <li class="menu-item-iconavatar"><img src="apps/files/img/profile.png" alt="" title="Perfil"></li>
+                  <li class="menu-item-iconavatar-right">
+                    <ul>
+                      <li class="menu-item-username"><i class="icon-ntx icon-cloud"></i><span>Federica Garcia   </span></li>
+                      <li class="menu-subitem-username"><span>federica.garcia                                                                                                                           </span></li>
+                      <li><a href="#">Tu cuenta</a></li>
+                      <li><a href="#">Notificaciones</a><span class="badge">7</span></li>
+                      <li><a href="#">Anuncios</a><span class="badge">4</span></li>
+                    </ul>
+                  </li>
+                  <li class="item-divisor"><span class="non-link"></span></li>
+                  <li><a href="#">Novedades en learningCloud</a></li>
+                  <li><a href="#">Acceso a manuales</a></li>
+                  <li><a href="#">Centro de ayuda</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#formModalSuggestions">Sugerencias</a></li>
+                  <li class="menu-item-important-action"><a href="#" rel="nofollow" class="btn btn-primary">Mi perfil Social</a></li>
+                  <li class="item-divisor"><span></span></li>
+                  <li class="menu-item-logout"><a href="#" rel="nofollow"><i class="icon-ntx icon-poweroff"></i> Salir de learningCloud</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="toggle-dashboard"><a href="javascript:void(0);" data-toggle="collapse" data-target="#menu-dashboard" class="collapsed"><span aria-hidden="true" class="glyphicon glyphicon-th"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard-wrapper-small">
+        <div id="menu-dashboard" class="row dashboard collapse">
+          <div class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner">    </span></div>
+          <div id="menu-apps" class="row">  
+            <div class="col-lg-12">   
+              <div class="col-md-1 app-wrapper">            <a href="apps/lcloud/index.html" data-toggle="tooltip" data-placement="top" title="CLOUD"><span class="icon-wrapper"><img src="apps/files/projects/lcloud.png"></span>
+                  <label>CLOUD</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/lcentral/index.html" data-toggle="tooltip" data-placement="top" title="CENTRAL"><span class="icon-wrapper"><img src="apps/files/projects/lcentral.png"></span>
+                  <label>CENTRAL                </label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/default/index.html" data-toggle="tooltip" data-placement="top" title="DEFAULT"><span class="icon-wrapper"><img src="apps/files/projects/default.png"></span>
+                  <label>DEFAULT</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/old/index.html" data-toggle="tooltip" data-placement="top" title="Old files"><span class="icon-wrapper"><img src="apps/files/projects/old.png"></span>
+                  <label>OLD</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="body-content">
+      <div id="menu-lateral" class="menu-lateral collapse in">
+        <nav role="navigation" class="navbar navbar-default">
+          <ul class="nav nav-stacked">
+            <li class="toggle"><a href="javascript:void(0);" data-toggle="collapse" data-target="#menu-lateral">                       <i class="icon icon-ntx icon-bars-menu fs-icon"></i></a></li>
+            <li class="active"><a href="apps/lcloud/users.html"><span class="icon icon icon-ntx icon-members"></span>
+                <label>Usuarios</label></a></li>
+            <li><a href="apps/lcloud/groups-table.html"><span class="icon icon icon-ntx icon-groups"></span>
+                <label>Grupos</label></a></li>
+            <li><a href="apps/lcloud/extensible_fields.html"><span class="icon icon icon-ntx icon-input"></span>
+                <label>Campos extend.</label></a></li>
+            <li><a href="apps/lcloudapps-list.html"><span class="icon icon icon-ntx icon-cubes"></span>
+                <label>Apps</label></a></li>
+            <li><a href="apps/lcloud/list-external-apps.html"><span class="icon icon icon-ntx icon-external-apps"></span>
+                <label>External Apps</label></a></li>
+            <li><a href="apps/lcloud/google-analytics-config.html"><span class="icon icon icon-ntx icon-collections"></span>
+                <label>Integrations</label></a></li>
+            <li><a href="#"><span class="icon icon icon-ntx icon-news"></span>
+                <label>Anuncios</label></a></li>
+            <li><a href="#"><span class="icon icon icon-ntx icon-ranking"></span>
+                <label>Sondeos</label></a></li>
+            <li><a href="apps/lcloud/lookandfeel.html"><span class="icon icon icon-ntx icon-appearance"></span>
+                <label>Apariencia</label></a></li>
+            <li><a href="apps/lcloud/password-config.html"><span class="icon icon icon-ntx icon-gear"></span>
+                <label>Conf. Avanzada</label></a></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row detail-header detail-header-sm">
+            <div class="col-md-12">
+              <div class="row col-reverse-responsive-md">
+                <div class="col-md-9">
+                  <div role="group" class="btn-group">
+                    <button type="button" data-toggle="modal" data-target="#formModalPopupExternalApp" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Add app                              </button>
+                  </div>
+                  <div role="group" class="btn-group">
+                    <button type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes" class="btn btn-default">Activate</button>
+                    <button type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes" class="btn btn-default">Deactivate </button>
+                  </div>
+                  <div role="group" class="btn-group">
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span>Delete              </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <form action="#" method="post" name="userSearchForm" class="form form-inline form-inverse form-right form-thin">
+                    <fieldset>
+                      <div class="form-group form-group-right form-group-search">
+                        <div class="input-group">
+                          <div class="inner-addon left-addon clearfix"><i id="" class="glyphicon glyphicon-search inner left"></i>
+                            <input type="text" name="searchTerm" value="" placeholder="Buscar" id="" class="form-control"><i id="" class="fa fa-close inner right"></i>
+                          </div><span class="input-group-btn">
+                            <button type="button" data-toggle="collapse" data-target="#form-advanced-search,#form-simple" class="btn btn-toggle"><span class="glyphicon glyphicon-filter"></span></button></span>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Formulario de búsqueda avanzada-->
+              <form id="form-advanced-search" class="form form-horizontal form-inverse form-advanced-search collapse col-md-12"><a href="javascript:void(0);" data-toggle="collapse" data-target="#form-advanced-search,#form-simple" class="toggle-form">Cerrar <span>X</span></a>
+                <legend>Búsqueda avanzada</legend>
+                <fieldset>
+                  <div class="form-group">
+                    <label for="input1" class="col-sm-3 control-label">Name</label>
+                    <div class="col-sm-9">
+                      <input id="input1" type="text" placeholder="Name" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="input2" class="col-sm-3 control-label">Description</label>
+                    <div class="col-sm-9">
+                      <input id="input2" type="text" placeholder="Description" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="input3" class="col-sm-3 control-label">Status</label>
+                    <div class="col-sm-9">
+                      <input id="input3" type="text" placeholder="Status" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                      <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <!-- ./Formulario de búsqueda avanzada-->
+          </div>
+          <div class="row visible-xs">
+            <div class="col-xs-12">
+              <div class="checkbox checkbox-primary">
+                <input id="checkbox" type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes" data-checkbox-selectall="">
+                <label for="checkbox">Seleccionar todos   </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div role="main" class="col-md-12">
+              <table id="external-apps" class="table table-full-width table-responsive table-hover vertical-align-center">
+                <thead>
+                  <tr>
+                    <th class="col-checkbox">
+                      <div class="checkbox checkbox-primary">
+                        <input id="checkbox" type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes" data-checkbox-selectall="">
+                        <label for="checkbox"></label>
+                      </div>
+                    </th>
+                    <th class="sortable sorted">Logo                           </th>
+                    <th class="sortable sorted desc">Name</th>
+                    <th class="sortable sorted desc">Order</th>
+                    <th class="sortable sorted">Description</th>
+                    <th class="sortable sorted">State </th>
+                  </tr>
+                </thead>
+                <tbody>                      
+                  <tr>
+                    <td class="checkbox-app">
+                      <div class="checkbox checkbox-primary">
+                        <input id="checkbox1" type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td class="logo"><img src="apps/files/img/external-apps/youtube.png"></td>
+                    <td class="title">                      <a href="#">Youtube</a></td>
+                    <td class="order"><span class="visible-xs">Orden: 1</span><span class="hidden-xs">1     </span></td>
+                    <td>YouTube (pronunciación AFI [ˈjuːtjuːb]) es un sitio web en el cual los usuarios pueden subir y compartir vídeos. Aloja una variedad de clips de películas, programas de televisión y vídeos musicales, así como contenidos amateur como videoblogs. A pesar de las reglas de YouTube contra subir vídeos con todos los derechos reservados, este material existe en abundancia.</td>
+                    <td class="state"> <span class="active">Active</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="checkbox-app">
+                      <div class="checkbox checkbox-primary">
+                        <input id="checkbox1" type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td class="logo"><img src="apps/files/img/external-apps/kalturalogo.png"></td>
+                    <td class="title">                      <a href="#">Kaltura</a></td>
+                    <td class="order"><span class="visible-xs">Orden: 2</span><span class="hidden-xs">2     </span></td>
+                    <td>Kaltura es una compañía de software, que ha creado la primera plataforma de código abierto que permite la gestión de video, así como la creación, interacción y colaboración. La plataforma de Kaltura permite integrar en cualquier página web, las funcionalidades avanzadas e interactivas del rich-media como por ejempo, búsqueda, subida, importación, edición, anotación, remezcla y división de material fotográfico, vídeo, y audio.</td>
+                    <td class="state"> <span class="inactive">Inactive              </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="checkbox-app">
+                      <div class="checkbox checkbox-primary">
+                        <input id="checkbox1" type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td class="logo"><img src="apps/files/img/external-apps/mail.png"></td>
+                    <td class="title">                      <a href="#">Mail</a></td>
+                    <td class="order"><span class="visible-xs">Orden: 3</span><span class="hidden-xs">3     </span></td>
+                    <td>Lorem ipsum bla bla bla bla bla bla</td>
+                    <td class="state"> <span class="inactive">Inactive              </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="checkbox-app">
+                      <div class="checkbox checkbox-primary">
+                        <input id="checkbox1" type="checkbox" data-group-checkboxes="nombre_grupo_checkboxes">
+                        <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td class="logo"><img src="apps/files/img/external-apps/maps.png"></td>
+                    <td class="title">                      <a href="#">Maps</a></td>
+                    <td class="order"><span class="visible-xs">Orden: 4</span><span class="hidden-xs">4     </span></td>
+                    <td>Google Maps es un servidor de aplicaciones de mapas en la web que pertenece a Alphabet Inc. Ofrece imágenes de mapas desplazables, así como fotografías por satélite del mundo e incluso la ruta entre diferentes ubicaciones o imágenes a pie de calle con Google Street View.</td>
+                    <td class="state"> <span class="active">Active</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Formulario Modal-->
+          <div id="formModalPopupExternalApp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal form-modal fade">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                  <h4 id="myModalLabel" class="modal-title">Add app</h4>
+                </div>
+                <div class="modal-body">
+                  <!-- Contenido modal-->
+                  <form class="form form-horizontal">
+                    <fieldset>
+                      <div class="form-group-title">
+                        <label>APP INFO + LTI SETTINGS</label>
+                      </div>
+                      <div class="form-group form-group-two-columns col-reverse-responsive col-reverse-responsive-md">
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                          <div class="form-group">                                  
+                            <div class="col-sm-12">
+                              <div id="dzupload_1" class="dropzone">
+                                <div class="dz-default dz-message">
+                                  <label class="title">Arrastra tu imagen aqu&iacute;...</label><span>&oacute;</span>
+                                  <button id="btn_dzupload_3" onclick="return false;" class="btn btn-default">Selecciona en tu disco</button><span class="info"></span>Formatos: jpg, png &oacute; gif<br>Dimensiones: 1200x1200 px, máximo 2Mb                                                                        
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                          <div class="form-horizontal">
+                            <div class="form-group">
+                              <label for="appname" class="col-sm-4 control-label">
+                                 
+                                Name *
+                              </label>
+                              <div class="col-sm-8">                                         
+                                <input placeholder="App name" id="appname" class="form-control"><span class="help-block">  </span>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="apporderappearance" class="col-sm-4 control-label">
+                                 
+                                Order *
+                              </label>
+                              <div class="col-sm-8">                                          
+                                <input placeholder="Number" id="apporderappearance" class="form-control"><span class="help-block"></span>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="appurl" class="col-sm-4 control-label">
+                                 
+                                URL *
+                              </label>
+                              <div class="col-sm-8">                                         
+                                <input id="appurl" class="form-control"><span class="help-block"> </span>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="appcustomerkey" class="col-sm-4 control-label">
+                                 
+                                Customer key *
+                              </label>
+                              <div class="col-sm-8">                                      
+                                <input id="appcustomerkey" class="form-control"><span class="help-block">                                   </span>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="appsharedsecret" class="col-sm-4 control-label">Shared secret *</label>
+                              <div class="col-sm-8">  
+                                <input id="appsharedsecret" type="password" placeholder="Password" class="form-control"><span class="help-block"></span>
+                              </div>
+                            </div>
+                            <div class="form-group">                           
+                              <label class="col-sm-4 control-label">
+                                 
+                                Abrir en *
+                              </label>
+                              <div class="col-sm-8">    
+                                <div class="radio radio-primary separation-top-small">
+                                  <input id="chk_newtab" type="radio" name="radiobutton" checked>
+                                  <label for="chk_newtab">
+                                     
+                                    Pestaña nueva                                           
+                                  </label>
+                                </div>
+                                <div class="radio radio-primary">
+                                  <input id="chk_currenttab" type="radio" name="radiobutton">
+                                  <label for="chk_currenttab">
+                                     
+                                    Pestaña actual
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group form-group-full-width separation-right-xxlarge">                           
+                        <label for="appcustomvalues" class="col-sm-3 control-label">
+                           
+                          Custom values
+                        </label>
+                        <div class="col-sm-9">                                                                         
+                          <textarea rows="4" id="appcustomvalues" class="form-control">                                </textarea><span class="help-block">  </span>
+                        </div>
+                      </div>
+                      <div class="form-group form-group-full-width separation-right-xxlarge">
+                        <label for="appdescription" class="col-sm-3 control-label">
+                           
+                          Description
+                        </label>
+                        <div class="col-sm-9">                                          
+                          <textarea placeholder="Description" id="appdescription" class="form-control"> </textarea><span class="help-block"></span>
+                        </div>
+                      </div>
+                      <div class="form-group-title">
+                        <label>Roles*</label>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                          <div class="row form-groups-checkboxes">                                         
+                            <div class="checkbox checkbox-primary">
+                              <input id="chk_student" type="checkbox">
+                              <label for="chk_student">Estudiante</label>
+                            </div>
+                            <div class="checkbox checkbox-primary">
+                              <input id="chk_teacher" type="checkbox">
+                              <label for="chk_teacher">Desarrollador de contenido                                         </label>
+                            </div>
+                            <div class="checkbox checkbox-primary">
+                              <input id="chk_content_developer" type="checkbox">
+                              <label for="chk_content_developer">Administrador</label>
+                            </div>
+                            <div class="checkbox checkbox-primary">
+                              <input id="chk_observer" type="checkbox">
+                              <label for="chk_observer">Profesor                                           </label>
+                            </div>
+                            <div class="checkbox checkbox-primary">
+                              <input id="chk_admin" type="checkbox">
+                              <label for="chk_admin">Observador</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group form-group-submit">
+                        <div class="col-sm-12">
+                          <div class="checkbox checkbox-primary separation-right">
+                            <input id="chk_active_app" type="checkbox" checked>
+                            <label for="chk_active_app">Activar</label>
+                          </div>
+                          <div class="clear visible-xs"></div>
+                          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-remove"></span>Cancel</button>
+                          <button type="submit" class="btn btn-primary"><span class="fa fa-floppy-o"></span>Create</button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <!-- ./Contenido modal-->
+              </div>
+            </div>
+          </div>
+          <!-- ./Formulario modal-->
+          <div class="row">
+            <div class="col-md-12">
+              <nav class="pagination-wrapper">
+                <ul class="pagination">
+                  <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li class="active"><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                </ul>
+                <div class="clearfix">
+                  <label class="pagination-resume">Encontrados 1.257 items</label>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="formModalSuggestions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal form-modal fade">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+              <h4 id="myModalLabel" class="modal-title">Enviar sugerencia</h4>
+            </div>
+            <div class="modal-body">
+              <!-- Contenido modal-->
+              <form class="form form-horizontal">
+                <fieldset>
+                  <div class="form-group-title">
+                    <label>Env&iacute;anos tu sugerencia</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject" class="col-sm-2 control-label">Asunto</label>
+                    <div class="col-sm-10">
+                      <input id="subject" type="text" placeholder="Asunto" class="form-control"><span class="help-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="content" class="col-sm-2 control-label">Descripci&oacute;n</label>
+                    <div class="col-sm-10">
+                      <textarea id="content" class="form-control"></textarea><span class="help-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group form-group-submit">
+                    <div class="col-sm-12">
+                      <button type="submit" class="btn btn-default">Cancelar</button>
+                      <button type="submit" class="btn btn-primary">Env&iacute;ar</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+              <!-- ./Contenido modal-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Formulario modal-->
+      <footer class="footer">
+        <div class="box">
+          <div class="developed">Developed by Netex Learning</div>
+          <div class="version">ver. X.Y.Z</div>
+        </div>
+      </footer>
+    </div><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="apps/vendors/jquery/jquery.1.11.2.min.js"></script><!-- jQuery UI -->
+    <script src="apps/vendors/jquery-ui-1.12.1/jquery-ui.min.js"></script><!-- Importante with locales para traducción cloud calendar -->
+    <script src="apps/vendors/momentjs/moment-with-locales.min.js"> </script><!-- Full Calendar scripts -->
+    <script src="apps/vendors/fullcalendar/lib/moment.min.js"></script>
+    <script src="apps/vendors/fullcalendar/fullcalendar.min.js"></script>
+    <script src="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.min.js"></script>
+    <script src="apps/vendors/fullcalendar/lang-all.js"></script><!-- jquery autocomplete master -->
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/jquery.mockjax.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/countries.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/demo.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/src/jquery.autocomplete.js"></script><!-- boostrap table -->
+    <script src="apps/vendors/bootstrap-table/dist/bootstrap-table.min.js"></script><!-- boostrap table locales para traducción -->
+    <script src="apps/vendors/bootstrap-table/dist/locale/bootstrap-table-es-ES.min.js"></script><!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="apps/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="apps/vendors/bootstrap-selects/bootstrap-select.min.js"></script>
+    <script src="apps/vendors/bootstrap-switches/js/bootstrap-switch.min.js"></script><!-- dropzone library -->
+    <script src="apps/vendors/dropzonejs/min/dropzone.min.js"></script><!-- js theme -->
+    <script src="apps/vendors/circles/circles.min.js"></script>
+    <script src="webcomponents/js/theme.js"></script><!-- bootstrap colorpicker -->
+    <script src="apps/vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script><!-- jquery ellipsis -->
+    <script src="apps/vendors/jquery-ellipsis/jquery.ellipsis.min.js"></script><!-- jquery mobile touch event -->
+    <script src="apps/vendors/jquery-mobile-touchevent/jquery.mobile.custom.min.js"></script><!-- bootstrap datetimepicker -->
+    <script src="apps/vendors/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script><!-- circular progress bar -->
+    <script src="apps/vendors/circular-progressbar/dist/progressbar.min.js"></script><!-- infinity repeteable form fields -->
+    <script src="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/js/infinity.min.js"></script><!-- croppie -->
+    <script src="apps/vendors/croppie/croppie.min.js"></script><!-- Slide slick -->
+    <script src="apps/vendors/slick-1.6.0/slick/slick.min.js"></script><!-- Bar rating -->
+    <script src="apps/vendors/jquery-bar-rating-master/dist/jquery.barrating.min.js"></script><!-- bootstrap responsive table dropdown -->
+    <script src="apps/vendors/bootstrap-responsive-table-dropdown-master/bs-responsive-table-dropdown.js"></script>
+  </body>
+</html>

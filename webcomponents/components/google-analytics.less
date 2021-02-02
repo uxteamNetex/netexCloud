@@ -1,0 +1,69 @@
+#ga-api-client-id{
+    .form-with-icon-right {
+        position: relative;
+        width: 90%;
+        span {
+            top: 8px;
+            right: -35px;
+            position: absolute;
+        }
+    }
+}
+#googleAnalyticsConfigDates{
+    .form.form-inline {
+        display: inline-block;
+        fieldset{
+            width: 100%;
+            .form-group{
+                max-width: 400px;
+            }
+        }
+    }
+    .table.table-responsive {
+        td.cell-list{
+            .subtitle{
+                color: @color-lightgrey;
+            }
+        }
+    }
+}
+.google-analytics-chart{
+    min-height: 300px;
+    &.double-chart{
+        max-width: 600px;
+    }
+}
+.google-analytics-img{
+    max-width: 200px;
+    width: 100%;
+}
+
+.ga-property{
+    color: @color-grey;
+    font-size: 15px;
+}
+.ga-view{
+    color: @color-lightgrey;
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 767px) {
+    .empty-content-centered{
+        margin-top: 50px;
+    }
+}
+@media (min-width: 768px){
+    .empty-content-centered{
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 768px){
+    #googleAnalyticsConfigDates{
+        .table.table-responsive td:before {
+            height: auto;
+        }
+    }
+}

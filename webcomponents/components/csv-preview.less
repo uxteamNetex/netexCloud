@@ -1,0 +1,46 @@
+@import "../../themes/less/variables";
+
+@index-width: 30px;
+
+.csv-preview-container{
+    display: flex;
+    fieldset{
+        display: table-cell;
+    }
+}
+.csv-preview{
+    overflow: scroll;
+    height: 200px; 
+    border:1px solid @color-grey;
+    table{
+
+        th,td{
+            padding:5px;
+            &.index{
+                text-align: center;
+                min-width:@index-width;     
+                border-right:1px solid @color-grey; 
+            }
+        }
+        th.index, td.index{
+           
+        }
+
+        width:100%;        
+        thead{
+            tr{
+                border-bottom:1px solid @color-lightgrey;
+                th{                                       
+                }
+            }
+        }
+        tbody{
+            td{               
+                border-bottom:1px solid @color-extralightgrey;
+                border-right:1px solid @color-grey;
+            }
+            td{                
+            }
+        }
+    }
+}

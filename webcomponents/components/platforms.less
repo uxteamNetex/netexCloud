@@ -1,0 +1,55 @@
+@import "../../themes/less/variables";
+@import "../../themes/less/settings";
+@import "../mixins";
+@import "helpers";
+
+#platforms{
+    td.name{
+        padding-top:10px;
+        //min-width: 160px;
+        div.icon-mark-wrapper{
+            width: 20px;
+            float: left;
+            /* text-align: center; */
+            margin-top: 5px;
+            span.icon-ntx{                 
+                vertical-align: bottom;
+            }
+            span.icon-mark-check{               
+            }
+        }        
+        img{
+            margin-left:5px;
+            margin-right:5px;
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+        }
+        label{           
+            display: initial;
+            word-break: break-all;
+        }
+    }
+    td.state{
+        span.purchased{            
+            color:@color-lightgrey;
+        }
+    }
+}
+
+#platform-config-detail{
+    dl{
+        dt{
+            text-align:left;
+        }
+    }
+    .platforms-list-apps{
+        img.img-app-platform{
+            margin-top:5px;
+            margin-bottom:5px;
+            width:65px;
+            height:65px;
+            border-radius: 6px;
+        }
+    }
+}

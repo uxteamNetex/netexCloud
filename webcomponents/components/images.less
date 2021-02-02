@@ -1,0 +1,127 @@
+@import "../../themes/less/variables";
+@import "../mixins";
+
+
+.image-box-wrapper {
+
+  img {
+    border: 1px solid @color-lightergrey;
+    border-radius: @border-radius-large;
+    overflow: hidden;
+    max-width: @img-dimensions;
+    max-height: @img-dimensions;
+    padding: @padding-small;
+    margin: @padding-small 0;    
+  }
+  &.image-box-img-size{
+     img {
+      max-width: inherit;
+      max-height: inherit;
+     }
+  }
+  &.image-box-lg-wrapper {
+    img {
+      max-width: @img-lg-dimensions;
+      max-height: @img-lg-dimensions;
+    }
+  }
+  &.image-box-sm-wrapper {
+    img {
+      max-width: @img-sm-dimensions;
+      max-height: @img-sm-dimensions;
+    }
+  }
+  &.image-box-xm-wrapper {
+    img {
+      max-width: @img-xm-dimensions;
+      max-height: @img-xm-dimensions;
+      padding: @padding-tiny;
+    }
+  }
+  &.image-box-xxm-wrapper {
+    img {
+      max-width: @img-xxm-dimensions;
+      max-height: @img-xxm-dimensions;
+      padding: @padding-tiny;
+    }
+  }
+  &.image-box-xxxm-wrapper {
+    img {
+      max-width: @img-xxxm-dimensions;
+      max-height: @img-xxxm-dimensions;
+      padding: @padding-tiny;
+    }
+  }
+  &.image-box-xxxxm-wrapper {
+    img {
+      max-width: @img-xxxxm-dimensions;
+      max-height: @img-xxxxm-dimensions;
+      padding: @padding-tiny;
+    }
+  }
+  &.unbordered, &.unbordered img {
+    border: 0 none;
+    border-radius: 0;
+
+  }
+  &.circle {
+    border-radius: 50% !important;
+    img {border-radius: 50% !important; }
+  }
+}
+
+.image-box-wrapper-innactive-close{
+   .btn-circle-close{
+      display:none;   
+   }
+}
+.image-box-wrapper-close{  
+  border: 1px solid @color-lightergrey;
+  border-radius: @border-radius-large;
+  padding: @padding-small;
+  margin: @padding-small 0; 
+  img{
+    border:none;
+  } 
+  .btn-circle-close{      
+      display:none;
+  }
+}
+.image-box-wrapper-close:hover {
+    cursor: pointer;
+    border: 1px solid @color-primary;    
+    .btn-circle-close{
+      display:block;
+    }
+}
+.image-box-wrapper-no-edit{
+  border: 1px solid @color-lightergrey;
+  height: 200px;
+  margin: 0 0 15px; 
+  overflow: hidden;
+  padding: @padding-small;
+  width: 200px;
+}
+
+.app-img-wrapper img {   
+    width: @img-sm-dimensions;
+    height: @img-sm-dimensions;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.img-circle-container{
+  border-radius: 50%;
+  display: inline-block;
+  height: 35px;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+  width: 35px;
+  img{
+    height: 100%;
+    margin: 0!important;
+    position: absolute;
+    width: auto;  
+  }
+}

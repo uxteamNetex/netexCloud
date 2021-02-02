@@ -1,0 +1,92 @@
+doctype html
+html(lang="en")
+    include ../../templates/components/_vars        
+    block vars
+        - showLateralMenu = true        
+        - sectionTitle = 'ICONS'        
+        - pathuserprofile  = '/apps/files/img/profile.png'
+        - pathmenudashboardicon = '/apps/files/icons/icon.svg'        
+        - pathlogo = '/apps/files/icons/logo/logo.png'        
+    block head
+        meta( charset="utf-8")
+        meta( http-equiv="X-UA-Compatible", content="IE=edge")
+        meta( name="viewport", content="width=device-width, initial-scale=1")
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        title #{appTitle}
+        <!-- fonts -->
+        link( href='//fonts.googleapis.com/css?family=Lato:100,400,700', rel='stylesheet', type='text/css')
+        <!-- Bootstrap -->
+        link( href="/apps/vendors/bootstrap/css/bootstrap.min.css", rel="stylesheet")
+        link( rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+        <!-- Theme -->
+        link( href="#{pathCSSTheme}", rel="stylesheet")
+        <!-- Force CSS Customizable -->
+        link( href="app.css", rel="stylesheet")          
+        
+    - var bodybg = ''
+    if bodyBGInverse
+        - bodybg = 'body-bg-inverse'
+    - bodybg =  bodybg + ' ' + bodyclasses + ' desktop-classic'
+    body(class=bodybg)        
+        div#menu-lateral-app
+            .row.profile
+                .col-lg-12.separation-top-medium
+                    div.profile-avatar
+                            img(src=pathuserprofile, alt="", title="Perfil")
+                    div.profile-data                        
+                        h4 Javier Méndez Veira
+                        h5 javier.mendez@netexlearning.net
+            .row.options
+                .col-preffix
+                    div.zone
+                .col-xs-9
+                    div.zone
+            .row.options
+                .col-preffix
+                    div.zone
+                .col-xs-6
+                    div.zone
+            .row.options
+                .col-preffix
+                    div.zone
+                .col-xs-9
+                    div.zone
+            .row.options
+                .col-preffix
+                    div.zone
+                .col-xs-6
+                    div.zone
+            .row.options.separator
+                .col-preffix
+                    div.zone
+                .col-xs-6
+                    div.zone
+            .row.options
+                .col-preffix
+                    div.zone
+                .col-xs-9
+                    div.zone
+            .row.options
+                .col-preffix
+                    div.zone
+                .col-xs-6
+                    div.zone
+        block topbar
+            nav(class="navbar navbar-topbar")
+                div.container-fluid.topbar-wrapper             
+                    div#navbar.navbar-topbar-wrapper.navbar-collapse                           
+
+                                                        
+        div.body-content           
+            section.content
+                div.container-fluid
+                                               
+                     
+block footerscripts
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    script(src="/apps/vendors/jquery/jquery.1.11.2.min.js")
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    script(src="/apps/vendors/bootstrap/js/bootstrap.min.js")    
+    
+      
+            

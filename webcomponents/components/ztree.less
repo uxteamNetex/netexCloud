@@ -1,0 +1,91 @@
+.ztree{
+    li{
+        list-style-type: none;
+        position: relative;
+        span{
+            &.button{
+                &.noline_close, &.noline_open{
+                    background-position: center !important;
+                    background-size: inherit;
+                    height: 34px !important;
+                    position: absolute;
+                    right: 0 !important;
+                    top: 12px !important;
+                    width: 34px !important;
+                    z-index: 99;  
+                }
+                &.ico_open, &.ico_close, &.ico_docu{
+                    background-image: url('@{url_images}icon-folder.png') !important;
+                    background-position: 0 !important;
+                    background-size: contain;
+                    height: 18px !important;
+                    margin: 0 0 0 17px !important;
+                    position: absolute;
+                    top: 20px;
+                    width: 23px !important;
+                }
+                &.noline_close{
+                    background-image: url('@{url_images}icon-arrow-down.png') !important;
+                }
+                &.noline_open{
+                    background-image: url('@{url_images}icon-arrow-up.png') !important;
+                }
+                &.noline_docu{
+                    display: none;
+                }
+            }
+        }
+        a{
+            border-bottom: 1px solid @color-extralightgrey;
+            height: 60px;
+            padding: 0 !important;
+            vertical-align: middle !important;
+            width: 100%;
+            &.ellipsis-points-2{
+                height: 60px;
+                margin: 0 auto;
+                position: relative;    
+            }
+            &:hover{
+                background-color: @color-extralightgrey;
+                text-decoration: none !important;
+            }
+            &.curSelectedNode{
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#56a7d7+0,56a7d7+7,f4f4f4+7,f4f4f4+100 */
+                background: @color-action; /* Old browsers */
+                background: -webkit-linear-gradient(left, @color-action 0%, @color-action 2%, @color-extralightgrey 2%, @color-extralightgrey 100%);
+                background: -o-linear-gradient(left, @color-action 0%, @color-action 2%, @color-extralightgrey 2%, @color-extralightgrey 100%);
+                background: linear-gradient(to right, @color-action 0%, @color-action 2%, @color-extralightgrey 2%, @color-extralightgrey 100%); /* FF3.6-15 */
+                /* Chrome10-25,Safari5.1-6 */
+                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                border: none !important;
+                color: @color-grey !important;
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color-action', endColorstr='@color-extralightgrey',GradientType=1 ); /* IE6-9 */
+                /*background-color: @color-extralightgrey !important;*/
+                height: 60px !important;
+                opacity: 1 !important;
+            }
+            span{
+                &.node_name{
+                    color: @color-grey;
+                    font-size: 14px;
+                    height: auto;
+                    top: 50%;
+                    overflow: hidden;
+                    padding-left: 46px;
+                    padding-right: 35px;
+                    position: absolute;
+                    transform: translate(0, -50%);
+                    width: inherit; 
+                    white-space: normal;
+                }
+            } 
+        }
+        ul{
+            padding: 0 0 0 10px !important;
+            &.line{
+                background: none !important;    
+            } 
+        }
+    }    
+}

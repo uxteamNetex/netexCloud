@@ -1,0 +1,22 @@
+body.login,
+body.login .login-instructions,
+body.login .login-wrapper .form-login label,
+body.login .login-wrapper .form-login .form-group .btn.btn-link,
+body.login .login-wrapper .forgot-password-wrapper a,
+body.login .footer-content {
+  color: #999999;
+}
+body.login {
+  background: url('apps/files/wallpapers/wallpaper_01.png');
+}
+body.login .login-wrapper .login-logo {
+  background: url('apps/files/icons/logo/logocloudlarge.png') no-repeat top center;
+}
+body.login .login-wrapper .form-login .btn-primary,
+body.login .login-wrapper .form-login .checkbox-primary input[type="checkbox"]:checked + label::before {
+  background-color: #56A7d7;
+  border-color: #56A7d7;
+}
+body.login .login-wrapper .form-login .btn-primary:hover {
+  background-color: #3091ca;
+}

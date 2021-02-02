@@ -1,0 +1,40 @@
+.croppie-wrapper {  
+  box-sizing: border-box;
+  position: relative;
+  min-height: 150px;
+  background: white;
+  padding: 20px 0;
+  //border: 2px dashed @color-lightergrey;
+  //border-radius: @border-radius-default;
+
+  .croppie-wrapper-innactive-close{
+    border: 1px solid @color-lightergrey;
+    border-radius: @border-radius-large;
+    .btn-circle-close{
+        border:1px solid red;
+        display:none;   
+    }
+  }
+  .croppie-wrapper-close{  
+    border: 1px solid @color-lightergrey;
+    border-radius: @border-radius-large;
+    padding: @padding-small;
+    margin: @padding-small 0; 
+    img{
+      border:none;
+    } 
+    
+    .btn-circle-close{      
+        display:none;
+    }
+  }
+
+  .croppie-wrapper-close:hover {
+      cursor: pointer;
+      border: 1px solid @color-primary;    
+      .btn-circle-close{
+        display:block;
+      }
+  }
+
+}

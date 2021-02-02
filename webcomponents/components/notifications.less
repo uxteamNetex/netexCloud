@@ -1,0 +1,87 @@
+@import "../../themes/less/variables";
+@import "../../themes/less/settings";
+@import "../mixins";
+@import "icons";
+@import "helpers";
+
+
+
+
+.notification {
+
+  width: @notification-width;
+
+  .z-depth-half;
+
+  .notification-head {
+    height: @notification-head-height;
+    color: @color-white;
+    font-size: @font-size-xlarge;
+    font-weight: bold;
+    .align-item-vertical-center();
+    padding: 0 @material-padding-base;
+
+    span {
+      padding-left: @material-padding-base;
+      .ellipsis();
+    }
+    &:before {
+      .opacity(0.5);
+    }
+  }
+
+
+  .notification-body {
+    padding: @material-padding-large @material-padding-xlarge @material-padding-xlarge @material-padding-xlarge;
+    .notification-title {
+      font-weight: bold;
+      font-style: italic;
+      font-size: @font-size-large;
+      color: @color-grey;
+
+    }
+
+    .notification-content {
+      color: @color-grey;
+      padding-top: @material-padding-large;
+    }
+
+    .notification-logo {
+      padding-top: @material-padding-xlarge;
+    }
+  }
+
+  &.notification-success {
+    .notification-head {
+      background-color: @color-success;
+      .icon-ntx-before(@icon-success; @font-size-icon-xmedium);
+    }
+  }
+  &.notification-error {
+    .notification-head {
+      background-color: @color-error;
+      .icon-ntx-before(@icon-error; @font-size-icon-xmedium);
+    }
+  }
+  &.notification-info {
+    .notification-head {
+      background-color: @color-info;
+      .icon-ntx-before(@icon-info; @font-size-icon-xmedium);
+    }
+  }
+  &.notification-warning {
+    .notification-head {
+      background-color: @color-warning;
+      .icon-ntx-before(@icon-warning; @font-size-icon-xmedium);
+    }
+  }
+
+}
+
+
+@media all and (max-width: @responsive-sm-min-width) {
+  .notification {
+    .calc(width; '100% - @{material-padding-base}') !important;
+  }
+}
+

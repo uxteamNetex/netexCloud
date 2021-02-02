@@ -1,0 +1,617 @@
+@import "../../themes/less/variables";
+@import "../mixins";
+@import "icons";
+
+#sortable {
+  list-style-type: none;
+  width: 100%;
+  .card-wrapper {
+    &:hover{
+      cursor: -webkit-grab;
+    }
+  }
+  .ui-state-default {
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 1.2em;
+    height: 120px;
+    line-height: 1.2em;
+    width: 100%;
+    float: left;
+    &.ui-h200{
+      height: 200px;
+    }
+    &.ui-w50{
+      width: 50%;
+    }
+    &:hover{
+      cursor: -webkit-grab;
+    }
+  }
+  .ui-state-highlight { 
+    height: 120px;
+    line-height: 1.2em; 
+    margin: 5px 0;
+    float: left;
+    width: 50%;
+  }
+  .ui-sortable-helper{
+    opacity: 0.7;
+  }
+}
+
+  
+
+/***************************************************************************/
+/****************************** CARDS **************************************/
+
+.cards-wrapper {
+  padding: @padding-base;
+  .card-wrapper {
+    position: relative;
+    float: left;
+    width: 100%;
+    .transiction(350ms; width; ease-in-out );
+    padding-left: 15px;
+    padding-right: 15px;
+    .card {
+      float: left;
+      border: 1px solid @color-lightergrey;
+      border-radius: @border-radius-xxlarge;
+      background-color: @color-white;
+      padding: @padding-xxlarge @padding-base;
+      margin-bottom: @padding-xxlarge;
+      text-decoration: none;
+      text-align: center;
+      width: 100%;
+      &:hover {
+        .box-shadow;
+      }
+      &.unbordered {
+        border: 0 none;
+        &:hover {
+          .box-shadow-none;
+        }
+      }
+
+      &.separation-reset { padding:  0 ; }
+
+      > div {
+        margin: 0 auto;
+      }
+
+      .image-circle-mixin(@cards-img-height; @cards-circle-padding; @cards-img-border);
+      .image-square-mixin(@cards-img-height; @cards-circle-padding; @cards-img-border);
+
+      .title, .card-title {
+        font-size: @font-size-xlarge !important;
+        &.card-title-sm {
+          font-size: @font-size-large !important;
+        }
+        &.card-title-lg {
+          font-size: @font-size-xxlarge !important;
+        }
+      }
+
+      .description {
+        padding-top: @padding-medium;
+        margin-bottom: @padding-base;
+        font-size: @font-size-large;
+        color: @color-grey;
+        height: 60px;
+        overflow: hidden;
+      }
+      .info, .remark {
+        text-align: center;
+        > * {
+          display: block;
+        }
+      }
+      .info {
+        font-size: @font-size-subtitle;
+        color: @color-lightgrey;
+        font-style: italic;
+      }
+      .remark {
+        font-size: @font-size-subtitle;
+        color: @color-lightgrey;
+      }
+      .card-content {
+        max-width: @list-entity-max-width;
+        color: @color-grey;
+        font-size: @font-size-medium;
+        padding-top: @padding-base;
+      }
+
+      .actions {
+        padding-top: @padding-base;
+        .btn:last-child {
+          margin-right: 0;
+        }
+      }
+
+    }
+
+    .mobile-compatible {
+      position: absolute;
+      border-top-right-radius: @border-radius-large;
+      right: 0;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      z-index: 500;
+      overflow: hidden;
+      i.icon-ntx {
+        color: @color-lightgrey;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        font-size: @font-size-icon;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        top: -100%;
+        left: 50%;
+        z-index: -1;
+        background: @color-grey;
+        transform: rotate(315deg) ;
+        -webkit-transform: rotate(315deg) ;
+        -moz-transform: rotate(315deg) ;
+        -o-transform: rotate(315deg) ;
+        -ms-transform: rotate(315deg) ;
+      }
+
+    }
+
+  }
+
+  &.cards-full-width {
+    .card-wrapper {
+      .calc(width; '100% + @{padding-base} + @{padding-base}') !important;
+      padding-left: @padding-base;
+      padding-right: @padding-base;
+      margin-right: -@padding-base;
+      margin-left: -@padding-base;
+      &.card-wrapper-50{
+        .calc(width; '50% + @{padding-base} + @{padding-base}') !important;  
+        .card-report{
+          margin-right: 10px;  
+        }
+      }
+      &.dragable{
+        background-color: red;  
+      }
+      .card-body {
+        padding-left: @padding-base;
+        width: 100%;
+      }
+      .card-report{
+        background-color: #fff;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+        margin-bottom: 20px;
+        .card-info{
+          background-color: #eee;
+          width: 350px;
+          float: left;
+          padding: 15px;
+          text-align: left;
+          i{
+            font-size: 30px;
+            color: #666;  
+          }
+          .report-type-title {
+            color: #666;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 10px 0;
+          }
+          .report-type-description {
+            line-height: 18px;
+          }
+        }
+        .card-body{
+          float: left;
+          padding: 15px;
+          .calc(width; '100% - 250px');
+          .card-report-type{
+            border-bottom: 1px solid #eee;
+            padding: 10px;  
+            &:last-child{
+              border-bottom: none;  
+            }
+          }
+        }
+      }
+    }
+  }
+  &.cards-horizontal {
+    padding: 0 @padding-base;
+    .card {
+      padding: @padding-large;
+      margin-bottom: @padding-medium;
+      position: relative;
+      > * {
+        float: left;
+        margin: 0 !important;
+        text-align: left !important;
+      }
+      > div:not(.image-circle):not(.card-image), > div:not(.image-square):not(.card-image) {
+        clear: right;
+      }
+      .image-circle, .image-square, .card-image {
+        clear: both;
+      }
+      .image-circle ~ div, .image-square ~ div, .card-image ~ div {
+        padding-left: @padding-xxlarge;
+      }
+      .description {
+        padding-top: 0;
+        margin-bottom: @padding-small;
+        height: auto;
+        overflow: visible;
+      }
+      .info, .description, .item-info, .subtitle, .title {
+        text-align: left !important;
+      }
+      .item-info {
+        float: left;
+        color: @color-lightgrey;
+        font-size: @font-size-medium;
+        &.right {
+          float: right;
+        }
+        &.date {
+          font-style: italic;
+          padding-top: @padding-base;
+        }
+      }
+
+      .card-body {
+        padding-left: @padding-base;
+        width: 100%;
+        color: @color-grey;
+
+        .actions {
+          float: right;
+          .btn:last-child, .btn-group:last-child {
+            margin-right: 0;
+          }
+        }
+
+
+      }
+
+      .title {
+        font-size: @font-size-xxxlarge;
+        color: @color-grey;
+      }
+
+      .subtitle {
+        font-size: @font-size-small;
+        font-weight: bold;
+        color: @color-lightgrey;
+        /*.badge {
+          color: @color-lightgrey;
+          border-radius: @border-radius;
+          background-color: @color-extralightgrey;
+          margin-left: @padding-small;
+        }*/
+      }
+
+      > .actions {
+        .btn:last-child, .btn-group:last-child {
+          margin-right: 0;
+        }
+        position: absolute;
+        right: @padding-xxlarge;
+      }
+    }
+
+    .card-wrapper {
+     /* border-bottom: 1px solid @color-lightergrey;*/
+    }
+
+    &.cards-announcements{
+      .card{
+        border-radius: 6px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+        transition: box-shadow 0.3s ease-in-out;
+        .card-mark {
+          position: absolute;
+          border-top-right-radius: 6px;
+          right: 0;
+          top: 0;
+          width: 50px;
+          height: 50px;
+          z-index: 500;
+          overflow: hidden;
+            i.icon-ntx {
+              color: @color-yellow;
+              position: absolute;
+              top: 2px;
+              right: 4px;
+              font-size: @font-size-icon-medium;
+            }
+          &:before {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -100%;
+            left: 50%;
+            z-index: -1;
+            background: @color-grey;
+            transform: rotate(315deg) ;
+            -webkit-transform: rotate(315deg) ;
+            -moz-transform: rotate(315deg) ;
+            -o-transform: rotate(315deg) ;
+            -ms-transform: rotate(315deg) ;
+          }
+        }
+        .card-body {
+           .calc_important(width; "100% - @{img-sm-dimensions} - @{padding-medium}");
+        }
+      }
+      .card:hover{
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      }  
+    }
+  }
+
+  &.cards-list-detail {
+
+    &.cards-horizontal {
+      .card {
+        padding: @padding-xxlarge;
+      }
+    }
+
+    &.cards-full-width {
+       .card-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+        .card-body {
+          padding-left: @padding-xxlarge;
+        }
+      }
+    }
+  }
+
+}
+
+.subtitle {
+  .badge {
+    color: @color-lightgrey;
+    border-radius: @border-radius;
+    background-color: @color-extralightgrey;
+    margin-left: @padding-small;
+  }
+}
+
+.card-image {
+  padding-left: @padding-medium;
+  &.image-box-wrapper {
+    ~ .card-body {
+      .calc_important(width; "100% - @{img-dimensions} - @{padding-medium}");
+    }
+    &.image-box-lg-wrapper ~ .card-body {
+      .calc_important(width; "100% - @{img-lg-dimensions} - @{padding-medium}");
+    }
+
+    &.image-box-sm-wrapper ~ .card-body {
+      .calc_important(width; "100% - @{img-sm-dimensions} - @{padding-medium}");
+    }
+
+    &.image-box-xm-wrapper ~ .card-body {
+      .calc_important(width; "100% - @{img-xm-dimensions} - @{padding-medium}");
+    }
+
+    &.image-box-xxm-wrapper ~ .card-body {
+      .calc_important(width; "100% - @{img-xxm-dimensions} - @{padding-medium}");
+    }
+  }
+}
+
+.image-circle, .image-square {
+  position: relative;
+  &.image-circle-xm, &.image-square-xm {
+    height: @cards-xm-img-height !important;
+    width:  @cards-xm-img-width !important;
+    .image-wrapper {
+      height: (@cards-xm-img-height - 4px*2 - 0px*2)  !important;
+      width: (@cards-xm-img-width - 4px*2 - 0px*2)   !important;
+      img {
+        max-height: (@cards-xm-img-height - 4px*2 - 0px*2)   !important;
+      }
+    }
+  }
+
+  &.image-circle-sm ~ .card-body, &.image-square-sm ~ .card-body {
+    .calc_important(width; "100% - @{cards-sm-img-width}");
+  }
+
+  &.image-circle-sm, &.image-square-sm {
+    height: @cards-sm-img-height !important;
+    width:  @cards-sm-img-width !important;
+    .image-wrapper {
+      height: (@cards-sm-img-height - 4px*2 - 0px*2)  !important;
+      width: (@cards-sm-img-width - 4px*2 - 0px*2)   !important;
+      img {
+        max-height: (@cards-sm-img-height - 4px*2 - 0px*2)   !important;
+      }
+    }
+  }
+
+  &.image-circle-xm ~ .card-body, &.image-square-xm ~ .card-body {
+    .calc_important(width; "100% - @{cards-xm-img-width}");
+  }
+
+}
+
+.image-circle, .image-square {
+  .icon-ntx {
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: -5px;
+    font-size: @font-size-icon-xxxxmedium;
+  }
+  .circle_percent ~ .icon-ntx {
+    bottom: -10px;
+  }
+}
+
+
+@media (max-width: @responsive-xm-min-width) { //480px
+  
+}
+
+
+@media (max-width: @responsive-sm-min-width) { //768px
+  .cards-wrapper {
+    &.cards-announcements{
+      .card-wrapper{
+        .card {
+          .card-body{
+            .calc_important(width; "100% - @{padding-medium}");
+          }
+        }
+      }  
+    }
+    .card {
+      .image-circle {
+
+      }
+
+      .image-square ~ div:not(.subtitle), .image-circle ~ div:not(.subtitle), .card-image ~ div:not(.subtitle) {
+        padding-left: 0 !important;
+      }
+      .subtitle {
+        padding-left: @padding-base !important;
+        padding-top: @padding-large;
+      }
+      .title, .card-title {
+        font-size: @font-size-xlarge !important;
+        &.card-title-sm {
+          font-size: @font-size-large !important;
+        }
+        &.card-title-lg {
+          font-size: @font-size-xxlarge !important;
+        }
+      }
+      .card-body {
+        float:left;
+        clear: both !important;
+        width: 100% !important;
+        .item-info {
+          clear: both;
+          &.date {
+            float: left;
+          }
+        }
+      }
+      .actions {
+        right: 8px !important;
+        bottom: 8px;
+        .btn {
+          background-color: inherit;
+          border:0 none;
+          width: 48px;
+          height: 48px;
+          padding: 0;
+          min-width: 0;
+          span {
+            display: none;
+          }
+          i.fa {
+            font-size: @font-size-icon;
+          }
+        }
+      }
+    }
+    &.cards-horizontal {
+      .card {
+        margin-bottom: @padding-large;
+      }
+    }
+  }
+
+  .image-circle, .image-square {
+    &.image-circle-sm, .image-square-sm {
+      height: @cards-sm-img-dimensions-responsive-mobile !important;
+      width: @cards-sm-img-dimensions-responsive-mobile !important;
+      .image-wrapper {
+        height: (@cards-sm-img-dimensions-responsive-mobile - 4px*2 - 0px*2) !important;
+        width: (@cards-sm-img-dimensions-responsive-mobile - 4px*2 - 0px*2) !important;
+        img {
+          max-height: (@cards-sm-img-dimensions-responsive-mobile - 4px*2 - 0px*2) !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @responsive-md-min-width) { //992px
+  .cards-wrapper {
+    &.cards-full-width {
+      .card-wrapper {
+        .card-report{ 
+          display: block;
+          .card-info{
+            float: none;
+            padding: 15px 25px;
+            text-align: center;
+            width: 100%;
+          }
+          .card-body{
+            float: none;
+            width: 100%;  
+          }
+        } 
+      }
+    }
+  }
+}
+
+
+/**
+* Le da al componente cards un ancho determinado y hace que salten los elementos cuando es necesario
+*/
+.cards-responsive-behaviour (@_num-columns; @_min-width; @_max-width; @_column_less: (@_num-columns - 1)) {
+  @media (min-width: @_min-width) and (max-width: @_max-width) {
+    .cards-wrapper {
+      &.cards-filters {
+        .card-wrapper {
+          width: (100% / ( @_column_less  ));
+          &:nth-child(@{_column_less}n +1) {
+            clear: left;
+          }
+        }
+      }
+      &:not(.cards-filters) {
+        .card-wrapper {
+          width: (100% / ( @_num-columns ));
+          &:nth-child(@{_num-columns}n +1) {
+            clear: left;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.cards-responsive-behaviour(1; 0px; 459px; 1);
+.cards-responsive-behaviour(2; 460px; 768px);
+.cards-responsive-behaviour(3; 769px; 991px);
+.cards-responsive-behaviour(4; 992px; 1123px);
+.cards-responsive-behaviour(5; 1124px; 1349px);
+.cards-responsive-behaviour(6; 1350px; 1899px);
+.cards-responsive-behaviour(7; 1900px; 999999px);

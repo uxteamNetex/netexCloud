@@ -1,0 +1,51 @@
+@import "../../themes/less/variables";
+@import "../mixins";
+@import "icons";
+
+.cloud-tags-wrapper {
+  display: block;
+  width: 100%;
+
+}
+
+
+.cloud-tag {
+  padding-right: @padding-medium;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  &.central-tag{
+    &.selected{
+      color: @color-pink;
+    }
+  }
+
+  &.tag-size-1 {
+    font-size: @font-size-base;
+  }
+  &.tag-size-2 {
+    font-size: @font-size-xlarge;
+    font-weight: bold;
+  }
+  &.tag-size-3 {
+    font-size: @font-size-xxxlarge;
+    font-weight: bold;
+  }
+  &.tag-size-4 {
+    font-size: @font-size-xxxxlarge;
+    font-weight: bold;
+  }
+  &.tag-size-5 {
+    font-size: @font-size-title;
+    font-weight: bold;
+  }
+  &.tag-size-6 {
+    font-size: @font-size-title + 6px;
+    font-weight: bold;
+  }
+
+  &.selected {
+    color: darken(@color-action, 20%);
+  }
+}

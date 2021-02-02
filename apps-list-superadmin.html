@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CONFIGURACIÓN</title><!-- Bootstrap -->
+    <link href="apps/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--link( rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")-->
+    <link rel="stylesheet" href="apps/vendors/font-awesome-4.5.0/css/font-awesome.min.css"><!-- Theme -->
+    <link href="styles/theme_lcloud.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="apps/vendors/html5shiv/html5shiv.min.js"></script>
+    <script src="apps/vendors/respond/respond.min.js"></script><![endif]-->
+    <!-- jquery UI -->
+    <link href="apps/vendors/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet"><!-- bootstrap colorpicker -->
+    <link href="apps/vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet"><!-- bootstrap datetimepicker -->
+    <link href="apps/vendors/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"><!-- infinity repeteable form fields -->
+    <link href="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/css/infinity.min.css" rel="stylesheet"><!-- croppie -->
+    <link href="apps/vendors/croppie/croppie.css" rel="stylesheet"><!-- Slide slick -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick.css" rel="stylesheet"><!-- Add the new slick-theme.css if you want the default styling -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick-theme.css" rel="stylesheet"><!-- Bar rating theme -->
+    <link href="apps/vendors/jquery-bar-rating-master/dist/themes/css-stars.css" rel="stylesheet"><!-- bootstrap table -->
+    <link href="apps/vendors/bootstrap-table/dist/bootstrap-table.min.css" rel="stylesheet"><!-- animate -->
+    <link href="apps/vendors/animate/animate.css" rel="stylesheet"><!-- jquery autocomplete master -->
+    <link href="apps/vendors/jQuery-Autocomplete-master/content/styles.css" rel="stylesheet"><!-- Full Calendar Assets -->
+    <link href="apps/vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar_customized.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+    <link href="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.css" rel="stylesheet">
+  </head>
+  <body class="body-bg-inverse ">
+    <nav class="navbar navbar-topbar">
+      <div class="container-fluid topbar-wrapper">
+        <div class="navbar-header"><a href="#" class="navbar-brand">CONFIGURACIÓN</a></div>
+        <div id="navbar" class="navbar-topbar-wrapper navbar-collapse"><a href="javascript:window.history.back();" class="navigation-back"><i class="fa fa-chevron-left"></i></a>
+          <label>PLATFORMS</label>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="profile-username"><a href="#">Federica Garcia</a></li>
+            <li class="profile-notifications-wrapper">
+              <div class="dropdown">
+                <div id="dropdownMenu-profile" data-toggle="dropdown" aria-expanded="true" class="avatar-wrapper"><img src="apps/files/img/profile.png"></div>
+                <div class="profile-notifications-bubble">122</div>
+                <ul role="menu" aria-labelledby="dropdownMenu-profile" class="dropdown-menu contextual-menu">
+                  <li class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner"></span></li>
+                  <li class="menu-item-iconavatar"><img src="apps/files/img/profile.png" alt="" title="Perfil"></li>
+                  <li class="menu-item-iconavatar-right">
+                    <ul>
+                      <li class="menu-item-username"><i class="icon-ntx icon-cloud"></i><span>Federica Garcia   </span></li>
+                      <li class="menu-subitem-username"><span>federica.garcia                                                                                                                           </span></li>
+                      <li><a href="#">Tu cuenta</a></li>
+                      <li><a href="#">Notificaciones</a><span class="badge">7</span></li>
+                      <li><a href="#">Anuncios</a><span class="badge">4</span></li>
+                    </ul>
+                  </li>
+                  <li class="item-divisor"><span class="non-link"></span></li>
+                  <li><a href="#">Novedades en learningCloud</a></li>
+                  <li><a href="#">Acceso a manuales</a></li>
+                  <li><a href="#">Centro de ayuda</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#formModalSuggestions">Sugerencias</a></li>
+                  <li class="menu-item-important-action"><a href="#" rel="nofollow" class="btn btn-primary">Mi perfil Social</a></li>
+                  <li class="item-divisor"><span></span></li>
+                  <li class="menu-item-logout"><a href="#" rel="nofollow"><i class="icon-ntx icon-poweroff"></i> Salir de learningCloud</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="toggle-dashboard"><a href="javascript:void(0);" data-toggle="collapse" data-target="#menu-dashboard" class="collapsed"><span aria-hidden="true" class="glyphicon glyphicon-th"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard-wrapper-small">
+        <div id="menu-dashboard" class="row dashboard collapse">
+          <div class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner">    </span></div>
+          <div id="menu-apps" class="row">  
+            <div class="col-lg-12">   
+              <div class="col-md-1 app-wrapper">            <a href="apps/lcloud/index.html" data-toggle="tooltip" data-placement="top" title="CLOUD"><span class="icon-wrapper"><img src="apps/files/projects/lcloud.png"></span>
+                  <label>CLOUD</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/lcentral/index.html" data-toggle="tooltip" data-placement="top" title="CENTRAL"><span class="icon-wrapper"><img src="apps/files/projects/lcentral.png"></span>
+                  <label>CENTRAL                </label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/default/index.html" data-toggle="tooltip" data-placement="top" title="DEFAULT"><span class="icon-wrapper"><img src="apps/files/projects/default.png"></span>
+                  <label>DEFAULT</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="apps/old/index.html" data-toggle="tooltip" data-placement="top" title="Old files"><span class="icon-wrapper"><img src="apps/files/projects/old.png"></span>
+                  <label>OLD</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+              <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                  <label>Lorem ipsum</label></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="body-content">
+      <div id="menu-lateral" class="menu-lateral collapse in">
+        <nav role="navigation" class="navbar navbar-default">
+          <ul class="nav nav-stacked">
+            <li class="toggle"><a href="javascript:void(0);" data-toggle="collapse" data-target="#menu-lateral">                       <i class="icon icon-ntx icon-bars-menu fs-icon"></i></a></li>
+            <li class="active"><a href="apps/lcloud/users.html"><span class="icon icon icon-ntx icon-members"></span>
+                <label>Usuarios</label></a></li>
+            <li><a href="apps/lcloud/groups-table.html"><span class="icon icon icon-ntx icon-groups"></span>
+                <label>Grupos</label></a></li>
+            <li><a href="apps/lcloud/extensible_fields.html"><span class="icon icon icon-ntx icon-input"></span>
+                <label>Campos extend.</label></a></li>
+            <li><a href="apps/lcloudapps-list.html"><span class="icon icon icon-ntx icon-cubes"></span>
+                <label>Apps</label></a></li>
+            <li><a href="apps/lcloud/list-external-apps.html"><span class="icon icon icon-ntx icon-external-apps"></span>
+                <label>External Apps</label></a></li>
+            <li><a href="apps/lcloud/google-analytics-config.html"><span class="icon icon icon-ntx icon-collections"></span>
+                <label>Integrations</label></a></li>
+            <li><a href="#"><span class="icon icon icon-ntx icon-news"></span>
+                <label>Anuncios</label></a></li>
+            <li><a href="#"><span class="icon icon icon-ntx icon-ranking"></span>
+                <label>Sondeos</label></a></li>
+            <li><a href="apps/lcloud/lookandfeel.html"><span class="icon icon icon-ntx icon-appearance"></span>
+                <label>Apariencia</label></a></li>
+            <li><a href="apps/lcloud/password-config.html"><span class="icon icon icon-ntx icon-gear"></span>
+                <label>Conf. Avanzada</label></a></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="content">
+        <div class="container-fluid">
+          <!--Course detail Header-->
+          <div class="row detail-header">
+            <div class="col-md-12">
+              <!--
+              <ul class="breadcrumb">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Página genérica</a></li>
+              <li class="active"><a href="#">Federica Garcia</a></li>
+              </ul>
+              -->
+              <h3>Nombre de la plataforma</h3>
+            </div>
+          </div>
+          <!-- ./Course detail Header-->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="tabs-wrapper">
+                <ul role="tablist" class="nav nav-tabs">
+                  <li role="presentation"><a href="#platformDetails" aria-controls="platformDetails" role="tab" data-toggle="tab">detalles</a></li>
+                  <li role="presentation" class="active"><a href="#platformApps" aria-controls="platformApps" role="tab" data-toggle="tab">aplicaciones</a></li>
+                  <li role="presentation"><a href="#platformProfiles" aria-controls="platformProfiles" role="tab" data-toggle="tab">roles</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Detail content-->
+          <div class="detail-content">
+            <div class="row">
+              <div class="col-md-12">
+                <!-- Tab content-->
+                <div class="tab-content">
+                  <!-- Platform detail-->
+                  <div id="platformDetails" role="tabpanel" class="tab-pane"></div>
+                  <!-- Platform applications-->
+                  <div id="platformApps" role="tabpanel" class="tab-pane active">
+                    <!-- Buttons-->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <button type="button" data-toggle="modal" data-target="#uploadModal" class="btn btn-primary"><i class="fa fa-plus"></i><span>Añadir aplicación</span></button>
+                      </div>
+                    </div>
+                    <!-- Platform info-->
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <!-- List apps-->
+                        <div class="list-apps-wrapper">
+                          <!-- Item app-->
+                          <div class="app-wrapper menu-item-wrapper">
+                            <!-- Menu item-->
+                            <div class="dropdown menu-item">
+                              <div id="dropdownMenu-item_1" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-ellipsis-v"></i></div>
+                              <!-- Contextual menú  item-->
+                              <ul role="menu" aria-labelledby="dropdownMenu-item_1" class="dropdown-menu pull-right inverse">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" data-toggle="modal" data-target="#editLanguages">Editar idiomas</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Añadir rol</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eliminar</a></li>
+                              </ul>
+                              <!-- ./Contextual menú item-->
+                            </div>
+                            <!-- ./Menu item-->
+                            <div class="app-icon-wrapper"><img src="apps/files/icons/desktop/tuformacion.png"></div><a>Formación</a>
+                          </div>
+                          <!-- ./Item app-->
+                          <!-- Item app-->
+                          <div class="app-wrapper menu-item-wrapper">
+                            <!-- Menu item-->
+                            <div class="dropdown menu-item">
+                              <div id="dropdownMenu-item_2" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-ellipsis-v"></i></div>
+                              <!-- Contextual menú  item-->
+                              <ul role="menu" aria-labelledby="dropdownMenu-item_2" class="dropdown-menu pull-right inverse">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Añadir rol</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar idiomas</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eliminar</a></li>
+                              </ul>
+                              <!-- ./Contextual menú item-->
+                            </div>
+                            <!-- ./Menu item-->
+                            <div class="app-icon-wrapper"><img src="apps/files/icons/desktop/aulavirtual.png"></div><a>Formación</a>
+                          </div>
+                          <!-- ./Item app-->
+                          <!-- Item app-->
+                          <div class="app-wrapper">
+                            <!-- Menu item-->
+                            <div class="dropdown menu-item">
+                              <div id="dropdownMenu-item_3" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-ellipsis-v"></i></div>
+                              <!-- Contextual menú  item-->
+                              <ul role="menu" aria-labelledby="dropdownMenu-item_3" class="dropdown-menu pull-right inverse">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Añadir rol</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eliminar</a></li>
+                              </ul>
+                              <!-- ./Contextual menú item-->
+                            </div>
+                            <!-- ./Menu item-->
+                            <div class="app-icon-wrapper"><img src="apps/files/icons/desktop/catalogos.png"></div><a>Formación</a>
+                          </div>
+                          <!-- ./Item app-->
+                          <!-- Item app-->
+                          <div class="app-wrapper">
+                            <!-- Menu item-->
+                            <div class="dropdown menu-item">
+                              <div id="dropdownMenu-item_4" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-ellipsis-v"></i></div>
+                              <!-- Contextual menú  item-->
+                              <ul role="menu" aria-labelledby="dropdownMenu-item_4" class="dropdown-menu pull-right inverse">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Añadir rol</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eliminar</a></li>
+                              </ul>
+                              <!-- ./Contextual menú item-->
+                            </div>
+                            <!-- ./Menu item-->
+                            <div class="app-icon-wrapper"><img src="apps/files/icons/desktop/biblioteca.png"></div><a>Formación</a>
+                          </div>
+                          <!-- ./Item app-->
+                          <!-- Item app-->
+                          <div class="app-wrapper">
+                            <!-- Menu item-->
+                            <div class="dropdown menu-item">
+                              <div id="dropdownMenu-item_5" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-ellipsis-v"></i></div>
+                              <!-- Contextual menú  item-->
+                              <ul role="menu" aria-labelledby="dropdownMenu-item_5" class="dropdown-menu pull-right inverse">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Añadir rol</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eliminar</a></li>
+                              </ul>
+                              <!-- ./Contextual menú item-->
+                            </div>
+                            <!-- ./Menu item-->
+                            <div class="app-icon-wrapper"><img src="apps/files/icons/desktop/biblioteca.png"></div><a>Formación</a>
+                          </div>
+                          <!-- ./Item app-->
+                          <!-- Item app-->
+                          <div class="app-wrapper">
+                            <!-- Menu item-->
+                            <div class="dropdown menu-item">
+                              <div id="dropdownMenu-item_6" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-ellipsis-v"></i></div>
+                              <!-- Contextual menú  item-->
+                              <ul role="menu" aria-labelledby="dropdownMenu-item_6" class="dropdown-menu pull-right inverse">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Añadir rol</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eliminar</a></li>
+                              </ul>
+                              <!-- ./Contextual menú item-->
+                            </div>
+                            <!-- ./Menu item-->
+                            <div class="app-icon-wrapper"><img src="apps/files/icons/desktop/biblioteca.png"></div><a>Formación</a>
+                          </div>
+                          <!-- ./Item app-->
+                          <!-- Item app-->
+                          <div class="app-wrapper">
+                            <!-- Menu item-->
+                            <div class="dropdown menu-item">
+                              <div id="dropdownMenu-item_7" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-ellipsis-v"></i></div>
+                              <!-- Contextual menú  item-->
+                              <ul role="menu" aria-labelledby="dropdownMenu-item_7" class="dropdown-menu pull-right inverse">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Añadir rol</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eliminar</a></li>
+                              </ul>
+                              <!-- ./Contextual menú item-->
+                            </div>
+                            <!-- ./Menu item-->
+                            <div class="app-icon-wrapper"><img src="apps/files/icons/desktop/social.png"></div><a>Formación</a>
+                          </div>
+                          <!-- ./Item app-->
+                          <!-- Item app-->
+                          <div class="app-wrapper">
+                            <!-- Menu item-->
+                            <div class="dropdown menu-item">
+                              <div id="dropdownMenu-item_8" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-ellipsis-v"></i></div>
+                              <!-- Contextual menú  item-->
+                              <ul role="menu" aria-labelledby="dropdownMenu-item_8" class="dropdown-menu pull-right inverse">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Añadir rol</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eliminar</a></li>
+                              </ul>
+                              <!-- ./Contextual menú item-->
+                            </div>
+                            <!-- ./Menu item-->
+                            <div class="app-icon-wrapper"><img src="apps/files/icons/desktop/maker.png"></div><a>Formación</a>
+                          </div>
+                          <!-- ./Item app-->
+                          <!-- Item app-->
+                          <div class="app-wrapper">
+                            <!-- Menu item-->
+                            <div class="dropdown menu-item">
+                              <div id="dropdownMenu-item_9" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-ellipsis-v"></i></div>
+                              <!-- Contextual menú  item-->
+                              <ul role="menu" aria-labelledby="dropdownMenu-item_9" class="dropdown-menu pull-right inverse">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Añadir rol</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eliminar</a></li>
+                              </ul>
+                              <!-- ./Contextual menú item-->
+                            </div>
+                            <!-- ./Menu item-->
+                            <div class="app-icon-wrapper"><img src="apps/files/icons/desktop/play.png"></div><a>Formación</a>
+                          </div>
+                          <!-- ./Item app-->
+                        </div>
+                        <!-- ./List apps-->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Platform profiles-->
+                  <div id="platformProfiles" role="tabpanel" class="tab-pane">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <button type="button" data-toggle="modal" data-target="#basicModal" class="btn btn-primary"><i class="fa fa-plus"></i><span>Añadir rol</span></button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="list-apps-title menu-item-wrapper"><span>Rol custom</span>
+                          <!-- Menu item-->
+                          <div class="dropdown menu-item">
+                            <div id="dropdownMenu-title_1" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-cog"></i><i class="fa fa-caret-down"></i></div>
+                            <!-- Contextual menú  item-->
+                            <ul role="menu" aria-labelledby="dropdownMenu-title_1" class="dropdown-menu pull-right inverse">
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Añadir aplicación</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar rol</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eliminar rol</a></li>
+                            </ul>
+                            <!-- ./Contextual menú item-->
+                          </div>
+                          <!-- ./Menu item-->
+                        </div>
+                        <div class="list-apps-empty">No hay aplicaciones asignadas a este rol</div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="list-apps-title menu-item-wrapper"><span>Alumno</span>
+                          <!-- Menu item-->
+                          <div class="dropdown menu-item">
+                            <div id="dropdownMenu-title_2" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-cog"></i><i class="fa fa-caret-down"></i></div>
+                            <!-- Contextual menú  item-->
+                            <ul role="menu" aria-labelledby="dropdownMenu-title_2" class="dropdown-menu pull-right inverse">
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Añadir aplicación</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar rol</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eliminar rol</a></li>
+                            </ul>
+                            <!-- ./Contextual menú item-->
+                          </div>
+                          <!-- ./Menu item-->
+                        </div>
+                        <div class="row list-apps-forms">
+                          <!-- Item 1 form-->
+                          <div class="col-lg-12">
+                            <form class="form form-inline form-apps">
+                              <fieldset>
+                                <!-- ./Menu item-->
+                                <div class="form-group form-group-icon"><img src="apps/files/icons/desktop/social.png"></div>
+                                <div class="form-group col-lg-8">
+                                  <div class="col-lg-12">
+                                    <label for="input_1" class="control-label">Social</label>
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <input id="input_1" type="text" placeholder="http://www.netexlearnig.com/app" class="form-control">
+                                  </div>
+                                </div>
+                                <div class="form-group form-actions">
+                                  <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o"></i>Guardar</button>
+                                </div>
+                              </fieldset>
+                            </form>
+                          </div>
+                          <!-- ./Item 1 form-->
+                          <!-- Item 2 form-->
+                          <div class="col-lg-12">
+                            <form class="form form-inline form-apps">
+                              <fieldset>
+                                <!-- ./Menu item-->
+                                <div class="form-group form-group-icon"><img src="apps/files/icons/desktop/maker.png"></div>
+                                <div class="form-group col-lg-8">
+                                  <div class="col-lg-12">
+                                    <label for="input_2" class="control-label">Maker</label>
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <input id="input_2" type="text" placeholder="http://www.netexlearnig.com/app" class="form-control">
+                                  </div>
+                                </div>
+                                <div class="form-group form-actions">
+                                  <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o"></i>Guardar</button>
+                                </div>
+                              </fieldset>
+                            </form>
+                          </div>
+                          <!-- ./Item 2 form-->
+                          <!-- Item 3 form-->
+                          <div class="col-lg-12">
+                            <form class="form form-inline form-apps">
+                              <fieldset>
+                                <!-- ./Menu item-->
+                                <div class="form-group form-group-icon"><img src="apps/files/icons/desktop/maker.png"></div>
+                                <div class="form-group col-lg-8 form-group-description">
+                                  <div class="col-lg-12">
+                                    <label class="control-label">Maker</label>
+                                  </div>
+                                  <div class="col-lg-12"><span class="label-data">http://www.netexlearnig.com/app</span></div>
+                                </div>
+                                <div class="form-group form-actions">
+                                  <button type="submit" class="btn btn-default"><i class="fa fa-pencil"></i>Editar</button>
+                                  <button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i>Eliminar</button>
+                                </div>
+                              </fieldset>
+                            </form>
+                          </div>
+                          <!-- ./Item 3 form-->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="list-apps-title menu-item-wrapper"><span>Profesor</span>
+                          <!-- Menu item-->
+                          <div class="dropdown menu-item">
+                            <div id="dropdownMenu-title_3" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-cog"></i><i class="fa fa-caret-down"></i></div>
+                            <!-- Contextual menú  item-->
+                            <ul role="menu" aria-labelledby="dropdownMenu-title_3" class="dropdown-menu pull-right inverse">
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Añadir aplicación</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar rol</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Eliminar rol</a></li>
+                            </ul>
+                            <!-- ./Contextual menú item-->
+                          </div>
+                          <!-- ./Menu item-->
+                        </div>
+                        <div class="row list-apps-forms">
+                          <!-- Item 4 form-->
+                          <div class="col-lg-12">
+                            <form class="form form-inline form-apps">
+                              <fieldset>
+                                <!-- ./Menu item-->
+                                <div class="form-group form-group-icon"><img src="apps/files/icons/desktop/tuformacion.png"></div>
+                                <div class="form-group col-lg-8 form-group-description">
+                                  <div class="col-lg-12">
+                                    <label class="control-label">Formación</label>
+                                  </div>
+                                  <div class="col-lg-12"><span class="label-data">http://www.netexlearnig.com/app</span></div>
+                                </div>
+                                <div class="form-group form-actions">
+                                  <button type="submit" class="btn btn-default"><i class="fa fa-pencil"></i>Editar</button>
+                                  <button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i>Eliminar</button>
+                                </div>
+                              </fieldset>
+                            </form>
+                          </div>
+                          <!-- ./Item 4 form-->
+                          <!-- Item 5 form-->
+                          <div class="col-lg-12">
+                            <form class="form form-inline form-apps">
+                              <fieldset>
+                                <!-- ./Menu item-->
+                                <div class="form-group form-group-icon"><img src="apps/files/icons/desktop/play.png"></div>
+                                <div class="form-group col-lg-8 form-group-description">
+                                  <div class="col-lg-12">
+                                    <label class="control-label">Play</label>
+                                  </div>
+                                  <div class="col-lg-12"><span class="label-data">http://www.netexlearnig.com/app</span></div>
+                                </div>
+                                <div class="form-group form-actions">
+                                  <button type="submit" class="btn btn-default"><i class="fa fa-pencil"></i>Editar</button>
+                                  <button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i>Eliminar</button>
+                                </div>
+                              </fieldset>
+                            </form>
+                          </div>
+                          <!-- ./Item 5 form-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./Tab content-->
+              </div>
+            </div>
+          </div>
+          <!-- ./Detail content-->
+          <!-- Basic Modal-->
+          <div id="basicModal" class="modal">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                  <h4 id="modal-title" class="modal-title">Añadir aplicaciones al rol<a href="#modal-title" class="anchorjs-link"><span class="anchorjs-icon"></span></a></h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form form-horizontal">
+                    <fieldset>
+                      <div class="list-apps-wrapper">
+                        <!-- Item app-->
+                        <div class="app-wrapper menu-item-wrapper">
+                          <!-- Menu item-->
+                          <div class="menu-item">
+                            <div class="checkbox checkbox-primary">
+                              <input id="checkbox_1" type="checkbox">
+                              <label for="checkbox_1"></label>
+                            </div>
+                          </div>
+                          <!-- ./Menu item-->
+                          <div class="app-icon-wrapper"><img src="apps/files/icons/desktop/tuformacion.png"></div><a>Formación</a>
+                        </div>
+                        <!-- ./Item app-->
+                        <!-- Item app-->
+                        <div class="app-wrapper menu-item-wrapper">
+                          <!-- Menu item-->
+                          <div class="menu-item">
+                            <div class="checkbox checkbox-primary">
+                              <input id="checkbox_2" type="checkbox">
+                              <label for="checkbox_2"></label>
+                            </div>
+                          </div>
+                          <!-- ./Menu item-->
+                          <div class="app-icon-wrapper"><img src="apps/files/icons/desktop/aulavirtual.png"></div><a>Formación</a>
+                        </div>
+                        <!-- ./Item app-->
+                        <!-- Item app-->
+                        <div class="app-wrapper menu-item-wrapper">
+                          <!-- Menu item-->
+                          <div class="menu-item">
+                            <div class="checkbox checkbox-primary">
+                              <input id="checkbox_3" type="checkbox">
+                              <label for="checkbox_3"></label>
+                            </div>
+                          </div>
+                          <!-- ./Menu item-->
+                          <div class="app-icon-wrapper"><img src="apps/files/icons/desktop/catalogos.png"></div><a>Formación</a>
+                        </div>
+                        <!-- ./Item app-->
+                        <!-- Item app-->
+                        <div class="app-wrapper menu-item-wrapper">
+                          <!-- Menu item-->
+                          <div class="menu-item">
+                            <div class="checkbox checkbox-primary">
+                              <input id="checkbox_4" type="checkbox" checked="checked">
+                              <label for="checkbox_4"></label>
+                            </div>
+                          </div>
+                          <!-- ./Menu item-->
+                          <div class="app-icon-wrapper"><img src="apps/files/icons/desktop/biblioteca.png"></div><a>Formación</a>
+                        </div>
+                        <!-- ./Item app-->
+                        <!-- Item app-->
+                        <div class="app-wrapper menu-item-wrapper">
+                          <!-- Menu item-->
+                          <div class="menu-item">
+                            <div class="checkbox checkbox-primary">
+                              <input id="checkbox_5" type="checkbox" checked="checked">
+                              <label for="checkbox_5"></label>
+                            </div>
+                          </div>
+                          <!-- ./Menu item-->
+                          <div class="app-icon-wrapper"><img src="apps/files/icons/desktop/biblioteca.png"></div><a>Formación</a>
+                        </div>
+                        <!-- ./Item app-->
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+                  <button type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+              <!-- /.modal-content-->
+            </div>
+            <!-- /.modal-dialog-->
+          </div>
+          <!-- ./Basic Modal-->
+          <!-- Uploader Modal-->
+          <div id="uploadModal" class="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                  <h4 id="modal-upload-title" class="modal-title">Añade aplicaciones<a href="#modal-title" class="anchorjs-link"><span class="anchorjs-icon"></span></a></h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form form-horizontal">
+                    <fieldset>
+                      <div class="form-group">
+                        <label for="input_1u" class="col-sm-2 control-label">Nombre</label>
+                        <div class="col-sm-8">
+                          <input id="input_1u" type="text" placeholder="Nombre de la plataforma" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">Imagen</label>
+                        <div class="col-sm-8">
+                          <div id="dZUpload" class="dropzone">
+                            <div class="dz-default dz-message">
+                              <label class="title">Arrastra tu imagen aquí...</label><span>ó</span>
+                              <button id="btn_dzupload_2" class="btn btn-default">Selecciona en tu disco</button><span class="info">Formatos: jpg, png ó gif<br>                                                                Dimensiones: 280x280 px, máximo 2Mb</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="editLanguages" class="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                  <h4 id="modal-upload-title" class="modal-title">Gestionar idiomas<a href="#modal-title" class="anchorjs-link"><span class="anchorjs-icon"></span></a></h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form form-horizontal">
+                    <fieldset>
+                      <div class="text-center">
+                        <div role="group" class="nav nav-tabs btn-group"><a href="#tab1" aria-controls="tab" role="tab" data-toggle="tab" class="btn btn-default active">Nombre visible</a><a href="#tab2" aria-controls="tab" role="tab" data-toggle="tab" class="btn btn-default">Descripción</a><a href="#tab3" aria-controls="tab" role="tab" data-toggle="tab" class="btn btn-default">Texto promocional                    </a></div>
+                        <!-- Tab panes-->
+                        <div class="tab-content">
+                          <div id="tab1" role="tabpanel" class="tab-pane active"> 
+                            <div class="form-group separation-top-xlarge">
+                              <label class="col-sm-4 text-left">Idioma</label>
+                              <label class="col-sm-6 text-left">descripción</label>
+                            </div>
+                            <div class="form-group form-group-full-width separation-top-medium separation-right-xxlarge text-left">                        <span for="english" class="col-sm-4 text-left">Inglés</span>
+                              <div class="col-sm-8">                                                                         
+                                <textarea rows="2" id="english" class="textarea-mini form-control">                                                                </textarea><span class="help-block"> </span>
+                              </div>
+                            </div>
+                            <div class="form-group form-group-full-width separation-top-medium separation-right-xxlarge text-left">                        <span for="spanish" class="col-sm-4 text-left">Español</span>
+                              <div class="col-sm-8">                                                                         
+                                <textarea rows="2" id="spanish" class="textarea-mini form-control"> </textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="tab2" role="tabpanel" class="tab-pane">...</div>
+                          <div id="tab3" role="tabpanel" class="tab-pane">...                                                                              </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="formModalSuggestions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal form-modal fade">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+              <h4 id="myModalLabel" class="modal-title">Enviar sugerencia</h4>
+            </div>
+            <div class="modal-body">
+              <!-- Contenido modal-->
+              <form class="form form-horizontal">
+                <fieldset>
+                  <div class="form-group-title">
+                    <label>Env&iacute;anos tu sugerencia</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject" class="col-sm-2 control-label">Asunto</label>
+                    <div class="col-sm-10">
+                      <input id="subject" type="text" placeholder="Asunto" class="form-control"><span class="help-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="content" class="col-sm-2 control-label">Descripci&oacute;n</label>
+                    <div class="col-sm-10">
+                      <textarea id="content" class="form-control"></textarea><span class="help-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group form-group-submit">
+                    <div class="col-sm-12">
+                      <button type="submit" class="btn btn-default">Cancelar</button>
+                      <button type="submit" class="btn btn-primary">Env&iacute;ar</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+              <!-- ./Contenido modal-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Formulario modal-->
+      <footer class="footer">
+        <div class="box">
+          <div class="developed">Developed by Netex Learning</div>
+          <div class="version">ver. X.Y.Z</div>
+        </div>
+      </footer>
+    </div><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="apps/vendors/jquery/jquery.1.11.2.min.js"></script><!-- jQuery UI -->
+    <script src="apps/vendors/jquery-ui-1.12.1/jquery-ui.min.js"></script><!-- Importante with locales para traducción cloud calendar -->
+    <script src="apps/vendors/momentjs/moment-with-locales.min.js"> </script><!-- Full Calendar scripts -->
+    <script src="apps/vendors/fullcalendar/lib/moment.min.js"></script>
+    <script src="apps/vendors/fullcalendar/fullcalendar.min.js"></script>
+    <script src="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.min.js"></script>
+    <script src="apps/vendors/fullcalendar/lang-all.js"></script><!-- jquery autocomplete master -->
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/jquery.mockjax.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/countries.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/scripts/demo.js"></script>
+    <script src="apps/vendors/jQuery-Autocomplete-master/src/jquery.autocomplete.js"></script><!-- boostrap table -->
+    <script src="apps/vendors/bootstrap-table/dist/bootstrap-table.min.js"></script><!-- boostrap table locales para traducción -->
+    <script src="apps/vendors/bootstrap-table/dist/locale/bootstrap-table-es-ES.min.js"></script><!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="apps/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="apps/vendors/bootstrap-selects/bootstrap-select.min.js"></script>
+    <script src="apps/vendors/bootstrap-switches/js/bootstrap-switch.min.js"></script><!-- dropzone library -->
+    <script src="apps/vendors/dropzonejs/min/dropzone.min.js"></script><!-- js theme -->
+    <script src="apps/vendors/circles/circles.min.js"></script>
+    <script src="webcomponents/js/theme.js"></script><!-- bootstrap colorpicker -->
+    <script src="apps/vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script><!-- jquery ellipsis -->
+    <script src="apps/vendors/jquery-ellipsis/jquery.ellipsis.min.js"></script><!-- jquery mobile touch event -->
+    <script src="apps/vendors/jquery-mobile-touchevent/jquery.mobile.custom.min.js"></script><!-- bootstrap datetimepicker -->
+    <script src="apps/vendors/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script><!-- circular progress bar -->
+    <script src="apps/vendors/circular-progressbar/dist/progressbar.min.js"></script><!-- infinity repeteable form fields -->
+    <script src="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/js/infinity.min.js"></script><!-- croppie -->
+    <script src="apps/vendors/croppie/croppie.min.js"></script><!-- Slide slick -->
+    <script src="apps/vendors/slick-1.6.0/slick/slick.min.js"></script><!-- Bar rating -->
+    <script src="apps/vendors/jquery-bar-rating-master/dist/jquery.barrating.min.js"></script><!-- bootstrap responsive table dropdown -->
+    <script src="apps/vendors/bootstrap-responsive-table-dropdown-master/bs-responsive-table-dropdown.js"></script>
+    <script src="webcomponents/js/init.materialcards.ellipsis.js"></script>
+    <script type="text/javascript">
+      jQuery( document ).ready(function() {
+        //Convertimos un grupo de botones para que funcione como un conjunto de tabs:
+        //Aplicamos activo según click.
+        jQuery(".nav-tabs.btn-group > .btn").click(function(){    
+            jQuery(this).addClass("active").siblings().removeClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

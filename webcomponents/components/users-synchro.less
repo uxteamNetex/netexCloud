@@ -1,0 +1,52 @@
+@import "../../themes/less/variables";
+@import "../mixins";
+
+.formModalPopupSynchroUsers{
+    .dl-horizontal dt{
+        text-align: left;
+    }
+    .list-apps{
+        .app:first-child{
+            border-top: 1px solid @color-lightergrey;
+        }
+        .app{
+            border-bottom: 1px solid @color-lightergrey;
+            padding: 15px 0;
+            img{
+                margin-top: 5px;
+                margin-bottom: 5px;
+                width: 65px;
+                height: 65px;
+                border-radius: 6px;    
+            }
+            .title{
+                font-size:18px;
+                margin-bottom: 10px;
+            }
+            .description {
+                img{
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+    }
+}
+
+//Modal import users
+.exporting-users-message-container{
+    align-items: center;
+    display: flex;
+    font-family: LatoSemibold;
+    margin: 40px 15px 15px 40px;
+    .exporting-users-message{
+        margin-left: 10px;
+        p{   
+            color: @color-grey;
+            margin: 0;
+            a{
+                margin: 0 4px;    
+            }
+        }
+    }
+}

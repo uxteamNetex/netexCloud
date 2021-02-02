@@ -1,0 +1,262 @@
+@import "../../themes/less/variables";
+@import "../mixins";
+
+
+@record-card-header-img-width: 160px;
+@color-titles: @color-darkgrey; 
+
+.record-card{    
+    margin-top: 60px;
+    border-radius: 6px;
+    background-color: @color-white;
+    padding:30px;
+    padding-top:15px;
+    .record-card-header{        
+        .record-card-image{            
+            float: left;
+            width: (@record-card-header-img-width + 20px);
+            img{
+                border-radius: 6px;
+                height: @record-card-header-img-width;
+                width: @record-card-header-img-width;            
+            }
+        }               
+        .record-card-header-text{
+            padding-top:20px; 
+            .calc(width;'100% - (@{record-card-header-img-width} + 20px)');
+            float:left;
+            color: @color-titles;                                    
+            .record-card-title{                
+                h1{  
+                    margin-top:0px;
+                    padding-left:0px;                  
+                    font-size: 50px;
+                    font-weight: bold;
+                }                
+            }  
+            .record-card-action{                            
+                .btn{
+                    font-size:18px;
+                }            
+            }               
+            .record-card-subtitle{ 
+                h2{
+                    margin-top: 5px;               
+                    font-size: 25px;  
+                }
+                                             
+            }
+        }         
+    }
+    .record-card-description{
+        margin-top:15px;
+        margin-bottom:15px;
+        font-size:16px;
+    }
+    .record-card-resume{
+        margin-top:15px;
+        margin-bottom:15px;            
+        min-height:100px; 
+        text-align: center;  
+        .col-cell {
+            border: 1px solid @color-extralightgrey;
+            .title{
+                font-size: 16px;
+                padding: 10px;                 
+            }
+            .description{
+                font-weight: bold;
+                font-size: 20px;
+                color: @color-titles;
+                padding: 10px; 
+            }
+        }       
+    }
+    .record-card-featured-picture{
+        img{
+            margin:0 auto;
+        }        
+    }
+    .record-card-list{
+        .record-card-list-title{
+            font-size: 16px;
+            color: @color-titles; 
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top:40px;
+            margin-bottom:20px;
+        }
+        .record-card-list-items{
+            .record-card-list-item{
+                margin-bottom:10px;
+                background-color: @color-extralightgrey;   
+                .item-img{
+                    float:left;
+                    padding:10px;
+                    padding-top:15px;
+                    padding-right:20px;
+                    img{
+                        border-radius: 8px;                                                
+                        width:65px;
+                        height:65px;
+                        border:1px solid transparent;                                           
+                    }   
+                }                         
+                .item-text{                                       
+                    padding:20px;
+                    .title{
+                        font-weight: bold;
+                        color: @color-titles;
+                        font-size: 16px;
+                        margin-right:10px;
+                    }   
+                    .roles{                        
+                        font-style: italic;
+                    }
+                    .description{
+                        
+                    }    
+                }
+                 
+            }            
+        }
+    }
+}
+
+.app-card{
+    .app-card-action{
+        display: inline-block;
+    }
+    .app-card-subtitle{
+        color: #333;
+        font-size: 25px;
+        margin: 0 auto;
+        max-width: 600px;
+        text-align: center;
+    }
+    .app-card-description{
+        color: #999;
+        font-size: 16px;        
+    }
+    .app-card-resume{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;          
+        min-height:100px; 
+        text-align: center;  
+        .col-cell {
+            border: 1px solid @color-lightergrey;
+            border-right: none;
+            &:last-of-type{
+                border-right: 1px solid @color-lightergrey;    
+            }
+            .title{
+                font-size: 16px;
+                padding: 15px 10px 0px;                 
+            }
+            .description{
+                font-weight: bold;
+                font-size: 20px;
+                color: @color-titles;
+                padding: 10px 10px 15px; 
+            }
+        }       
+    }
+    .app-card-featured-picture{
+        img{
+            margin:0 auto;
+        }        
+    }
+    .app-card-list{
+        .app-card-list-title{
+            font-size: 16px;
+            color: @color-titles; 
+            font-weight: bold;
+            text-align: left;
+            text-transform: uppercase;
+            margin-top:40px;
+            margin-bottom:20px;
+        }
+        .app-card-list-items{
+            text-align: left;
+            .app-card-list-item{
+                margin-bottom:10px;
+                background-color: @color-extralightgrey;   
+                .item-img{
+                    float:left;
+                    padding:10px;
+                    padding-top:15px;
+                    padding-right:20px;
+                    img{
+                        border-radius: 8px;                                                
+                        width:65px;
+                        height:65px;
+                        border:1px solid transparent;                                           
+                    }   
+                }                         
+                .item-text{                                       
+                    padding:20px;
+                    .title{
+                        font-weight: bold;
+                        color: @color-titles;
+                        font-size: 16px;
+                        margin-right:10px;
+                    }   
+                    .roles{                        
+                        font-style: italic;
+                    }
+                    .description{
+                        
+                    }    
+                }
+                 
+            }            
+        }
+    }
+}
+
+@media (max-width: @responsive-md-min-width) {   
+        .record-card{
+            margin-top:15px;
+            padding-left:15px;    
+            padding-right:15px;  
+            .record-card-header{
+                .record-card-header-text{
+                    width:100%;
+                    //margin-right: -15px;
+                    //margin-left: -15px;
+                }    
+            }
+                 
+        }       
+}
+@media (max-width: @responsive-sm-min-width) {
+}
+@media (max-width: @responsive-xm-min-width) {
+     .record-card{           
+            .record-card-header{
+                .record-card-header-text{
+                    width:190px;
+                    .record-card-action{
+                        .btn{
+                            font-size:15px;
+                            margin:0 auto;
+                        }                           
+                    }
+                }                
+            }
+
+            .record-card-list{        
+                .record-card-list-items{
+                    .record-card-list-item{
+                        .item-text{
+                            float:left;
+                            padding:10px;
+                        }   
+                    }
+                }
+            }
+
+     }
+
+}

@@ -1,0 +1,99 @@
+@import "../../themes/less/variables";
+@import "../../themes/less/settings";
+@import "../mixins";
+@import "helpers";
+@import "icons";
+
+
+//badge
+.badge {
+  &.badge-success, &.badge-error, &.badge-warning, &.badge-info, &.badge-inprogress, &.badge-green {
+    color: @color-white !important;
+    border-radius: 10px;
+    &:before { margin-right: @padding-small; }
+  }
+  &.badge-medium { padding: 5px 10px; }
+  &.badge-xlarge { padding: 10px 15px; }
+  &.badge-xxlarge { padding: 10px 30px; }
+  &.badge-xxxlarge { padding: 10px 60px; }
+
+  &.badge-success {
+    background-color: @color-success;
+    .icon-ntx-before(@icon-success; @font-size-icon-xsmall);
+  }
+  &.badge-error {
+    background-color: @color-error;
+    .icon-ntx-before(@icon-error; @font-size-icon-xsmall);
+  }
+  &.badge-warning {
+    background-color: @color-warning;
+    .icon-ntx-before(@icon-warning; @font-size-icon-xsmall);
+  }
+  &.badge-green {
+    background-color: @color-success;
+  }
+  &.badge-square {
+    border-radius: 0;
+  }
+  &.badge-bg-warning {
+    font-weight: 400;
+    background-color: @color-orange;
+  }
+  &.badge-bg-inprogress {
+    font-weight: 400;
+    background-color: @color-orange;
+  }
+  &.badge-icon-round {
+    padding-left: 0;
+    padding-right: 0;
+    width: 17px;
+    height: 17px;
+    &:empty {
+      display: inline-block;
+    }
+    &:before {
+      margin-right: 0;
+    }
+  }
+  &.badge-enrolled {
+    background-color: #e9e9e9;
+    color: @color-grey;
+    cursor: pointer;
+    font-size: @font-size-medium;
+    font-weight: 400;
+    padding: @padding-medium;
+  }
+  &.badge-transparent{
+      border-radius: 10px;                
+      background-color: transparent;
+  }
+  &.badge-primary{
+      background-color: @color-primary;
+  }
+  &.badge-icon-left{
+    .icon{
+      margin-right:5px;
+    }
+  }
+  &.badge-icon-right{
+    .icon{
+      margin-left:5px;
+    }
+  }
+  &.badge-added {
+    color: @color-green;
+    font-size: @font-size-base;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  &.badge-inactive {
+    color: @color-lightgrey;
+    font-size: @font-size-base;
+    font-weight: normal;
+  }
+  &.badge-subgroup{
+    color: @color-grey;
+    font-size: @font-size-medium;
+    font-weight: normal;
+  }
+}

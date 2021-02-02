@@ -1,0 +1,96 @@
+@import "../../themes/less/variables";
+@import "../../themes/less/settings";
+@import "../mixins";
+@import "helpers";
+@import "icons";
+
+// progress bar
+
+
+.progressbar-wrapper {
+  padding-top: @padding-small;
+  display: block;
+  height: 70px;
+  clear: both;
+  &.progressbar-wrapper-short{
+       height: 50px;
+  }
+  .progressbar-title {
+    clear: both;
+  }
+  .progressbar {
+    float: left;
+    height: 5px;
+    
+    .calc(width; '100% - 140px');
+    margin-top: @padding-medium;
+    background-color: @color-extralightgrey;
+    position: relative;
+    .progressbar-progress {
+      background-color: @color-primary;
+      height: 5px;
+      position: absolute;
+      &.progressbar-not-evaluate{
+          background-color: @color-extralightgrey;
+      }
+    }
+    .progressbar-mandatory {
+      .icon-ntx-before(@icon-trophy);
+      &:before {
+        color: @color-orange;
+      }
+      position: absolute;
+      margin-top: @padding-medium;
+      margin-left: -@padding-medium;
+    }
+    
+    .progressbar-medal {
+      .icon-ntx-before(@icon-medal);
+      &:before {
+        color: @color-orange;
+      }
+      position: absolute;
+      margin-top: @padding-medium;
+      margin-left: -@padding-medium;
+    }
+  }
+
+  .progressbar-result {
+    float: left;
+    padding-left: @padding-base;
+
+  }
+}
+
+.material-card-progressbar-wrapper{
+    margin-top: 30px;
+    display: block;
+    height: 50px;
+    clear: both;    
+    width: initial;    
+    width: auto;
+            
+    .progressbar-text{
+        font-size: @font-size-small;
+        padding-right: 10px;
+        padding-bottom: 7px;
+        color: @color-lightgrey;
+    }   
+    .material-card-progressbar{
+        .calc(width; '100%');
+        margin: 0px;
+    }
+}
+
+@media all and (max-width: @responsive-xm-min-width ){
+    .detail-header{
+      .progressbar-wrapper{
+          margin-top:10px;
+          .progressbar-title, .progressbar{        
+            text-align: left;
+            margin-left: 30px;
+          }
+      } 
+    }
+    
+}

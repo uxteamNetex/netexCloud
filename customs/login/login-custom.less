@@ -1,0 +1,30 @@
+@login-bg-image : 'apps/files/wallpapers/wallpaper_01.png';
+@login-logo : 'apps/files/icons/logo/logocloudlarge.png';
+@login-text-color:  #999999;
+@login-color-primary: #56A7d7;
+
+body.login,
+body.login .login-instructions,
+body.login .login-wrapper .form-login label,
+body.login .login-wrapper .form-login .form-group .btn.btn-link,
+body.login .login-wrapper .forgot-password-wrapper a,
+body.login .footer-content {     
+    color: @login-text-color;
+}
+
+body.login {
+  background: url(@login-bg-image);
+}
+body.login .login-wrapper .login-logo {
+  background: url(@login-logo) no-repeat top center;
+}
+
+body.login .login-wrapper .form-login .btn-primary,
+body.login .login-wrapper .form-login .checkbox-primary input[type="checkbox"]:checked + label::before {
+  background-color: @login-color-primary;
+  border-color: @login-color-primary;
+}
+
+body.login .login-wrapper .form-login .btn-primary:hover {
+  background-color: darken(@login-color-primary, 10%);
+}
