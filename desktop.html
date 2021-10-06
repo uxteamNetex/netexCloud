@@ -8,7 +8,7 @@
     <link href="apps/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!--link( rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")-->
     <link rel="stylesheet" href="apps/vendors/font-awesome-4.5.0/css/font-awesome.min.css"><!-- Theme -->
-    <link href="styles/theme_lcloud.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <link href="styles/theme_lcloud.min.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="apps/vendors/html5shiv/html5shiv.min.js"></script>
@@ -96,8 +96,39 @@
     <div class="body-content">     
       <section class="content">
         <div class="container-fluid">
+
           <div data-ride="carousel" data-interval="false" class="desktop-apps-wrapper carousel slide">
             <div role="listbox" class="carousel-inner">
+
+              <div class="desktop-app" data-toggle="modal" data-target="#apps-group-modal">
+                <div class="small-apps-container">
+                  <a href="#">
+                    <img src="apps/files/icons/desktop/App-mensajeria.svg">
+                    <img src="apps/files/icons/desktop/App-asistencia.svg">
+                    <img src="apps/files/icons/desktop/App-calendario.svg">
+                    <img src="apps/files/icons/desktop/App-notificaciones.svg">
+                  </a>
+                </div>
+                <a href="#">Integra Agenda</a>
+              </div>
+              <div class="desktop-app" data-toggle="modal" data-target="#apps-group-modal-uno">
+                <div class="small-apps-container">
+                  <a href="#">
+                    <img src="apps/files/icons/desktop/App-mensajeria.svg">
+                  </a>
+                </div>
+                <a href="#">Integra Agenda uno</a>
+              </div>
+              <div class="desktop-app" data-toggle="modal" data-target="#apps-group-modal-tres">
+                <div class="small-apps-container">
+                  <a href="#">
+                    <img src="apps/files/icons/desktop/App-mensajeria.svg">
+                    <img src="apps/files/icons/desktop/App-asistencia.svg">
+                    <img src="apps/files/icons/desktop/App-calendario.svg">
+                  </a>
+                </div>
+                <a href="#">Integra Agenda tres</a>
+              </div>
               <div class="desktop-app">
                 <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/administracion.png"></a></div><a href="#">Administración</a>
               </div>
@@ -172,9 +203,11 @@
               <ol class="carousel-indicators"></ol>
             </div>
           </div>
+
         </div>
       </section>
     </div>
+
     <!-- Confirmation Modal-->
     <div id="trialModal" class="modal">
       <div class="vertical-alignment-helper">
@@ -195,6 +228,206 @@
         </div>
       </div>
     </div>
+
+    <!-- Apps group Modal-->
+    <div id="apps-group-modal" class="modal modal-slide">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+
+              <section class="slider slider-multiple slide-apps-dashboard">
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-mensajeria.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">1-Mensajeria</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-asistencia.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">2-Asistencia</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-calendario.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">3-Calendario</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-notificaciones.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">4-Notificaciones</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">5-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">6-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">7-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">8-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">9-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">10-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">11-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">12-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">13-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">14-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="apps-group-modal-uno" class="modal modal-slide">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+
+              <section class="slider slider-uno slide-apps-dashboard">
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-mensajeria.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">1-Mensajeria</span>
+                  </span>
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="apps-group-modal-tres" class="modal modal-slide">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+
+              <section class="slider slider-tres slide-apps-dashboard">
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-mensajeria.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">1-Mensajeria</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-asistencia.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">2-Asistencia</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-calendario.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">3-Calendario</span>
+                  </span>
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="news-content" class="news-wrapper collapse">
       <div class="content">
         <div data-toggle="collapse" data-target="#news-content" class="toggle-close">X</div>
@@ -290,29 +523,170 @@
 <script src="apps/vendors/bootstrap/js/bootstrap.min.js"> </script>
 <script src="apps/vendors/jquery-mobile-touchevent/jquery.mobile.custom.min.js">    </script>
 <script src="webcomponents/js/init.dashboardswipe.js"> </script>
+<script src="apps/vendors/slick-1.6.0/slick/slick.min.js"></script>
 <script src="webcomponents/js/theme.js"> </script>
+
 <script type="text/javascript">
   jQuery('#trialModal').modal('show');
   
-  //Añadirle al fondo de noticias un alto del 100%
   $(document).ready(function () {
+    //Añadirle al fondo de noticias un alto del 100%
+    newsContentHeight();
+    function resetContentHeight() {
+        $("#news-content").css("height", 0);
+    }
+    function newsContentHeight() {
+        var documentHeight = $(document).height();
+        $("#news-content").css("height", documentHeight);
+    }
+    $("#news-content").on("shown.bs.collapse", function(){
+        newsContentHeight();
+    });
+
+    $(window).resize(function() { 
+      resetContentHeight();
       newsContentHeight();
-      function resetContentHeight() {
-          $("#news-content").css("height", 0);
-      }
-      function newsContentHeight() {
-          var documentHeight = $(document).height();
-          $("#news-content").css("height", documentHeight);
-      }
-      $("#news-content").on("shown.bs.collapse", function(){
-          newsContentHeight();
+      //Se recarga la página para que cuando se redimensina la pantalla coja el código del slick
+      setTimeout(function(){
+        window.location.reload();
       });
-      $(window).resize(function() {   
-          resetContentHeight();
-          newsContentHeight();
+    });
+    $(document).scroll(function(){
+      newsContentHeight();
+    });
+
+    //Se carga el slick
+    function loadSlickMultiple() {
+       
+    }
+    function loadSlickUno() {
+      $(".slider-uno").slick({
+        dots: true,
+        infinite: true,
+        rows: 2,
+        slidesPerRow: 6,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesPerRow: 5,
+            }
+          },
+          {
+            breakpoint: 1050,
+            settings: {
+              slidesPerRow: 4,
+            }
+          },
+          {
+            breakpoint: 880,
+            settings: {
+              slidesPerRow: 3,
+            }
+          },
+          {
+          breakpoint: 650,
+            settings: {
+              slidesPerRow: 2,
+            },
+          },
+          {
+          breakpoint: 430,
+            settings: {
+              slidesPerRow: 1,
+            },
+          }
+        ]
+      }); 
+    }
+    function loadSlickTres() {
+      $(".slider-tres").slick({
+        dots: true,
+        infinite: true,
+        rows: 2,
+        slidesPerRow: 6,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesPerRow: 5,
+            }
+          },
+          {
+            breakpoint: 1050,
+            settings: {
+              slidesPerRow: 4,
+            }
+          },
+          {
+            breakpoint: 880,
+            settings: {
+              slidesPerRow: 3,
+            }
+          },
+          {
+          breakpoint: 650,
+            settings: {
+              slidesPerRow: 2,
+            },
+          },
+          {
+          breakpoint: 430,
+            settings: {
+              slidesPerRow: 1,
+            },
+          }
+        ]
+      }); 
+    }
+
+    //Se abre la modal de apps group y se carga el slick
+    $('#apps-group-modal').on('shown.bs.modal', function () {
+      $(".slider-multiple").slick({
+        dots: true,
+        infinite: true,
+        rows: 2,
+        slidesPerRow: 6,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesPerRow: 5,
+            }
+          },
+          {
+            breakpoint: 1050,
+            settings: {
+              slidesPerRow: 4,
+            }
+          },
+          {
+            breakpoint: 880,
+            settings: {
+              slidesPerRow: 3,
+            }
+          },
+          {
+          breakpoint: 650,
+            settings: {
+              slidesPerRow: 2,
+            },
+          },
+          {
+          breakpoint: 430,
+            settings: {
+              slidesPerRow: 1,
+            },
+          }
+        ]
       });
-      $(document).scroll(function(){
-          newsContentHeight();
-      });
+    });
+    $('#apps-group-modal-uno').on('shown.bs.modal', function () {
+      loadSlickUno(); 
+    });
+    $('#apps-group-modal-tres').on('shown.bs.modal', function () {
+      loadSlickTres();    
+    });
+      
   });
 </script>

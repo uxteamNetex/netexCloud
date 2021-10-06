@@ -148,6 +148,25 @@ body.desktop {
             }
           }
         }
+        .small-apps-container {
+          border: 2px solid #fff;
+          background: rgba(255,255,255,0.5);
+          border-radius: @border-radius-xxlarge;
+          overflow: hidden;
+          margin-bottom: @padding-xxlarge;
+          height: @desktop-app-img-dimensions;
+          width: @desktop-app-img-dimensions;
+          a{
+            display: flex;
+            flex-wrap: wrap;
+            img {
+              border-radius: 8px;
+              height: 48px;
+              margin: 10px;
+              width: 48px;
+            }
+          }
+        }
         a {
           font-size: @font-size-xlarge;
           color: @color-white;
@@ -158,6 +177,13 @@ body.desktop {
         &:hover {
           img {
             .transform-scale(1.1);
+          }
+          .small-apps-container {
+            a{
+              img {
+                transform: none;
+              }
+            }
           }
         }
 
@@ -769,6 +795,20 @@ body.desktop, .desktop-classic{
             }
           }
         }
+        .small-apps-container {
+          border-radius: @border-radius-large;
+          height: @desktop-app-img-dimensions-sm;
+          width: @desktop-app-img-dimensions-sm;
+          margin: 0 auto;
+          a {
+            border-radius: @border-radius-default;
+            img {
+              height: 36px;
+              margin: 4px 3px;
+              width: 36px;
+            }
+          }
+        }
         > a {
           padding-top: @padding-base;
           line-height: inherit;
@@ -804,7 +844,6 @@ body.desktop, .desktop-classic{
 
 @media (max-width: @responsive-xm-min-width) { //480px
   body.desktop {
-
     .navbar {
       .topbar-wrapper {
         .navbar-header {
@@ -912,6 +951,27 @@ body.desktop, .desktop-classic{
               border-radius: @border-radius-default;
               height: @desktop-app-img-dimensions-xm;
               width: @desktop-app-img-dimensions-xm;
+            }
+          }
+        }
+        .small-apps-container {
+          border-radius: @border-radius-default;
+          height: @desktop-app-img-dimensions-xm;
+          width: @desktop-app-img-dimensions-xm;
+          float: left;
+          margin-bottom: @padding-medium;
+          a {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            height: 44px;
+            justify-content: space-around;
+            width: 44px;
+            img {
+              border-radius: 4px;
+              height: 18px;
+              margin: 0;
+              width: 18px;
             }
           }
         }

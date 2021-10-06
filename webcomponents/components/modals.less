@@ -6,18 +6,164 @@
 .modal {
   z-index: @zindex-modal;
   cursor: default;
+  &.modal-slide{
+    .modal-dialog{
+      max-width: 1000px;
+      width: fit-content;
+      width: -moz-fit-content;
+      .modal-content{
+        max-width: 1154px;
+        min-width: 204px;
+        .modal-header{
+          background: transparent;
+          border: none;
+          display: inline-block;
+          height: auto;
+          padding: 8px;
+          width: 100%;
+          .close {
+            align-items: center;
+            display: flex;
+            height: 32px;
+            justify-content: center;
+            opacity: 1;
+            width: 32px;
+            &:hover{
+              background: rgba(0, 0, 0, 0.2);
+              border-radius: 50%;
+              cursor: pointer;
+              span {
+                color: @color-white;
+              }
+            }
+            span {
+              color: @color-lightgrey;
+              height: 25px;
+            }
+          }  
+        }
+        .modal-body{
+          padding: 12px;
+          .desktop-apps-wrapper2 {
+            .carousel-inner2{
+              display: flex;
+              flex-wrap: wrap;
+              .desktop-app2 {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 12px 24px;
+                .transiction(500ms; all);
+                text-align: center;
+                width: 140px;
+                .app-notification-bubble-parent2{
+                  width: @desktop-app-img-dimensions;
+                  margin: 0 auto;
+                  position: relative;
+                  z-index: 9;
+                  .app-notification-bubble2 {
+                    background-color: @color-error;
+                    border-radius: 100px;
+                    color: @color-white;
+                    font-size: 14px;
+                    height: 30px;
+                    line-height: 30px;
+                    min-width: 30px;
+                    position: absolute;
+                    right: -9px;
+                    text-align: center;
+                    top: -8px;
+                    width: auto;
+                  } 
+                }
+                .icon-app-wrapper2 {
+                  border-radius: @border-radius-xxlarge;
+                  overflow: hidden;
+                  margin-bottom: @padding-xxlarge;
+                  height: @desktop-app-img-dimensions;
+                  width: @desktop-app-img-dimensions;
+                  img {
+                    height: @desktop-app-img-dimensions;
+                    width: @desktop-app-img-dimensions;
+                  }
+                  a, img {
+                    overflow: hidden;
+                    border-radius: @border-radius-xxlarge;
+                    .transform-scale();
+                    .transiction(120ms);
+                  }
+                }
+                a {
+                  font-size: @font-size-xlarge;
+                  color: @color-darkgrey;
+                }
+                &:hover {
+                  img {
+                    .transform-scale(1.1);
+                  }
+                }
+                &.disabled {
+                  &:hover {
+                    img {
+                      .transform-scale();
+                    }
+                  }
+                  img {
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                  }
+                  > a {
+                    color: @color-lightgrey;
+                    text-shadow: initial;
+                  }
+                }
+              }
+            }
+            .desktop-apps-paginator2 {
+              float: left;
+              clear: left;
+              display: table;
+              width: 100%;
+              ul, ol {
+                position: inherit;
+                width: auto;
+                margin: 0 auto;
+                padding: 0;
+                display: table;
+                li {
+                  margin: 0;
+                  list-style: none;
+                  float: left;
+                  &:not(:last-child) {
+                    margin-right: @padding-medium;
+                  }
+                  width: @desktop-paginator-item-dimensions;
+                  height: @desktop-paginator-item-dimensions;
+                  background-color: @color-extralightgrey;
+                  display: block;
+                  border-radius: 50%;
+                  opacity: 0.6;
+                  &.active, &:hover {
+                      opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .modal-header {
     .background-gradient(@navbar-header-color-dg-min; @navbar-header-color-dg-max);
     color: @color-white;
     height: inherit; // @modal-header-height;
     padding-left: @padding-large;
-
     h4 {
       font-size: @font-size-large;
       font-weight: bold;
       color: @color-white;
     }
-
     a.close, button.close {
       color: @color-white;
       opacity: 1;
@@ -162,18 +308,29 @@
     }        
  }
 
-  @media (max-width: @responsive-sm-min-width) { //768px;
-    .vertical-alignment-helper {
-      .vertical-align-center {
-        padding-left:15px;
-        padding-right:15px;
-      }                 
-    }        
-  }
-
 }
- 
- 
+
+@media (max-width: 1200px) {
+  .modal {
+    &.modal-slide{
+      .modal-dialog{
+        .modal-content{
+          max-width: 90vw;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @responsive-sm-min-width) { //768px;
+  .vertical-alignment-helper {
+    .vertical-align-center {
+      padding-left:15px;
+      padding-right:15px;
+    }                 
+  }        
+}
+
 @media (max-width: @responsive-xm-min-width) { //480px;
   .modal{
     &.form-modal {
