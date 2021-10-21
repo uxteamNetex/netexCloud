@@ -19097,6 +19097,7 @@ h6.text-responsive,
 .slider .slick-prev,
 .slider .slick-next {
   top: 42% !important;
+  z-index: 99;
 }
 .slider .slick-prev:before,
 .slider .slick-next:before {
