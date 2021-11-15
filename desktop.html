@@ -235,6 +235,7 @@
         <div class="modal-dialog vertical-align-center">
           <div class="modal-content">
             <div class="modal-header">
+              <p class="modal-title">Integra agenda</p>
               <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
@@ -365,6 +366,7 @@
         <div class="modal-dialog vertical-align-center">
           <div class="modal-content">
             <div class="modal-header">
+              <p class="modal-title">Integra agenda uno</p>
               <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
@@ -391,6 +393,7 @@
         <div class="modal-dialog vertical-align-center">
           <div class="modal-content">
             <div class="modal-header">
+              <p class="modal-title">Integra agenda tres</p>
               <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
@@ -546,99 +549,15 @@
     $(window).resize(function() { 
       resetContentHeight();
       newsContentHeight();
-      //Se recarga la página para que cuando se redimensina la pantalla coja el código del slick
+
       setTimeout(function(){
+        //Se recarga la página para que cuando se redimensina la pantalla coja el código del slick
         window.location.reload();
       });
     });
     $(document).scroll(function(){
       newsContentHeight();
     });
-
-    //Se carga el slick
-    function loadSlickMultiple() {
-       
-    }
-    function loadSlickUno() {
-      $(".slider-uno").slick({
-        dots: true,
-        infinite: true,
-        rows: 2,
-        slidesPerRow: 6,
-        responsive: [
-          {
-            breakpoint: 1200,
-            settings: {
-              slidesPerRow: 5,
-            }
-          },
-          {
-            breakpoint: 1050,
-            settings: {
-              slidesPerRow: 4,
-            }
-          },
-          {
-            breakpoint: 880,
-            settings: {
-              slidesPerRow: 3,
-            }
-          },
-          {
-          breakpoint: 650,
-            settings: {
-              slidesPerRow: 2,
-            },
-          },
-          {
-          breakpoint: 430,
-            settings: {
-              slidesPerRow: 1,
-            },
-          }
-        ]
-      }); 
-    }
-    function loadSlickTres() {
-      $(".slider-tres").slick({
-        dots: true,
-        infinite: true,
-        rows: 2,
-        slidesPerRow: 6,
-        responsive: [
-          {
-            breakpoint: 1200,
-            settings: {
-              slidesPerRow: 5,
-            }
-          },
-          {
-            breakpoint: 1050,
-            settings: {
-              slidesPerRow: 4,
-            }
-          },
-          {
-            breakpoint: 880,
-            settings: {
-              slidesPerRow: 3,
-            }
-          },
-          {
-          breakpoint: 650,
-            settings: {
-              slidesPerRow: 2,
-            },
-          },
-          {
-          breakpoint: 430,
-            settings: {
-              slidesPerRow: 1,
-            },
-          }
-        ]
-      }); 
-    }
 
     //Se abre la modal de apps group y se carga el slick
     $('#apps-group-modal').on('shown.bs.modal', function () {
@@ -682,10 +601,84 @@
       });
     });
     $('#apps-group-modal-uno').on('shown.bs.modal', function () {
-      loadSlickUno(); 
+      $(".slider-uno").slick({
+        dots: true,
+        infinite: true,
+        rows: 2,
+        slidesPerRow: 6,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesPerRow: 5,
+            }
+          },
+          {
+            breakpoint: 1050,
+            settings: {
+              slidesPerRow: 4,
+            }
+          },
+          {
+            breakpoint: 880,
+            settings: {
+              slidesPerRow: 3,
+            }
+          },
+          {
+          breakpoint: 650,
+            settings: {
+              slidesPerRow: 2,
+            },
+          },
+          {
+          breakpoint: 430,
+            settings: {
+              slidesPerRow: 1,
+            },
+          }
+        ]
+      }); 
     });
     $('#apps-group-modal-tres').on('shown.bs.modal', function () {
-      loadSlickTres();    
+      $(".slider-tres").slick({
+        dots: true,
+        infinite: true,
+        rows: 2,
+        slidesPerRow: 6,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesPerRow: 5,
+            }
+          },
+          {
+            breakpoint: 1050,
+            settings: {
+              slidesPerRow: 4,
+            }
+          },
+          {
+            breakpoint: 880,
+            settings: {
+              slidesPerRow: 3,
+            }
+          },
+          {
+          breakpoint: 650,
+            settings: {
+              slidesPerRow: 2,
+            },
+          },
+          {
+          breakpoint: 430,
+            settings: {
+              slidesPerRow: 1,
+            },
+          }
+        ]
+      });  
     });
       
   });

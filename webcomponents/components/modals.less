@@ -17,15 +17,24 @@
         .modal-header{
           background: transparent;
           border: none;
-          display: inline-block;
+          display: flex;
           height: auto;
           padding: 8px;
           width: 100%;
+          .modal-title{
+            color: @color-darkgrey;
+            font-family: Lato;
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+            width: calc(100% - 32px);
+          }
           .close {
             align-items: center;
             display: flex;
             height: 32px;
             justify-content: center;
+            margin-left: auto;
             opacity: 1;
             width: 32px;
             &:hover{
@@ -38,7 +47,7 @@
             }
             span {
               color: @color-lightgrey;
-              height: 25px;
+              height: 22px;
             }
           }  
         }

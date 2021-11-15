@@ -4025,16 +4025,25 @@ div.avatar-wrapper img {
 .modal.modal-slide .modal-dialog .modal-content .modal-header {
   background: transparent;
   border: none;
-  display: inline-block;
+  display: flex;
   height: auto;
   padding: 8px;
   width: 100%;
+}
+.modal.modal-slide .modal-dialog .modal-content .modal-header .modal-title {
+  color: #333;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  width: calc(100% - 32px);
 }
 .modal.modal-slide .modal-dialog .modal-content .modal-header .close {
   align-items: center;
   display: flex;
   height: 32px;
   justify-content: center;
+  margin-left: auto;
   opacity: 1;
   width: 32px;
 }
@@ -4048,7 +4057,7 @@ div.avatar-wrapper img {
 }
 .modal.modal-slide .modal-dialog .modal-content .modal-header .close span {
   color: #999;
-  height: 25px;
+  height: 22px;
 }
 .modal.modal-slide .modal-dialog .modal-content .modal-body {
   padding: 12px;
