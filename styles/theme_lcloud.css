@@ -4031,12 +4031,15 @@ div.avatar-wrapper img {
   width: 100%;
 }
 .modal.modal-slide .modal-dialog .modal-content .modal-header .modal-title {
-  color: #333;
+  color: #FFF;
   font-family: Lato;
   font-size: 24px;
   font-weight: 400;
-  text-align: center;
-  width: calc(100% - 32px);
+  left: 50%;
+  margin-right: -50% !important;
+  position: absolute;
+  top: -50px;
+  transform: translate(-50%, 0%);
 }
 .modal.modal-slide .modal-dialog .modal-content .modal-header .close {
   align-items: center;
