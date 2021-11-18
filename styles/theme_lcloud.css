@@ -19039,7 +19039,6 @@ h6.text-responsive,
   background: url('../apps/files/img/remove_icon.png') 0 0 no-repeat;
 }
 .slider {
-  display: -webkit-box;
   margin: 0 auto;
   margin-bottom: 0 !important;
   width: 100%;
