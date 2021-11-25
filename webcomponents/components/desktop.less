@@ -208,6 +208,12 @@ body.desktop {
       background: none;
       top: -70px;
       width: 30px;
+      &:focus{
+      opacity: 0.5;
+        &:hover{
+          opacity: 1;
+        }  
+      }
       &.left {
         left: -25px;
       }
@@ -734,6 +740,11 @@ body.desktop, .desktop-classic{
           .icon-app-wrapper{
             margin-bottom: 15px;  
           }  
+        }
+      }
+      .desktop-app {
+        .small-apps-container {
+          margin-bottom: 15px;
         }
       }
     }

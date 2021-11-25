@@ -8931,6 +8931,12 @@ body.desktop .desktop-apps-wrapper .carousel-control {
   top: -70px;
   width: 30px;
 }
+body.desktop .desktop-apps-wrapper .carousel-control:focus {
+  opacity: 0.5;
+}
+body.desktop .desktop-apps-wrapper .carousel-control:focus:hover {
+  opacity: 1;
+}
 body.desktop .desktop-apps-wrapper .carousel-control.left {
   left: -25px;
 }
@@ -9427,6 +9433,9 @@ body.desktop .news-wrapper .content .form label,
     margin-bottom: 25px;
   }
   body.desktop .desktop-apps-wrapper .desktop-apps-page .desktop-app .icon-app-wrapper {
+    margin-bottom: 15px;
+  }
+  body.desktop .desktop-apps-wrapper .desktop-app .small-apps-container {
     margin-bottom: 15px;
   }
 }
