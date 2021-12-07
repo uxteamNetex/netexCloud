@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>app title</title><!-- Bootstrap -->
+    <link href="apps/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--link( rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")-->
+    <link rel="stylesheet" href="apps/vendors/font-awesome-4.5.0/css/font-awesome.min.css"><!-- Theme -->
+    <link href="styles/theme_lcloud.min.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="apps/vendors/html5shiv/html5shiv.min.js"></script>
+    <script src="apps/vendors/respond/respond.min.js"></script><![endif]-->
+    <!-- jquery UI -->
+    <link href="apps/vendors/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet"><!-- bootstrap colorpicker -->
+    <link href="apps/vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet"><!-- bootstrap datetimepicker -->
+    <link href="apps/vendors/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"><!-- infinity repeteable form fields -->
+    <link href="apps/vendors/jQuery-Repeatable-Form-fields-infinity/src/css/infinity.min.css" rel="stylesheet"><!-- croppie -->
+    <link href="apps/vendors/croppie/croppie.css" rel="stylesheet"><!-- Slide slick -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick.css" rel="stylesheet"><!-- Add the new slick-theme.css if you want the default styling -->
+    <link href="apps/vendors/slick-1.6.0/slick/slick-theme.css" rel="stylesheet"><!-- Bar rating theme -->
+    <link href="apps/vendors/jquery-bar-rating-master/dist/themes/css-stars.css" rel="stylesheet"><!-- bootstrap table -->
+    <link href="apps/vendors/bootstrap-table/dist/bootstrap-table.min.css" rel="stylesheet"><!-- animate -->
+    <link href="apps/vendors/animate/animate.css" rel="stylesheet"><!-- jquery autocomplete master -->
+    <link href="apps/vendors/jQuery-Autocomplete-master/content/styles.css" rel="stylesheet"><!-- Full Calendar Assets -->
+    <link href="apps/vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar_customized.css" rel="stylesheet">
+    <link href="apps/vendors/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+    <link href="apps/vendors/fullcalendar-scheduler-1.9.4/scheduler.css" rel="stylesheet">
+    <style>
+      body.desktop .navbar .topbar-wrapper .navbar-header a.navbar-brand {
+        background-image: url('apps/files/icons/logo/logo-compuesto-01.png');
+      }
+    </style>
+  </head>
+  <body class="desktop">  
+    <nav class="navbar navbar-topbar">
+      <div class="container-fluid topbar-wrapper">
+        <div class="navbar-header">              
+          <a href="#" class="navbar-brand">Learning Cloud</a>
+        </div>
+        <div id="navbar" class="navbar-topbar-wrapper navbar-collapse">
+          <!-- Topbar menú-->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="profile-username"><span>Federica</span></li>
+            <li class="profile-notifications-wrapper">
+              <!-- User image profile-->
+              <div class="dropdown">
+                <div id="dropdownMenu-profile" data-toggle="dropdown" aria-expanded="true" class="avatar-wrapper"><img src="apps/files/img/profile.png"></div>
+                <div class="profile-notifications-bubble">78</div>
+                <!-- Contextual menú  profile-->
+                <ul role="menu" aria-labelledby="dropdownMenu-profile" class="dropdown-menu">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ver perfil</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mensajes</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Salir de la sesión</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="toggle-dashboard"><a href="javascript:void(0);" data-toggle="collapse" data-target="#menu-dashboard" class="collapsed"><span aria-hidden="true" class="glyphicon glyphicon-th">                                                           </span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="dashboard-wrapper-small">
+          <div id="menu-dashboard" class="row dashboard collapse">
+            <div class="dropdown-caret right"><span class="caret-outer"></span><span class="caret-inner">    </span></div>
+            <div id="menu-apps" class="row">  
+              <div class="col-lg-12">   
+                <div class="col-md-1 app-wrapper">            <a href="apps/lcloud/index.html" data-toggle="tooltip" data-placement="top" title="CLOUD"><span class="icon-wrapper"><img src="apps/files/projects/lcloud.png"></span>
+                    <label>CLOUD</label></a></div>
+                <div class="col-md-1 app-wrapper">  <a href="apps/lcentral/index.html" data-toggle="tooltip" data-placement="top" title="CENTRAL"><span class="icon-wrapper"><img src="apps/files/projects/lcentral.png"></span>
+                    <label>CENTRAL                </label></a></div>
+                <div class="col-md-1 app-wrapper">  <a href="apps/default/index.html" data-toggle="tooltip" data-placement="top" title="DEFAULT"><span class="icon-wrapper"><img src="apps/files/projects/default.png"></span>
+                    <label>DEFAULT</label></a></div>
+                <div class="col-md-1 app-wrapper">  <a href="apps/old/index.html" data-toggle="tooltip" data-placement="top" title="Old files"><span class="icon-wrapper"><img src="apps/files/projects/old.png"></span>
+                    <label>OLD</label></a></div>
+                <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                    <label>Lorem ipsum</label></a></div>
+                <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                    <label>Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </label></a></div>
+                <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                    <label>Lorem ipsum</label></a></div>
+                <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                    <label>Lorem ipsum</label></a></div>
+                <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                    <label>Lorem ipsum</label></a></div>
+                <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                    <label>Lorem ipsum</label></a></div>
+                <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                    <label>Lorem ipsum</label></a></div>
+                <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                    <label>Lorem ipsum</label></a></div>
+                <div class="col-md-1 app-wrapper">  <a href="#"><span class="icon-wrapper"><img src="apps/files/icons/icon.svg"></span>
+                    <label>Lorem ipsum</label></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="body-content">     
+      <section class="content">
+        <div class="container-fluid">
+
+          <div data-ride="carousel" data-interval="false" class="desktop-apps-wrapper carousel slide">
+            <div role="listbox" class="carousel-inner">
+
+              <div class="desktop-app" data-toggle="modal" data-target="#apps-group-modal">
+                <div class="small-apps-container">
+                  <a href="#">
+                    <img src="apps/files/icons/desktop/App-mensajeria.svg">
+                    <img src="apps/files/icons/desktop/App-asistencia.svg">
+                    <img src="apps/files/icons/desktop/App-calendario.svg">
+                    <img src="apps/files/icons/desktop/App-notificaciones.svg">
+                  </a>
+                </div>
+                <a href="#">Integra Agenda</a>
+              </div>
+              <div class="desktop-app" data-toggle="modal" data-target="#apps-group-modal-uno">
+                <div class="small-apps-container">
+                  <a href="#">
+                    <img src="apps/files/icons/desktop/App-mensajeria.svg">
+                  </a>
+                </div>
+                <a href="#">Integra Agenda uno</a>
+              </div>
+              <div class="desktop-app" data-toggle="modal" data-target="#apps-group-modal-tres">
+                <div class="small-apps-container">
+                  <a href="#">
+                    <img src="apps/files/icons/desktop/App-mensajeria.svg">
+                    <img src="apps/files/icons/desktop/App-asistencia.svg">
+                    <img src="apps/files/icons/desktop/App-calendario.svg">
+                  </a>
+                </div>
+                <a href="#">Integra Agenda tres</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/administracion.png"></a></div><a href="#">Administración</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/evaluador.png"></a></div><a href="#">Evaluador</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/expediente.png"></a></div><a href="#">Expediente</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/biblioteca.png"></a></div><a href="#">Biblioteca (Alumno)</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/biblioteca.png"></a></div><a href="#">Biblioteca (Formador)</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/biblioteca.png"></a></div><a href="#">Biblioteca (Admin)</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/tuformacion.png"></a></div><a href="#">Tu formación</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/catalogos.png"></a></div><a href="#">Catálogo</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/calendario.png"></a></div><a href="#">Calendario</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/play.png"></a></div><a href="#">Learning Play</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/social.png"></a></div><a href="#">Tu comunidad</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/actualidad.png"></a></div><a href="#">Anuncios</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/ajustes.png"></a></div><a href="#">Configuración</a>
+              </div>
+              <div class="desktop-app">
+                <div class="app-notification-bubble-parent">
+                  <div class="app-notification-bubble">3</div>
+                </div>
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/notificaciones.png"></a></div><a href="#">Notificaciones</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/informes.png"></a></div><a href="#">Informes</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/opensesame.png"></a></div><a href="#">OpenSesame</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/anderspink.png"></a></div><a href="#">Informes de Anders Pink</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/googleanalytics.png"></a></div><a href="#">Google Analytics</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/maker.png"></a></div><a href="#">Maker</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/kaltura.png"></a></div><a href="#">Kaltura</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/ajustes.png"></a></div><a href="#">Configuración</a>
+              </div>
+              <div class="desktop-app">
+                <div class="icon-app-wrapper"><a href="#"><img src="apps/files/icons/desktop/usuarios.png"></a></div><a href="#">Usuarios</a>
+              </div>
+            </div><a href="" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a href="" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+            <div class="desktop-apps-paginator">
+              <ol class="carousel-indicators"></ol>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- Confirmation Modal-->
+    <div id="trialModal" class="modal">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+              <h4 id="modal-title" class="modal-title">You`re using a trial version of learningCloud</h4><a href="#modal-title" class="anchorjs-link"><span class="anchorjs-icon"></span></a>
+            </div>
+            <div class="modal-body">
+              <p class="center-align separation-top separation-bottom grey dark fs-large">Your trial period will expired in 29 day(s). To use learningCloud after this period you should purchase a license.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Upgrade</button>
+              <button type="button" data-toggle="modal" data-target="#trialModal,#formModal" class="btn btn-default">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apps group Modal-->
+    <div id="apps-group-modal" class="modal modal-slide">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">Integra agenda</p>
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+
+              <section class="slider slider-multiple slide-apps-dashboard">
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-mensajeria.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">1-Mensajeria</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-asistencia.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">2-Asistencia</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-calendario.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">3-Calendario</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-notificaciones.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">4-Notificaciones</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">5-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">6-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">7-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">8-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">9-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">10-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">11-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">12-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">13-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-netex-default.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">14-His audiam deserunt in, eum ubique voluptatibus te</span>
+                  </span>
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="apps-group-modal-uno" class="modal modal-slide">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">Integra agenda uno</p>
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+
+              <section class="slider slider-uno slide-apps-dashboard">
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-mensajeria.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">1-Mensajeria</span>
+                  </span>
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="apps-group-modal-tres" class="modal modal-slide">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">Integra agenda tres</p>
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+
+              <section class="slider slider-tres slide-apps-dashboard">
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-mensajeria.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">1-Mensajeria</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-asistencia.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">2-Asistencia</span>
+                  </span>
+                </div>
+                <div class="slide-apps-dashboard__app">
+                  <div class="slide-apps-dashboard__app--img">
+                    <img src="apps/files/icons/desktop/App-calendario.svg">
+                  </div>
+                  <span class="slide-apps-dashboard__app--text ellipsis-points ellipsis-points-2">
+                    <span class="textellipsis">3-Calendario</span>
+                  </span>
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="news-content" class="news-wrapper collapse">
+      <div class="content">
+        <div data-toggle="collapse" data-target="#news-content" class="toggle-close">X</div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row news-container col-reverse-responsive">
+              <div class="col-news">
+                <div class="section"><i class="icon-ntx icon-news"></i>
+                  <label>News</label>
+                </div>
+                <div class="news-list">
+                  <div class="row new-wrapper">
+                    <div class="col-xs-11 separation-left-reset">
+                      <time class="new-time">23/09/2015</time>
+                    </div>
+                    <div class="col-xs-1 separation-right-reset right-align"><i class="icon-ntx icon-star icon-color-white fs-icon-xmedium"></i></div><a href="newsdetail.html" class="new-title">Dimite el presidente</a>
+                    <div class="new-summary">Loremvina molestie in magna.</div>
+                  </div>
+                  <div class="row new-wrapper">
+                    <div class="col-xs-11 separation-left-reset">
+                      <time class="new-time">23/09/2015</time>
+                    </div>
+                    <div class="col-xs-1 separation-right-reset right-align"><i class="icon-ntx icon-star icon-color-white fs-icon-xmedium"></i></div><a href="newsdetail.html" class="new-title">Tejerina confirma un apoyo masivo al acuerdo lácteo</a>
+                    <div class="new-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor felis in mi dapibus tempor. Etiam gravida nisl in nulla ullamcorper, in ultrices quam ullamcorper. Aliquam erat volutpat. In hac habitasse platea dictumst. Phasellus hendrerit urna non turpis pulvinar, sit amet placerat augue tincidunt. Donec ornare quam quis dapibus vestibulum. Duis interdum laoreet placerat. Integer ut dignissim metus. Nullam erat est, pulvinar ut fermentum vitae, molestie in magna.</div>
+                  </div>
+                  <div class="row new-wrapper">
+                    <div class="col-xs-11 separation-left-reset">
+                      <time class="new-time">23/09/2015</time>
+                    </div><a href="newsdetail.html" class="new-title">Tejerina confirma un apoyo masivo al acuerdo lácteo</a>
+                    <div class="new-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor felis in mi dapibus tempor. Etiam gravida nisl in nulla ullamcorper, in ultrices quam ullamcorper. Aliquam erat volutpat. In hac habitasse platea dictumst. Phasellus hendrerit urna non turpis pulvinar, sit amet placerat augue tincidunt. Donec ornare quam quis dapibus vestibulum. Duis interdum laoreet placerat. Integer ut dignissim metus. Nullam erat est, pulvinar ut fermentum vitae, molestie in magna.</div>
+                  </div>
+                  <div class="row new-wrapper">
+                    <div class="col-xs-11 separation-left-reset">
+                      <time class="new-time">23/09/2015</time>
+                    </div><a href="newsdetail.html" class="new-title">Tejerina confirma un apoyo masivo al acuerdo lácteo</a>
+                    <div class="new-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor felis in mi dapibus tempor. Etiam gravida nisl in nulla ullamcorper, in ultrices quam ullamcorper. Aliquam erat volutpat. In hac habitasse platea dictumst. Phasellus hendrerit urna non turpis pulvinar, sit amet placerat augue tincidunt. Donec ornare quam quis dapibus vestibulum. Duis interdum laoreet placerat. Integer ut dignissim metus. Nullam erat est, pulvinar ut fermentum vitae, molestie in magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor felis in mi dapibus tempor. Etiam gravida nisl in nulla ullamcorper, in ultrices quam ullamcorper. Aliquam erat volutpat. In hac habitasse platea dictumst. Phasellus hendrerit urna non turpis pulvinar, sit amet placerat augue tincidunt. Donec ornare quam quis dapibus vestibulum. Duis interdum laoreet placerat. Integer ut dignissim metus. Nullam erat est, pulvinar ut fermentum vitae, molestie in magna.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-poll">
+                <div class="poll">
+                  <div class="section"><i class="icon-ntx icon-news"></i>
+                    <label>News</label>
+                  </div>
+                  <div class="form form-transparent">
+                    <fieldset>
+                      <div class="form-group">
+                        <label>Which device are you most likely to use to access training content</label>
+                        <div class="clearfix">
+                          <div class="radio radio-primary clearfix">
+                            <input id="radio1" type="radio" name="radio" value="option1">
+                            <label for="radio1">Smartphone</label>
+                          </div>
+                          <div class="radio radio-primary clearfix">
+                            <input id="radio2" type="radio" name="radio" value="option2">
+                            <label for="radio2">Tablet</label>
+                          </div>
+                          <div class="radio radio-primary clearfix">
+                            <input id="radio3" type="radio" name="radio" value="option3">
+                            <label for="radio3">Laptop</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <button class="btn btn-primary">Responder  </button>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="loading-wrapper vertical-align-center"><i class="fa fa-circle-o-notch fa-spin"></i>
+          <label>Loading</label>
+        </div>
+      </div>
+    </div>
+    <div data-toggle="collapse" data-target="#news-content" class="news-toggle collapsed">
+      <div class="label-wrapper">
+        <div class="label">Actualidad </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="box">
+        <div class="developed">Developed by Netex Learning</div>
+        <div class="version">ver. X.Y.Z</div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="apps/vendors/jquery/jquery.1.11.2.min.js">     </script>
+<script src="apps/vendors/bootstrap/js/bootstrap.min.js"> </script>
+<script src="apps/vendors/jquery-mobile-touchevent/jquery.mobile.custom.min.js">    </script>
+<script src="webcomponents/js/init.dashboardswipe.js"> </script>
+<script src="apps/vendors/slick-1.6.0/slick/slick.min.js"></script>
+<script src="webcomponents/js/theme.js"> </script>
+
+<script type="text/javascript">
+  jQuery('#trialModal').modal('show');
+  
+  $(document).ready(function () {
+    //Añadirle al fondo de noticias un alto del 100%
+    newsContentHeight();
+    function resetContentHeight() {
+        $("#news-content").css("height", 0);
+    }
+    function newsContentHeight() {
+        var documentHeight = $(document).height();
+        $("#news-content").css("height", documentHeight);
+    }
+    $("#news-content").on("shown.bs.collapse", function(){
+        newsContentHeight();
+    });
+
+    $(window).resize(function() { 
+      resetContentHeight();
+      newsContentHeight();
+
+      setTimeout(function(){
+        //Se recarga la página para que cuando se redimensina la pantalla coja el código del slick
+        window.location.reload();
+      });
+    });
+    $(document).scroll(function(){
+      newsContentHeight();
+    });
+
+    //Se abre la modal de apps group y se carga el slick
+    $('#apps-group-modal').on('shown.bs.modal', function () {
+      $(".slider-multiple").slick({
+        dots: true,
+        infinite: true,
+        rows: 2,
+        slidesPerRow: 6,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesPerRow: 5,
+            }
+          },
+          {
+            breakpoint: 1050,
+            settings: {
+              slidesPerRow: 4,
+            }
+          },
+          {
+            breakpoint: 880,
+            settings: {
+              slidesPerRow: 3,
+            }
+          },
+          {
+          breakpoint: 650,
+            settings: {
+              slidesPerRow: 2,
+            },
+          },
+          {
+          breakpoint: 430,
+            settings: {
+              slidesPerRow: 1,
+            },
+          }
+        ]
+      });
+    });
+    $('#apps-group-modal-uno').on('shown.bs.modal', function () {
+      $(".slider-uno").slick({
+        dots: true,
+        infinite: true,
+        rows: 2,
+        slidesPerRow: 6,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesPerRow: 5,
+            }
+          },
+          {
+            breakpoint: 1050,
+            settings: {
+              slidesPerRow: 4,
+            }
+          },
+          {
+            breakpoint: 880,
+            settings: {
+              slidesPerRow: 3,
+            }
+          },
+          {
+          breakpoint: 650,
+            settings: {
+              slidesPerRow: 2,
+            },
+          },
+          {
+          breakpoint: 430,
+            settings: {
+              slidesPerRow: 1,
+            },
+          }
+        ]
+      }); 
+    });
+    $('#apps-group-modal-tres').on('shown.bs.modal', function () {
+      $(".slider-tres").slick({
+        dots: true,
+        infinite: true,
+        rows: 2,
+        slidesPerRow: 6,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesPerRow: 5,
+            }
+          },
+          {
+            breakpoint: 1050,
+            settings: {
+              slidesPerRow: 4,
+            }
+          },
+          {
+            breakpoint: 880,
+            settings: {
+              slidesPerRow: 3,
+            }
+          },
+          {
+          breakpoint: 650,
+            settings: {
+              slidesPerRow: 2,
+            },
+          },
+          {
+          breakpoint: 430,
+            settings: {
+              slidesPerRow: 1,
+            },
+          }
+        ]
+      });  
+    });
+      
+  });
+</script>
